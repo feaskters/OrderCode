@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="X7e-i9-PXB" customClass="SettingView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景-设置" translatesAutoresizingMaskIntoConstraints="NO" id="yoI-C4-7MV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景-设置2" translatesAutoresizingMaskIntoConstraints="NO" id="heR-42-xcz">
+                    <rect key="frame" x="16" y="65" width="343" height="473"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKx-5W-8kE">
+                    <rect key="frame" x="118.5" y="558" width="138" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="138" id="iYo-Rf-Fxh"/>
+                        <constraint firstAttribute="height" constant="56" id="x5b-wV-hUJ"/>
+                    </constraints>
+                    <state key="normal" image="完成"/>
+                    <connections>
+                        <action selector="back:" destination="X7e-i9-PXB" eventType="touchUpInside" id="sCp-3C-WPr"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="背景音乐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcC-Oe-kbe">
+                    <rect key="frame" x="114.5" y="107" width="146" height="43"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <color key="textColor" red="0.51764705882352946" green="0.28627450980392155" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aCx-Lq-aXb">
+                    <rect key="frame" x="112" y="294" width="213" height="31"/>
+                    <color key="tintColor" red="0.51372549019607838" green="0.28235294117647058" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="minimumTrackTintColor" red="0.51764705879999995" green="0.28627450980000002" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="thumbTintColor" red="0.59999999999999998" green="0.35686274509803922" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="changeVolume:" destination="X7e-i9-PXB" eventType="valueChanged" id="RCf-Qx-Pur"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音量" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gis-Gt-ei7">
+                    <rect key="frame" x="43" y="294" width="49" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="gZb-6t-zv5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.35686274509999999" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VS-6O-C9i">
+                    <rect key="frame" x="69" y="403" width="237" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="imG-BU-W5E"/>
+                        <constraint firstAttribute="width" constant="237" id="qEX-Sg-VB4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <state key="normal" title="静音" backgroundImage="背景-设置3">
+                        <color key="titleColor" red="0.93333333333333335" green="0.77254901960784317" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="silent:" destination="X7e-i9-PXB" eventType="touchUpInside" id="7Bn-AZ-uxK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="gis-Gt-ei7" firstAttribute="leading" secondItem="B8h-Gf-cqQ" secondAttribute="leading" constant="43" id="2tG-1N-TqG"/>
+                <constraint firstItem="heR-42-xcz" firstAttribute="top" secondItem="B8h-Gf-cqQ" secondAttribute="top" constant="45" id="6bh-8A-XeV"/>
+                <constraint firstItem="heR-42-xcz" firstAttribute="leading" secondItem="B8h-Gf-cqQ" secondAttribute="leading" constant="16" id="7jQ-2c-Xvz"/>
+                <constraint firstItem="yoI-C4-7MV" firstAttribute="top" secondItem="X7e-i9-PXB" secondAttribute="top" id="9WX-8O-kbi"/>
+                <constraint firstItem="B8h-Gf-cqQ" firstAttribute="trailing" secondItem="heR-42-xcz" secondAttribute="trailing" constant="16" id="HLF-DY-kEa"/>
+                <constraint firstItem="UcC-Oe-kbe" firstAttribute="centerX" secondItem="X7e-i9-PXB" secondAttribute="centerX" id="Hld-57-knI"/>
+                <constraint firstItem="aCx-Lq-aXb" firstAttribute="leading" secondItem="gis-Gt-ei7" secondAttribute="trailing" constant="22" id="KiO-s8-1WQ"/>
+                <constraint firstItem="heR-42-xcz" firstAttribute="centerX" secondItem="X7e-i9-PXB" secondAttribute="centerX" id="LAA-x3-vjS"/>
+                <constraint firstItem="B8h-Gf-cqQ" firstAttribute="bottom" secondItem="lKx-5W-8kE" secondAttribute="bottom" constant="53" id="WpF-yL-gWi"/>
+                <constraint firstItem="lKx-5W-8kE" firstAttribute="top" secondItem="4VS-6O-C9i" secondAttribute="bottom" constant="80" id="acU-bA-KYX"/>
+                <constraint firstItem="4VS-6O-C9i" firstAttribute="centerX" secondItem="X7e-i9-PXB" secondAttribute="centerX" id="cpT-GV-MzB"/>
+                <constraint firstItem="aCx-Lq-aXb" firstAttribute="top" secondItem="gis-Gt-ei7" secondAttribute="top" id="fR6-r7-Uqm"/>
+                <constraint firstItem="B8h-Gf-cqQ" firstAttribute="trailing" secondItem="yoI-C4-7MV" secondAttribute="trailing" id="nVo-6E-9fo"/>
+                <constraint firstItem="4VS-6O-C9i" firstAttribute="top" secondItem="gis-Gt-ei7" secondAttribute="bottom" constant="80" id="nXg-5F-cPh"/>
+                <constraint firstItem="yoI-C4-7MV" firstAttribute="leading" secondItem="B8h-Gf-cqQ" secondAttribute="leading" id="oM6-Gs-mzl"/>
+                <constraint firstItem="lKx-5W-8kE" firstAttribute="top" secondItem="heR-42-xcz" secondAttribute="bottom" constant="20" id="osL-hL-uzS"/>
+                <constraint firstItem="UcC-Oe-kbe" firstAttribute="top" secondItem="B8h-Gf-cqQ" secondAttribute="top" constant="87" id="qVc-6L-xZT"/>
+                <constraint firstItem="B8h-Gf-cqQ" firstAttribute="trailing" secondItem="aCx-Lq-aXb" secondAttribute="trailing" constant="52" id="qaF-tG-XPC"/>
+                <constraint firstItem="lKx-5W-8kE" firstAttribute="centerX" secondItem="X7e-i9-PXB" secondAttribute="centerX" id="qin-IU-7MF"/>
+                <constraint firstItem="B8h-Gf-cqQ" firstAttribute="bottom" secondItem="yoI-C4-7MV" secondAttribute="bottom" id="zro-Xr-OQi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="B8h-Gf-cqQ"/>
+            <connections>
+                <outlet property="volume" destination="aCx-Lq-aXb" id="Qed-gM-OVQ"/>
+            </connections>
+            <point key="canvasLocation" x="84" y="115.59220389805098"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="完成" width="138" height="56"/>
+        <image name="背景-设置" width="789" height="398"/>
+        <image name="背景-设置2" width="266" height="278"/>
+        <image name="背景-设置3" width="442" height="193"/>
+    </resources>
+</document>
