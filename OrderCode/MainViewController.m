@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "Setting/SettingView.h"
+#import "checkPoint/CheckPointPageView.h"
 
 @interface MainViewController ()
 
@@ -22,11 +23,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     self.screenWidth = self.view.frame.size.width;
     self.screenHeight = self.view.frame.size.height;
-    
-    
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [self addSelectCheckPointPage];
+}
+
+//关卡选择页面
+- (void)addSelectCheckPointPage{
+    //加载关卡数据
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"CheckPoint" ofType:@"plist"];
+    NSArray *array = [NSArray arrayWithContentsOfFile:path];
+    //加载选择页面
+    CheckPointPageView *cppv = [CheckPointPageView checkPointPage];
+    cppv.musicPlay_yx = self._musicPlay_yx;
+    cppv.checkPoints = array;
+    CGRect frame = CGRectMake(0, 0, _mainScrollView.frame.size.width, _mainScrollView.frame.size.height);
+    cppv.frame = frame;
+    [self.mainScrollView addSubview:cppv];
 }
 
 //弹出设置页面

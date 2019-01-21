@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="PNw-tK-g1O">
+            <view key="view" contentMode="scaleToFill" id="PGx-Ga-Ypn">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景-游戏" translatesAutoresizingMaskIntoConstraints="NO" id="IL7-x7-Ssw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lC4-Xi-FgA">
+                        <rect key="frame" x="10" y="10" width="71" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="75" id="YOk-Pt-1Vn"/>
+                            <constraint firstAttribute="width" constant="71" id="kTm-oS-naQ"/>
+                        </constraints>
+                        <state key="normal" image="返回"/>
+                        <state key="highlighted" image="返回-点击"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="r4y-Jt-Igd" firstAttribute="trailing" secondItem="IL7-x7-Ssw" secondAttribute="trailing" id="BSm-f1-yLP"/>
+                    <constraint firstItem="IL7-x7-Ssw" firstAttribute="top" secondItem="PGx-Ga-Ypn" secondAttribute="top" id="ayJ-XG-gWh"/>
+                    <constraint firstItem="r4y-Jt-Igd" firstAttribute="bottom" secondItem="IL7-x7-Ssw" secondAttribute="bottom" id="jbp-LB-v0P"/>
+                    <constraint firstItem="lC4-Xi-FgA" firstAttribute="leading" secondItem="r4y-Jt-Igd" secondAttribute="leading" constant="10" id="sFx-VD-oZ5"/>
+                    <constraint firstItem="IL7-x7-Ssw" firstAttribute="leading" secondItem="r4y-Jt-Igd" secondAttribute="leading" id="ucH-gQ-uN2"/>
+                    <constraint firstItem="lC4-Xi-FgA" firstAttribute="top" secondItem="PGx-Ga-Ypn" secondAttribute="top" constant="10" id="zHp-2x-3yV"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="r4y-Jt-Igd"/>
+            </view>
+            <point key="canvasLocation" x="59" y="43"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="背景-游戏" width="1280" height="960"/>
+        <image name="返回" width="71" height="75"/>
+        <image name="返回-点击" width="71" height="75"/>
+    </resources>
+</document>

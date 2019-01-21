@@ -12,9 +12,13 @@
 		F7206C6621F31D40003CCB2A /* 点击按钮.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7206C6321F31D40003CCB2A /* 点击按钮.mp3 */; };
 		F7206C6721F31D40003CCB2A /* 移动.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7206C6421F31D40003CCB2A /* 移动.mp3 */; };
 		F7206C6A21F321FF003CCB2A /* CheckPointPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7206C6921F321FF003CCB2A /* CheckPointPage.xib */; };
+		F7206C6D21F327F3003CCB2A /* CheckPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7206C6C21F327F3003CCB2A /* CheckPointView.m */; };
+		F7206C7021F32802003CCB2A /* CheckPointPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7206C6F21F32802003CCB2A /* CheckPointPageView.m */; };
+		F734349921F5584000C005E9 /* CheckPoint.plist in Resources */ = {isa = PBXBuildFile; fileRef = F734349821F5584000C005E9 /* CheckPoint.plist */; };
+		F734349C21F575E900C005E9 /* GameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F734349B21F575E900C005E9 /* GameView.xib */; };
+		F734349F21F5786700C005E9 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F734349E21F5786700C005E9 /* GameViewController.m */; };
 		F7DA2BBB21F2C5E20060C272 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DA2BBA21F2C5E20060C272 /* AppDelegate.m */; };
 		F7DA2BBE21F2C5E20060C272 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DA2BBD21F2C5E20060C272 /* ViewController.m */; };
-		F7DA2BC121F2C5E20060C272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DA2BBF21F2C5E20060C272 /* Main.storyboard */; };
 		F7DA2BC321F2C5E30060C272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DA2BC221F2C5E30060C272 /* Assets.xcassets */; };
 		F7DA2BC621F2C5E30060C272 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DA2BC421F2C5E30060C272 /* LaunchScreen.storyboard */; };
 		F7DA2BC921F2C5E30060C272 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DA2BC821F2C5E30060C272 /* main.m */; };
@@ -30,12 +34,19 @@
 		F7206C6321F31D40003CCB2A /* 点击按钮.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "点击按钮.mp3"; sourceTree = "<group>"; };
 		F7206C6421F31D40003CCB2A /* 移动.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "移动.mp3"; sourceTree = "<group>"; };
 		F7206C6921F321FF003CCB2A /* CheckPointPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckPointPage.xib; sourceTree = "<group>"; };
+		F7206C6B21F327F3003CCB2A /* CheckPointView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckPointView.h; sourceTree = "<group>"; };
+		F7206C6C21F327F3003CCB2A /* CheckPointView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckPointView.m; sourceTree = "<group>"; };
+		F7206C6E21F32802003CCB2A /* CheckPointPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckPointPageView.h; sourceTree = "<group>"; };
+		F7206C6F21F32802003CCB2A /* CheckPointPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckPointPageView.m; sourceTree = "<group>"; };
+		F734349821F5584000C005E9 /* CheckPoint.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CheckPoint.plist; sourceTree = "<group>"; };
+		F734349B21F575E900C005E9 /* GameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameView.xib; sourceTree = "<group>"; };
+		F734349D21F5786700C005E9 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		F734349E21F5786700C005E9 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		F7DA2BB621F2C5E20060C272 /* OrderCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DA2BB921F2C5E20060C272 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7DA2BBA21F2C5E20060C272 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F7DA2BBC21F2C5E20060C272 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F7DA2BBD21F2C5E20060C272 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F7DA2BC021F2C5E20060C272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7DA2BC221F2C5E30060C272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7DA2BC521F2C5E30060C272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7DA2BC721F2C5E30060C272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,8 +75,22 @@
 			children = (
 				F7206C6021F31665003CCB2A /* CheckPoint.xib */,
 				F7206C6921F321FF003CCB2A /* CheckPointPage.xib */,
+				F7206C6B21F327F3003CCB2A /* CheckPointView.h */,
+				F7206C6C21F327F3003CCB2A /* CheckPointView.m */,
+				F7206C6E21F32802003CCB2A /* CheckPointPageView.h */,
+				F7206C6F21F32802003CCB2A /* CheckPointPageView.m */,
 			);
 			path = checkPoint;
+			sourceTree = "<group>";
+		};
+		F734349A21F575D200C005E9 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				F734349B21F575E900C005E9 /* GameView.xib */,
+				F734349D21F5786700C005E9 /* GameViewController.h */,
+				F734349E21F5786700C005E9 /* GameViewController.m */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 		F7DA2BAD21F2C5E20060C272 = {
@@ -87,20 +112,21 @@
 		F7DA2BB821F2C5E20060C272 /* OrderCode */ = {
 			isa = PBXGroup;
 			children = (
+				F734349A21F575D200C005E9 /* Game */,
+				F7DA2BCF21F2DA680060C272 /* resource */,
+				F7DA2BDA21F3037F0060C272 /* Setting */,
 				F7206C6821F321DB003CCB2A /* checkPoint */,
-				F7DA2BBF21F2C5E20060C272 /* Main.storyboard */,
 				F7DA2BBC21F2C5E20060C272 /* ViewController.h */,
 				F7DA2BBD21F2C5E20060C272 /* ViewController.m */,
 				F7DA2BD221F2DC380060C272 /* MainViewController.h */,
 				F7DA2BD321F2DC380060C272 /* MainViewController.m */,
-				F7DA2BDA21F3037F0060C272 /* Setting */,
-				F7DA2BCF21F2DA680060C272 /* resource */,
 				F7DA2BB921F2C5E20060C272 /* AppDelegate.h */,
 				F7DA2BBA21F2C5E20060C272 /* AppDelegate.m */,
 				F7DA2BC221F2C5E30060C272 /* Assets.xcassets */,
 				F7DA2BC421F2C5E30060C272 /* LaunchScreen.storyboard */,
 				F7DA2BC721F2C5E30060C272 /* Info.plist */,
 				F7DA2BC821F2C5E30060C272 /* main.m */,
+				F734349821F5584000C005E9 /* CheckPoint.plist */,
 			);
 			path = OrderCode;
 			sourceTree = "<group>";
@@ -189,8 +215,9 @@
 				F7206C6721F31D40003CCB2A /* 移动.mp3 in Resources */,
 				F7DA2BC321F2C5E30060C272 /* Assets.xcassets in Resources */,
 				F7DA2BD621F2DF050060C272 /* SettingView.xib in Resources */,
+				F734349C21F575E900C005E9 /* GameView.xib in Resources */,
 				F7206C6521F31D40003CCB2A /* 移动1.mp3 in Resources */,
-				F7DA2BC121F2C5E20060C272 /* Main.storyboard in Resources */,
+				F734349921F5584000C005E9 /* CheckPoint.plist in Resources */,
 				F7206C6A21F321FF003CCB2A /* CheckPointPage.xib in Resources */,
 				F7206C6121F31665003CCB2A /* CheckPoint.xib in Resources */,
 			);
@@ -203,10 +230,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F734349F21F5786700C005E9 /* GameViewController.m in Sources */,
 				F7DA2BBE21F2C5E20060C272 /* ViewController.m in Sources */,
 				F7DA2BC921F2C5E30060C272 /* main.m in Sources */,
+				F7206C6D21F327F3003CCB2A /* CheckPointView.m in Sources */,
 				F7DA2BBB21F2C5E20060C272 /* AppDelegate.m in Sources */,
 				F7DA2BD421F2DC380060C272 /* MainViewController.m in Sources */,
+				F7206C7021F32802003CCB2A /* CheckPointPageView.m in Sources */,
 				F7DA2BD921F303750060C272 /* SettingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,14 +244,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F7DA2BBF21F2C5E20060C272 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F7DA2BC021F2C5E20060C272 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F7DA2BC421F2C5E30060C272 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

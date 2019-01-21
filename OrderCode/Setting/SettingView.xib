@@ -34,14 +34,8 @@
                         <action selector="back:" destination="X7e-i9-PXB" eventType="touchUpInside" id="sCp-3C-WPr"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="背景音乐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcC-Oe-kbe">
-                    <rect key="frame" x="114.5" y="107" width="146" height="43"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                    <color key="textColor" red="0.51764705882352946" green="0.28627450980392155" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aCx-Lq-aXb">
-                    <rect key="frame" x="112" y="294" width="213" height="31"/>
+                    <rect key="frame" x="119" y="214" width="206" height="31"/>
                     <color key="tintColor" red="0.51372549019607838" green="0.28235294117647058" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <color key="minimumTrackTintColor" red="0.51764705879999995" green="0.28627450980000002" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -50,10 +44,10 @@
                         <action selector="changeVolume:" destination="X7e-i9-PXB" eventType="valueChanged" id="RCf-Qx-Pur"/>
                     </connections>
                 </slider>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音量" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gis-Gt-ei7">
-                    <rect key="frame" x="43" y="294" width="49" height="29"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BGM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gis-Gt-ei7">
+                    <rect key="frame" x="36" y="214" width="56" height="29"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="49" id="gZb-6t-zv5"/>
+                        <constraint firstAttribute="width" constant="56" id="gZb-6t-zv5"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <color key="textColor" red="0.59999999999999998" green="0.35686274509999999" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -73,32 +67,57 @@
                         <action selector="silent:" destination="X7e-i9-PXB" eventType="touchUpInside" id="7Bn-AZ-uxK"/>
                     </connections>
                 </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.30000001192092896" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pY3-NL-wjr">
+                    <rect key="frame" x="119" y="294" width="206" height="31"/>
+                    <color key="tintColor" red="0.51372549020000002" green="0.28235294119999998" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="minimumTrackTintColor" red="0.51764705879999995" green="0.28627450980000002" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="thumbTintColor" red="0.59999999999999998" green="0.35686274509999999" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="changeVolume_yx:" destination="X7e-i9-PXB" eventType="valueChanged" id="Anx-tj-J01"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音效" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNP-zG-Ye9">
+                    <rect key="frame" x="36" y="294" width="56" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="56" id="KlZ-W5-dZV"/>
+                        <constraint firstAttribute="width" constant="56" id="trZ-1G-ABj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.35686274509999999" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <constraints>
-                <constraint firstItem="gis-Gt-ei7" firstAttribute="leading" secondItem="B8h-Gf-cqQ" secondAttribute="leading" constant="43" id="2tG-1N-TqG"/>
+                <constraint firstItem="gis-Gt-ei7" firstAttribute="leading" secondItem="B8h-Gf-cqQ" secondAttribute="leading" constant="36" id="2tG-1N-TqG"/>
                 <constraint firstItem="heR-42-xcz" firstAttribute="top" secondItem="B8h-Gf-cqQ" secondAttribute="top" constant="45" id="6bh-8A-XeV"/>
                 <constraint firstItem="heR-42-xcz" firstAttribute="leading" secondItem="B8h-Gf-cqQ" secondAttribute="leading" constant="16" id="7jQ-2c-Xvz"/>
                 <constraint firstItem="yoI-C4-7MV" firstAttribute="top" secondItem="X7e-i9-PXB" secondAttribute="top" id="9WX-8O-kbi"/>
                 <constraint firstItem="B8h-Gf-cqQ" firstAttribute="trailing" secondItem="heR-42-xcz" secondAttribute="trailing" constant="16" id="HLF-DY-kEa"/>
-                <constraint firstItem="UcC-Oe-kbe" firstAttribute="centerX" secondItem="X7e-i9-PXB" secondAttribute="centerX" id="Hld-57-knI"/>
-                <constraint firstItem="aCx-Lq-aXb" firstAttribute="leading" secondItem="gis-Gt-ei7" secondAttribute="trailing" constant="22" id="KiO-s8-1WQ"/>
+                <constraint firstItem="aCx-Lq-aXb" firstAttribute="leading" secondItem="gis-Gt-ei7" secondAttribute="trailing" constant="29" id="KiO-s8-1WQ"/>
                 <constraint firstItem="heR-42-xcz" firstAttribute="centerX" secondItem="X7e-i9-PXB" secondAttribute="centerX" id="LAA-x3-vjS"/>
+                <constraint firstItem="4VS-6O-C9i" firstAttribute="top" secondItem="FNP-zG-Ye9" secondAttribute="bottom" constant="80" id="OfZ-WX-NQR"/>
+                <constraint firstItem="B8h-Gf-cqQ" firstAttribute="trailing" secondItem="pY3-NL-wjr" secondAttribute="trailing" constant="52" id="W4B-pF-hMP"/>
                 <constraint firstItem="B8h-Gf-cqQ" firstAttribute="bottom" secondItem="lKx-5W-8kE" secondAttribute="bottom" constant="53" id="WpF-yL-gWi"/>
+                <constraint firstItem="pY3-NL-wjr" firstAttribute="leading" secondItem="FNP-zG-Ye9" secondAttribute="trailing" constant="29" id="YsG-tD-3ev"/>
                 <constraint firstItem="lKx-5W-8kE" firstAttribute="top" secondItem="4VS-6O-C9i" secondAttribute="bottom" constant="80" id="acU-bA-KYX"/>
                 <constraint firstItem="4VS-6O-C9i" firstAttribute="centerX" secondItem="X7e-i9-PXB" secondAttribute="centerX" id="cpT-GV-MzB"/>
                 <constraint firstItem="aCx-Lq-aXb" firstAttribute="top" secondItem="gis-Gt-ei7" secondAttribute="top" id="fR6-r7-Uqm"/>
+                <constraint firstItem="FNP-zG-Ye9" firstAttribute="leading" secondItem="B8h-Gf-cqQ" secondAttribute="leading" constant="36" id="hPw-51-ctl"/>
+                <constraint firstItem="pY3-NL-wjr" firstAttribute="top" secondItem="FNP-zG-Ye9" secondAttribute="top" id="j9q-1n-kH4"/>
                 <constraint firstItem="B8h-Gf-cqQ" firstAttribute="trailing" secondItem="yoI-C4-7MV" secondAttribute="trailing" id="nVo-6E-9fo"/>
-                <constraint firstItem="4VS-6O-C9i" firstAttribute="top" secondItem="gis-Gt-ei7" secondAttribute="bottom" constant="80" id="nXg-5F-cPh"/>
+                <constraint firstItem="4VS-6O-C9i" firstAttribute="top" secondItem="gis-Gt-ei7" secondAttribute="bottom" constant="160" id="nXg-5F-cPh"/>
                 <constraint firstItem="yoI-C4-7MV" firstAttribute="leading" secondItem="B8h-Gf-cqQ" secondAttribute="leading" id="oM6-Gs-mzl"/>
                 <constraint firstItem="lKx-5W-8kE" firstAttribute="top" secondItem="heR-42-xcz" secondAttribute="bottom" constant="20" id="osL-hL-uzS"/>
-                <constraint firstItem="UcC-Oe-kbe" firstAttribute="top" secondItem="B8h-Gf-cqQ" secondAttribute="top" constant="87" id="qVc-6L-xZT"/>
                 <constraint firstItem="B8h-Gf-cqQ" firstAttribute="trailing" secondItem="aCx-Lq-aXb" secondAttribute="trailing" constant="52" id="qaF-tG-XPC"/>
                 <constraint firstItem="lKx-5W-8kE" firstAttribute="centerX" secondItem="X7e-i9-PXB" secondAttribute="centerX" id="qin-IU-7MF"/>
                 <constraint firstItem="B8h-Gf-cqQ" firstAttribute="bottom" secondItem="yoI-C4-7MV" secondAttribute="bottom" id="zro-Xr-OQi"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="B8h-Gf-cqQ"/>
             <connections>
+                <outlet property="mute" destination="4VS-6O-C9i" id="4DI-Hu-MWR"/>
                 <outlet property="volume" destination="aCx-Lq-aXb" id="Qed-gM-OVQ"/>
+                <outlet property="volume_yx" destination="pY3-NL-wjr" id="1Jc-FV-8xU"/>
             </connections>
             <point key="canvasLocation" x="84" y="115.59220389805098"/>
         </view>

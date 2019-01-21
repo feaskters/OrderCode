@@ -12,11 +12,25 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="mLE-r8-13c">
+        <view contentMode="scaleToFill" id="mLE-r8-13c" customClass="CheckPointPageView">
             <rect key="frame" x="0.0" y="0.0" width="355" height="500"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nff-TZ-veW">
+                    <rect key="frame" x="0.0" y="0.0" width="355" height="500"/>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Nff-TZ-veW" firstAttribute="leading" secondItem="Wkq-cL-HgB" secondAttribute="leading" id="6gF-Nx-l5v"/>
+                <constraint firstItem="Wkq-cL-HgB" firstAttribute="bottom" secondItem="Nff-TZ-veW" secondAttribute="bottom" id="AuU-a6-Uod"/>
+                <constraint firstItem="Wkq-cL-HgB" firstAttribute="trailing" secondItem="Nff-TZ-veW" secondAttribute="trailing" id="ifu-0o-mgz"/>
+                <constraint firstItem="Nff-TZ-veW" firstAttribute="top" secondItem="mLE-r8-13c" secondAttribute="top" id="tQ5-BG-62p"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="Wkq-cL-HgB"/>
+            <connections>
+                <outlet property="scrollView" destination="Nff-TZ-veW" id="5at-3M-F57"/>
+            </connections>
             <point key="canvasLocation" x="103" y="168"/>
         </view>
     </objects>
