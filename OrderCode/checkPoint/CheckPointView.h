@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CheckPointView : UIView
 
+@property UIViewController *nc;//main的navigationcontroller
+@property AVAudioPlayer *musicPlay;
 @property AVAudioPlayer *musicPlay_yx;
 @property (weak, nonatomic) IBOutlet UIImageView *star;
 @property (weak, nonatomic) IBOutlet UIButton *level;

@@ -24,10 +24,12 @@
     //是否可点击
     if ([_checkPonitInfo[@"enable"] boolValue]) {
         [self setUserInteractionEnabled:true];
+        [self.level setBackgroundImage:[UIImage imageNamed:@"背景-设置2"] forState:UIControlStateNormal];
         [self setAlpha:1];
     }else
     {
         [self setUserInteractionEnabled:false];
+         [self.level setBackgroundImage:[UIImage imageNamed:@"背景-设置3"] forState:UIControlStateNormal];
         [self setAlpha:0.5];
     }
     //是否有星星
@@ -52,9 +54,14 @@
 //开始关卡
 - (IBAction)enterGame:(UIButton *)sender {
     [_musicPlay_yx play];
-    UINavigationController *navigator = [[UINavigationController alloc]init];
-    GameViewController *gcv = [[GameViewController alloc]init];
-    [ pushViewController:gcv animated:YES];
+    GameViewController *gcv = [GameViewController gameView];
+    gcv.musicPlay_yx = self.musicPlay_yx;
+    gcv.musicPlay = self.musicPlay;
+    gcv.checkPointInfo = self.checkPonitInfo;
+    [self.nc presentViewController:gcv animated:YES completion:^{
+        [self.musicPlay pause];
+    }];
+    
 }
 
 

@@ -27,7 +27,12 @@
     self.screenHeight = self.view.frame.size.height;
 }
 
+-(void)viewDidDisappear:(BOOL)animated{
+    [__musicPlay pause];
+}
+
 - (void)viewDidAppear:(BOOL)animated{
+    [__musicPlay play];
     [self addSelectCheckPointPage];
 }
 
@@ -39,7 +44,9 @@
     //加载选择页面
     CheckPointPageView *cppv = [CheckPointPageView checkPointPage];
     cppv.musicPlay_yx = self._musicPlay_yx;
+    cppv.musicPlay = self._musicPlay;
     cppv.checkPoints = array;
+    cppv.nc = self;
     CGRect frame = CGRectMake(0, 0, _mainScrollView.frame.size.width, _mainScrollView.frame.size.height);
     cppv.frame = frame;
     [self.mainScrollView addSubview:cppv];

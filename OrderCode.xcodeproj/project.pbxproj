@@ -17,6 +17,8 @@
 		F734349921F5584000C005E9 /* CheckPoint.plist in Resources */ = {isa = PBXBuildFile; fileRef = F734349821F5584000C005E9 /* CheckPoint.plist */; };
 		F734349C21F575E900C005E9 /* GameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F734349B21F575E900C005E9 /* GameView.xib */; };
 		F734349F21F5786700C005E9 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F734349E21F5786700C005E9 /* GameViewController.m */; };
+		F73434A221F57E0D00C005E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73434A021F57E0D00C005E9 /* Main.storyboard */; };
+		F73434A421F5B40C00C005E9 /* 游戏页面背景.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F73434A321F5B40C00C005E9 /* 游戏页面背景.mp3 */; };
 		F7DA2BBB21F2C5E20060C272 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DA2BBA21F2C5E20060C272 /* AppDelegate.m */; };
 		F7DA2BBE21F2C5E20060C272 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DA2BBD21F2C5E20060C272 /* ViewController.m */; };
 		F7DA2BC321F2C5E30060C272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DA2BC221F2C5E30060C272 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 		F734349B21F575E900C005E9 /* GameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameView.xib; sourceTree = "<group>"; };
 		F734349D21F5786700C005E9 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		F734349E21F5786700C005E9 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		F73434A121F57E0D00C005E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = OrderCode/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		F73434A321F5B40C00C005E9 /* 游戏页面背景.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "游戏页面背景.mp3"; sourceTree = "<group>"; };
 		F7DA2BB621F2C5E20060C272 /* OrderCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DA2BB921F2C5E20060C272 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7DA2BBA21F2C5E20060C272 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 				F7DA2BDA21F3037F0060C272 /* Setting */,
 				F7206C6821F321DB003CCB2A /* checkPoint */,
 				F7DA2BBC21F2C5E20060C272 /* ViewController.h */,
+				F73434A021F57E0D00C005E9 /* Main.storyboard */,
 				F7DA2BBD21F2C5E20060C272 /* ViewController.m */,
 				F7DA2BD221F2DC380060C272 /* MainViewController.h */,
 				F7DA2BD321F2DC380060C272 /* MainViewController.m */,
@@ -134,6 +139,7 @@
 		F7DA2BCF21F2DA680060C272 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				F73434A321F5B40C00C005E9 /* 游戏页面背景.mp3 */,
 				F7206C6321F31D40003CCB2A /* 点击按钮.mp3 */,
 				F7206C6421F31D40003CCB2A /* 移动.mp3 */,
 				F7206C6221F31D40003CCB2A /* 移动1.mp3 */,
@@ -212,6 +218,7 @@
 				F7DA2BD121F2DA7D0060C272 /* 柔和的风.mp3 in Resources */,
 				F7206C6621F31D40003CCB2A /* 点击按钮.mp3 in Resources */,
 				F7DA2BC621F2C5E30060C272 /* LaunchScreen.storyboard in Resources */,
+				F73434A221F57E0D00C005E9 /* Main.storyboard in Resources */,
 				F7206C6721F31D40003CCB2A /* 移动.mp3 in Resources */,
 				F7DA2BC321F2C5E30060C272 /* Assets.xcassets in Resources */,
 				F7DA2BD621F2DF050060C272 /* SettingView.xib in Resources */,
@@ -219,6 +226,7 @@
 				F7206C6521F31D40003CCB2A /* 移动1.mp3 in Resources */,
 				F734349921F5584000C005E9 /* CheckPoint.plist in Resources */,
 				F7206C6A21F321FF003CCB2A /* CheckPointPage.xib in Resources */,
+				F73434A421F5B40C00C005E9 /* 游戏页面背景.mp3 in Resources */,
 				F7206C6121F31665003CCB2A /* CheckPoint.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +252,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		F73434A021F57E0D00C005E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F73434A121F57E0D00C005E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		F7DA2BC421F2C5E30060C272 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
