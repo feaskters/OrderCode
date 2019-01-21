@@ -54,7 +54,7 @@
     [_musicPlay_bg play];
     //设置scrollview
     self.orderScrollView.frame = CGRectMake(self.orderScrollView.frame.origin.x, self.orderScrollView.frame.origin.y, self.gameView.frame.size.width, 40);
-    self.orderScrollView.scrollEnabled = YES; self.orderScrollView.contentSize = CGSizeMake(40, 36 * 40);
+    self.orderScrollView.scrollEnabled = YES; self.orderScrollView.contentSize = CGSizeMake(36 * 40, 40);
     
 }
 

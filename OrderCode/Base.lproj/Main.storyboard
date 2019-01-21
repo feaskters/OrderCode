@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--firstIn-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="firstIn" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NsW-CH-ZMS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景-宇宙" translatesAutoresizingMaskIntoConstraints="NO" id="Da9-XO-bh0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZm-sI-9Bx">
+                                <rect key="frame" x="68.5" y="391.5" width="238" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="238" id="cju-24-kvt"/>
+                                </constraints>
+                                <state key="normal" image="开始游戏"/>
+                                <state key="highlighted" image="开始游戏-点击"/>
+                                <connections>
+                                    <segue destination="d4x-78-fZC" kind="show" identifier="showMain" id="zmM-1K-0AV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="code of order" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ns7-BR-b5s">
+                                <rect key="frame" x="15.5" y="240" width="344.5" height="53.5"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
+                                <color key="textColor" red="0.6176787265334085" green="0.79649518345835757" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.41568627450000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bZm-sI-9Bx" firstAttribute="centerY" secondItem="NsW-CH-ZMS" secondAttribute="centerY" multiplier="1.3" id="8dC-4h-zxU"/>
+                            <constraint firstItem="Da9-XO-bh0" firstAttribute="leading" secondItem="hso-sr-UEm" secondAttribute="leading" id="IlI-63-ROp"/>
+                            <constraint firstItem="hso-sr-UEm" firstAttribute="bottom" secondItem="Da9-XO-bh0" secondAttribute="bottom" id="MHz-Tp-O3I"/>
+                            <constraint firstItem="Ns7-BR-b5s" firstAttribute="centerY" secondItem="NsW-CH-ZMS" secondAttribute="centerY" multiplier="0.8" id="Ohi-IC-DFM"/>
+                            <constraint firstItem="Da9-XO-bh0" firstAttribute="top" secondItem="NsW-CH-ZMS" secondAttribute="top" id="Ory-mx-lxg"/>
+                            <constraint firstItem="Ns7-BR-b5s" firstAttribute="centerX" secondItem="NsW-CH-ZMS" secondAttribute="centerX" id="UGA-d3-kEo"/>
+                            <constraint firstItem="bZm-sI-9Bx" firstAttribute="centerX" secondItem="NsW-CH-ZMS" secondAttribute="centerX" id="Z0n-yZ-lY9"/>
+                            <constraint firstItem="hso-sr-UEm" firstAttribute="trailing" secondItem="Da9-XO-bh0" secondAttribute="trailing" id="hJc-td-ST5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hso-sr-UEm"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="capital" destination="Ns7-BR-b5s" id="re0-c4-9MV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45.600000000000001" y="32.833583208395808"/>
+        </scene>
+        <!--main-->
+        <scene sceneID="jUl-ff-aPA">
+            <objects>
+                <viewController title="main" id="d4x-78-fZC" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t2z-tT-GVv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景-天空" translatesAutoresizingMaskIntoConstraints="NO" id="dob-sm-yE0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQd-8b-sW0">
+                                <rect key="frame" x="16" y="40" width="28" height="29"/>
+                                <state key="normal" image="设置"/>
+                                <state key="highlighted" image="设置-点击"/>
+                                <connections>
+                                    <action selector="setting:" destination="d4x-78-fZC" eventType="touchUpInside" id="5DL-LM-6PG"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1I7-TM-t1f">
+                                <rect key="frame" x="10" y="100" width="355" height="467"/>
+                                <color key="backgroundColor" red="0.51764705879999995" green="0.28627450980000002" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1I7-TM-t1f" firstAttribute="centerX" secondItem="t2z-tT-GVv" secondAttribute="centerX" id="2Gy-qE-sIe"/>
+                            <constraint firstItem="1I7-TM-t1f" firstAttribute="leading" secondItem="AzY-sa-5UI" secondAttribute="leading" constant="10" id="7dL-bN-d9q"/>
+                            <constraint firstItem="dob-sm-yE0" firstAttribute="top" secondItem="t2z-tT-GVv" secondAttribute="top" id="8ec-iE-jWe"/>
+                            <constraint firstItem="AzY-sa-5UI" firstAttribute="bottom" secondItem="1I7-TM-t1f" secondAttribute="bottom" constant="100" id="AJe-2e-Hnz"/>
+                            <constraint firstItem="JQd-8b-sW0" firstAttribute="top" secondItem="AzY-sa-5UI" secondAttribute="top" constant="20" id="CVM-bP-BzA"/>
+                            <constraint firstItem="dob-sm-yE0" firstAttribute="leading" secondItem="AzY-sa-5UI" secondAttribute="leading" id="Eg4-cR-htA"/>
+                            <constraint firstItem="AzY-sa-5UI" firstAttribute="trailing" secondItem="1I7-TM-t1f" secondAttribute="trailing" constant="10" id="M51-Ie-MMw"/>
+                            <constraint firstItem="1I7-TM-t1f" firstAttribute="top" secondItem="dob-sm-yE0" secondAttribute="top" constant="100" id="Qe7-05-Pdd"/>
+                            <constraint firstAttribute="trailing" secondItem="dob-sm-yE0" secondAttribute="trailing" id="bkd-nO-sQU"/>
+                            <constraint firstItem="JQd-8b-sW0" firstAttribute="leading" secondItem="AzY-sa-5UI" secondAttribute="leading" constant="16" id="h0f-Yv-L81"/>
+                            <constraint firstItem="AzY-sa-5UI" firstAttribute="bottom" secondItem="dob-sm-yE0" secondAttribute="bottom" id="pwx-lh-TlK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AzY-sa-5UI"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="mainScrollView" destination="1I7-TM-t1f" id="vRV-aI-KeP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GFF-Cv-hLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869.60000000000002" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="开始游戏" width="238" height="84"/>
+        <image name="开始游戏-点击" width="238" height="84"/>
+        <image name="背景-天空" width="256" height="256"/>
+        <image name="背景-宇宙" width="1920" height="1080"/>
+        <image name="设置" width="28" height="29"/>
+        <image name="设置-点击" width="28" height="29"/>
+    </resources>
+</document>
