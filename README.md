@@ -8,6 +8,11 @@ IOS游戏项目-指令代码
 3. 滑动控制音量
 4. 图片拉伸保护
 5. 不同状态按钮的使用
+6. 帧动画的使用
+7. ustimer的使用
+8. 使用animation来使人物移动
+9. uiscrollView的使用
+10. 使用plist加载数据
 ## 所用资源
 1. 来自[爱给网](http://www.aigei.com/)的图片和图标
 2. 来自[站长素材](http://sc.chinaz.com/yinxiao/)的音效
