@@ -60,7 +60,7 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景-设置2" translatesAutoresizingMaskIntoConstraints="NO" id="lgY-33-rx2">
                         <rect key="frame" x="-2.5" y="536" width="332.5" height="40"/>
                     </imageView>
-                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pX-k3-tOH">
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pX-k3-tOH">
                         <rect key="frame" x="-2.5" y="536" width="332.5" height="40"/>
                     </scrollView>
                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoW-Up-kzf">
@@ -188,9 +188,16 @@
                 <viewLayoutGuide key="safeArea" id="r4y-Jt-Igd"/>
             </view>
             <connections>
+                <outlet property="cleanbtn" destination="log-uh-Zgv" id="z5X-fw-lWt"/>
+                <outlet property="delete" destination="FoW-Up-kzf" id="ft8-Tn-XUh"/>
+                <outlet property="downbtn" destination="FnS-zS-GKt" id="Rqq-nH-3Cs"/>
                 <outlet property="gameView" destination="fFP-D2-Wcs" id="qve-3H-Wsr"/>
+                <outlet property="leftbtn" destination="OLW-7o-ydy" id="vvx-jM-gmh"/>
                 <outlet property="levelImage" destination="yta-yZ-YG6" id="BVO-IT-Q7r"/>
                 <outlet property="orderScrollView" destination="0pX-k3-tOH" id="Huu-vV-glE"/>
+                <outlet property="rightbtn" destination="Bre-I3-JC8" id="XG5-f2-OU4"/>
+                <outlet property="startbtn" destination="aoM-Zt-MbN" id="jKc-WX-MsV"/>
+                <outlet property="upbtn" destination="txK-LK-Jmo" id="nVp-7P-jfQ"/>
                 <outlet property="view" destination="PGx-Ga-Ypn" id="6qn-GN-xCH"/>
             </connections>
             <point key="canvasLocation" x="58.399999999999999" y="42.728635682158924"/>

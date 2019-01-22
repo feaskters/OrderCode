@@ -19,6 +19,13 @@
 		F734349F21F5786700C005E9 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F734349E21F5786700C005E9 /* GameViewController.m */; };
 		F73434A221F57E0D00C005E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73434A021F57E0D00C005E9 /* Main.storyboard */; };
 		F73434A421F5B40C00C005E9 /* 游戏页面背景.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F73434A321F5B40C00C005E9 /* 游戏页面背景.mp3 */; };
+		F767E9A721F6BC3C00ED86E5 /* GameContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767E9A621F6BC3C00ED86E5 /* GameContainerView.m */; };
+		F767E9A921F6BC5000ED86E5 /* GameContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F767E9A821F6BC5000ED86E5 /* GameContainerView.xib */; };
+		F767E9AB21F6D30800ED86E5 /* Character.xib in Resources */ = {isa = PBXBuildFile; fileRef = F767E9AA21F6D30800ED86E5 /* Character.xib */; };
+		F767E9B121F6D37600ED86E5 /* CharacterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767E9B021F6D37600ED86E5 /* CharacterView.m */; };
+		F767E9B321F7153A00ED86E5 /* 金币.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F767E9B221F7153A00ED86E5 /* 金币.mp3 */; };
+		F767E9B821F7172100ED86E5 /* GameOverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F767E9B721F7172100ED86E5 /* GameOverView.xib */; };
+		F767E9BB21F71F0500ED86E5 /* GameOverView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767E9BA21F71F0500ED86E5 /* GameOverView.m */; };
 		F7DA2BBB21F2C5E20060C272 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DA2BBA21F2C5E20060C272 /* AppDelegate.m */; };
 		F7DA2BBE21F2C5E20060C272 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DA2BBD21F2C5E20060C272 /* ViewController.m */; };
 		F7DA2BC321F2C5E30060C272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DA2BC221F2C5E30060C272 /* Assets.xcassets */; };
@@ -46,6 +53,16 @@
 		F734349E21F5786700C005E9 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		F73434A121F57E0D00C005E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = OrderCode/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		F73434A321F5B40C00C005E9 /* 游戏页面背景.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "游戏页面背景.mp3"; sourceTree = "<group>"; };
+		F767E9A521F6BC3C00ED86E5 /* GameContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameContainerView.h; sourceTree = "<group>"; };
+		F767E9A621F6BC3C00ED86E5 /* GameContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameContainerView.m; sourceTree = "<group>"; };
+		F767E9A821F6BC5000ED86E5 /* GameContainerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameContainerView.xib; sourceTree = "<group>"; };
+		F767E9AA21F6D30800ED86E5 /* Character.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Character.xib; sourceTree = "<group>"; };
+		F767E9AF21F6D37600ED86E5 /* CharacterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacterView.h; sourceTree = "<group>"; };
+		F767E9B021F6D37600ED86E5 /* CharacterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacterView.m; sourceTree = "<group>"; };
+		F767E9B221F7153A00ED86E5 /* 金币.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "金币.mp3"; sourceTree = "<group>"; };
+		F767E9B721F7172100ED86E5 /* GameOverView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameOverView.xib; sourceTree = "<group>"; };
+		F767E9B921F71F0500ED86E5 /* GameOverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameOverView.h; sourceTree = "<group>"; };
+		F767E9BA21F71F0500ED86E5 /* GameOverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameOverView.m; sourceTree = "<group>"; };
 		F7DA2BB621F2C5E20060C272 /* OrderCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DA2BB921F2C5E20060C272 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7DA2BBA21F2C5E20060C272 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,10 +108,26 @@
 			isa = PBXGroup;
 			children = (
 				F734349B21F575E900C005E9 /* GameView.xib */,
+				F767E9A821F6BC5000ED86E5 /* GameContainerView.xib */,
+				F767E9AA21F6D30800ED86E5 /* Character.xib */,
+				F767E9AF21F6D37600ED86E5 /* CharacterView.h */,
+				F767E9B021F6D37600ED86E5 /* CharacterView.m */,
 				F734349D21F5786700C005E9 /* GameViewController.h */,
 				F734349E21F5786700C005E9 /* GameViewController.m */,
+				F767E9A521F6BC3C00ED86E5 /* GameContainerView.h */,
+				F767E9A621F6BC3C00ED86E5 /* GameContainerView.m */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		F767E9B421F716FC00ED86E5 /* GameOver */ = {
+			isa = PBXGroup;
+			children = (
+				F767E9B721F7172100ED86E5 /* GameOverView.xib */,
+				F767E9B921F71F0500ED86E5 /* GameOverView.h */,
+				F767E9BA21F71F0500ED86E5 /* GameOverView.m */,
+			);
+			path = GameOver;
 			sourceTree = "<group>";
 		};
 		F7DA2BAD21F2C5E20060C272 = {
@@ -116,6 +149,7 @@
 		F7DA2BB821F2C5E20060C272 /* OrderCode */ = {
 			isa = PBXGroup;
 			children = (
+				F767E9B421F716FC00ED86E5 /* GameOver */,
 				F734349A21F575D200C005E9 /* Game */,
 				F7DA2BCF21F2DA680060C272 /* resource */,
 				F7DA2BDA21F3037F0060C272 /* Setting */,
@@ -140,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				F73434A321F5B40C00C005E9 /* 游戏页面背景.mp3 */,
+				F767E9B221F7153A00ED86E5 /* 金币.mp3 */,
 				F7206C6321F31D40003CCB2A /* 点击按钮.mp3 */,
 				F7206C6421F31D40003CCB2A /* 移动.mp3 */,
 				F7206C6221F31D40003CCB2A /* 移动1.mp3 */,
@@ -221,12 +256,16 @@
 				F73434A221F57E0D00C005E9 /* Main.storyboard in Resources */,
 				F7206C6721F31D40003CCB2A /* 移动.mp3 in Resources */,
 				F7DA2BC321F2C5E30060C272 /* Assets.xcassets in Resources */,
+				F767E9B321F7153A00ED86E5 /* 金币.mp3 in Resources */,
+				F767E9AB21F6D30800ED86E5 /* Character.xib in Resources */,
 				F7DA2BD621F2DF050060C272 /* SettingView.xib in Resources */,
 				F734349C21F575E900C005E9 /* GameView.xib in Resources */,
 				F7206C6521F31D40003CCB2A /* 移动1.mp3 in Resources */,
 				F734349921F5584000C005E9 /* CheckPoint.plist in Resources */,
 				F7206C6A21F321FF003CCB2A /* CheckPointPage.xib in Resources */,
 				F73434A421F5B40C00C005E9 /* 游戏页面背景.mp3 in Resources */,
+				F767E9A921F6BC5000ED86E5 /* GameContainerView.xib in Resources */,
+				F767E9B821F7172100ED86E5 /* GameOverView.xib in Resources */,
 				F7206C6121F31665003CCB2A /* CheckPoint.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,10 +281,13 @@
 				F7DA2BBE21F2C5E20060C272 /* ViewController.m in Sources */,
 				F7DA2BC921F2C5E30060C272 /* main.m in Sources */,
 				F7206C6D21F327F3003CCB2A /* CheckPointView.m in Sources */,
+				F767E9B121F6D37600ED86E5 /* CharacterView.m in Sources */,
 				F7DA2BBB21F2C5E20060C272 /* AppDelegate.m in Sources */,
+				F767E9A721F6BC3C00ED86E5 /* GameContainerView.m in Sources */,
 				F7DA2BD421F2DC380060C272 /* MainViewController.m in Sources */,
 				F7206C7021F32802003CCB2A /* CheckPointPageView.m in Sources */,
 				F7DA2BD921F303750060C272 /* SettingView.m in Sources */,
+				F767E9BB21F71F0500ED86E5 /* GameOverView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

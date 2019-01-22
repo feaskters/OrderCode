@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSDictionary *checkPointInfo;
 
+- (IBAction)back:(UIButton *)sender;
 +(instancetype)gameView;
 
 @end
