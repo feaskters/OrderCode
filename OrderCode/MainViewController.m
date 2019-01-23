@@ -10,12 +10,15 @@
 #import <AVFoundation/AVFoundation.h>
 #import "Setting/SettingView.h"
 #import "checkPoint/CheckPointPageView.h"
+#import "TeachViewController.h"
 
 @interface MainViewController ()
 
+@property UIImageView *teach;
 @property NSInteger screenWidth;
 @property NSInteger screenHeight;
 @property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
+@property CheckPointPageView *cppv;
 
 @end
 
@@ -29,6 +32,7 @@
 
 -(void)viewDidDisappear:(BOOL)animated{
     [__musicPlay pause];
+    [self.cppv removeFromSuperview];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -38,18 +42,28 @@
 
 //关卡选择页面
 - (void)addSelectCheckPointPage{
-    //加载关卡数据
-    NSString *path = [[NSBundle mainBundle]pathForResource:@"CheckPoint" ofType:@"plist"];
-    NSArray *array = [NSArray arrayWithContentsOfFile:path];
-    //加载选择页面
-    CheckPointPageView *cppv = [CheckPointPageView checkPointPage];
-    cppv.musicPlay_yx = self._musicPlay_yx;
-    cppv.musicPlay = self._musicPlay;
-    cppv.checkPoints = array;
-    cppv.nc = self;
+    //沙盒路径
+    NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+     NSString *fileName = [documentPath stringByAppendingPathComponent:@"CheckPoint.plist"];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if (![fileManager fileExistsAtPath:fileName]) {
+        //加载关卡数据
+        NSString *path = [[NSBundle mainBundle]pathForResource:@"CheckPoint" ofType:@"plist"];
+        if (![fileManager copyItemAtPath:path toPath:fileName error:nil]) {
+            NSLog(@"plist文件移动失败");
+        }
+
+    }
+    NSArray *array = [NSArray arrayWithContentsOfFile:fileName];
+        //加载选择页面
+    self.cppv = [CheckPointPageView checkPointPage];
+    self.cppv.musicPlay_yx = self._musicPlay_yx;
+    self.cppv.musicPlay = self._musicPlay;
+    self.cppv.checkPoints = array;
+    self.cppv.nc = self;
     CGRect frame = CGRectMake(0, 0, _mainScrollView.frame.size.width, _mainScrollView.frame.size.height);
-    cppv.frame = frame;
-    [self.mainScrollView addSubview:cppv];
+    self.cppv.frame = frame;
+    [self.mainScrollView addSubview:self.cppv];
 }
 
 //弹出设置页面
@@ -63,6 +77,14 @@
     [self.view addSubview:view];
 }
 
-//加载关卡选择页面
+//教程页面
+- (IBAction)teach:(UIButton *)sender {
+    [__musicPlay_yx play];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    TeachViewController *tvc = [segue destinationViewController];
+    tvc.musicPlay_yx = self._musicPlay_yx;
+}
 
 @end

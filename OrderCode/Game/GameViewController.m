@@ -107,7 +107,10 @@
     switch (sender.tag) {
         case 0:
             //开始执行指令
-            [self act];
+            if (self.orderArray.count != 0) {
+                
+                [self act];
+            }
             break;
         case 1:
         case 2:
@@ -216,6 +219,12 @@
         [NSTimer scheduledTimerWithTimeInterval:i repeats:NO block:^(NSTimer * _Nonnull timer) {
             int num = (int)[self.orderArray[0] integerValue];
             NSArray *location = [self.gcv move:num];
+            if ([location isEqualToArray:self.checkPointInfo[@"金币"]]) {
+                [self.gcv.musicPlay_coin play];
+                self.gcv.coinView.animationDuration = 1;
+                [self.gcv.coinView startAnimating];
+                self.gov.is_star = 1;
+            }
             if (self.orderArray.count > 0) {
                 [self.orderArray removeObjectAtIndex:0];
                 [self refreshOrderScrollView];

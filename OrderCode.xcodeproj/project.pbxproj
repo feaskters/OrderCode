@@ -14,6 +14,7 @@
 		F7206C6A21F321FF003CCB2A /* CheckPointPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7206C6921F321FF003CCB2A /* CheckPointPage.xib */; };
 		F7206C6D21F327F3003CCB2A /* CheckPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7206C6C21F327F3003CCB2A /* CheckPointView.m */; };
 		F7206C7021F32802003CCB2A /* CheckPointPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7206C6F21F32802003CCB2A /* CheckPointPageView.m */; };
+		F7274C2D21F825650049D5BE /* TeachViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7274C2C21F825650049D5BE /* TeachViewController.m */; };
 		F734349921F5584000C005E9 /* CheckPoint.plist in Resources */ = {isa = PBXBuildFile; fileRef = F734349821F5584000C005E9 /* CheckPoint.plist */; };
 		F734349C21F575E900C005E9 /* GameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F734349B21F575E900C005E9 /* GameView.xib */; };
 		F734349F21F5786700C005E9 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F734349E21F5786700C005E9 /* GameViewController.m */; };
@@ -47,6 +48,8 @@
 		F7206C6C21F327F3003CCB2A /* CheckPointView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckPointView.m; sourceTree = "<group>"; };
 		F7206C6E21F32802003CCB2A /* CheckPointPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckPointPageView.h; sourceTree = "<group>"; };
 		F7206C6F21F32802003CCB2A /* CheckPointPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckPointPageView.m; sourceTree = "<group>"; };
+		F7274C2B21F825650049D5BE /* TeachViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeachViewController.h; sourceTree = "<group>"; };
+		F7274C2C21F825650049D5BE /* TeachViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeachViewController.m; sourceTree = "<group>"; };
 		F734349821F5584000C005E9 /* CheckPoint.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CheckPoint.plist; sourceTree = "<group>"; };
 		F734349B21F575E900C005E9 /* GameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameView.xib; sourceTree = "<group>"; };
 		F734349D21F5786700C005E9 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 				F7DA2BBD21F2C5E20060C272 /* ViewController.m */,
 				F7DA2BD221F2DC380060C272 /* MainViewController.h */,
 				F7DA2BD321F2DC380060C272 /* MainViewController.m */,
+				F7274C2B21F825650049D5BE /* TeachViewController.h */,
+				F7274C2C21F825650049D5BE /* TeachViewController.m */,
 				F7DA2BB921F2C5E20060C272 /* AppDelegate.h */,
 				F7DA2BBA21F2C5E20060C272 /* AppDelegate.m */,
 				F7DA2BC221F2C5E30060C272 /* Assets.xcassets */,
@@ -277,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7274C2D21F825650049D5BE /* TeachViewController.m in Sources */,
 				F734349F21F5786700C005E9 /* GameViewController.m in Sources */,
 				F7DA2BBE21F2C5E20060C272 /* ViewController.m in Sources */,
 				F7DA2BC921F2C5E30060C272 /* main.m in Sources */,
@@ -430,13 +436,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8ZTWLR4VWF;
+				DEVELOPMENT_TEAM = Y97Q74UT3T;
 				INFOPLIST_FILE = OrderCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wzll7.OrderCode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zmh.OrderCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -447,13 +453,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8ZTWLR4VWF;
+				DEVELOPMENT_TEAM = Y97Q74UT3T;
 				INFOPLIST_FILE = OrderCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wzll7.OrderCode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zmh.OrderCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

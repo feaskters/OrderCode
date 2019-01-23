@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GameContainerView : UIView
 
 
+@property UIImageView *coinView;
 @property AVAudioPlayer *musicPlay_coin;
 @property AVAudioPlayer *musicPlay_yx;
 @property AVAudioPlayer *musicPlay_move;

@@ -12,7 +12,6 @@
 @interface GameContainerView()
 
 @property CharacterView *character;
-@property UIImageView *coinView;
 
 @end
 
@@ -27,10 +26,59 @@
             UIImage *image = [[UIImage alloc]init];
             switch ([self.gameDetail[@"block"][i][j] integerValue]) {
                 case 0:
-                    image = [UIImage imageNamed:@"草地"];
+                    image = [UIImage imageNamed:@"上下垂直"];
                     break;
                 case 1:
-                    image = [UIImage imageNamed:@"上下垂直"];
+                    image = [UIImage imageNamed:@"左上"];
+                    break;
+                case 2:
+                    image = [UIImage imageNamed:@"三叉-水平上"];
+                    break;
+                case 3:
+                    image = [UIImage imageNamed:@"右上"];
+                    break;
+                case 4:
+                    image = [UIImage imageNamed:@"三叉-垂直左"];
+                    break;
+                case 5:
+                    image = [UIImage imageNamed:@"水平"];
+                    break;
+                case 6:
+                    image = [UIImage imageNamed:@"三叉-垂直右"];
+                    break;
+                case 7:
+                    image = [UIImage imageNamed:@"左下"];
+                    break;
+                case 8:
+                    image = [UIImage imageNamed:@"三叉-水平下"];
+                    break;
+                case 9:
+                    image = [UIImage imageNamed:@"右下"];
+                    break;
+                case 10:
+                    image = [UIImage imageNamed:@"草地"];
+                    break;
+                case 11:
+                    image = [UIImage imageNamed:@"下-封顶"];
+                    break;
+                case 12:
+                    image = [UIImage imageNamed:@"右-封顶"];
+                    break;
+                case 13:
+                    image = [UIImage imageNamed:@"十字路口"];
+                    break;
+                case 14:
+                    image = [UIImage imageNamed:@"熊"];
+                    break;
+                case 15:
+                    image = [UIImage imageNamed:@"企鹅"];
+                    break;
+                case 16:
+                    image = [UIImage imageNamed:@"幽灵"];
+                    break;
+                case 17:
+                    image = [UIImage imageNamed:@"牛"];
+                    break;
                 default:
                     break;
             }
@@ -103,13 +151,13 @@
         default:
             break;
     }
-    //判断金币
+//    //判断金币
     NSArray *location = [self.character location];
-    if ([location isEqualToArray:self.gameDetail[@"金币"]]) {
-        [_musicPlay_coin play];
-        self.coinView.animationDuration = 1;
-        [self.coinView startAnimating];
-    }
+//    if ([location isEqualToArray:self.gameDetail[@"金币"]]) {
+//        [_musicPlay_coin play];
+//        self.coinView.animationDuration = 1;
+//        [self.coinView startAnimating];
+//    }
     return location;
 }
 

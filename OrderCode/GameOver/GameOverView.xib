@@ -56,11 +56,18 @@
                         <action selector="back:" destination="iN0-l3-epB" eventType="touchUpInside" id="WxD-ai-EJY"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="星星-空" translatesAutoresizingMaskIntoConstraints="NO" id="qjS-m4-Lgb">
-                    <rect key="frame" x="137.5" y="317" width="100" height="100"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="成功" translatesAutoresizingMaskIntoConstraints="NO" id="9GX-sF-bWQ">
+                    <rect key="frame" x="137.5" y="295" width="100" height="100"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="100" id="BUy-Q2-uCg"/>
-                        <constraint firstAttribute="width" constant="100" id="H9B-Jc-ne1"/>
+                        <constraint firstAttribute="width" constant="100" id="O6k-Cs-23c"/>
+                        <constraint firstAttribute="height" constant="100" id="stY-Jl-oPJ"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="星星-空" translatesAutoresizingMaskIntoConstraints="NO" id="qjS-m4-Lgb">
+                    <rect key="frame" x="162.5" y="415" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="2Nk-um-s86"/>
+                        <constraint firstAttribute="height" constant="50" id="TUr-gB-QuG"/>
                     </constraints>
                 </imageView>
             </subviews>
@@ -70,26 +77,29 @@
                 <constraint firstItem="CP6-Df-wj7" firstAttribute="centerY" secondItem="XeF-o9-Ahf" secondAttribute="centerY" id="6xo-M0-x48"/>
                 <constraint firstItem="Wxq-CE-IJs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="60" id="8Rf-tC-J7a"/>
                 <constraint firstItem="mgb-OY-bQ1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="60" id="AOp-Bh-w1S"/>
+                <constraint firstItem="qjS-m4-Lgb" firstAttribute="top" secondItem="9GX-sF-bWQ" secondAttribute="bottom" constant="20" id="Cwf-pz-u8x"/>
                 <constraint firstItem="Wxq-CE-IJs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="80" id="GQZ-Lg-XdB"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="h93-P6-XyU" secondAttribute="trailing" constant="20" id="Gfg-e0-gDP"/>
+                <constraint firstItem="9GX-sF-bWQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="L7U-DL-JmP"/>
                 <constraint firstItem="OBV-VI-gji" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Pgn-l6-B9W"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mgb-OY-bQ1" secondAttribute="trailing" constant="60" id="ZEH-Hc-l93"/>
                 <constraint firstItem="EZb-1K-dsd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bcu-ny-QUb"/>
                 <constraint firstItem="mgb-OY-bQ1" firstAttribute="top" secondItem="Wxq-CE-IJs" secondAttribute="bottom" constant="20" id="brb-Xq-UhG"/>
+                <constraint firstItem="qjS-m4-Lgb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="e81-hZ-AVv"/>
+                <constraint firstItem="9GX-sF-bWQ" firstAttribute="top" secondItem="EZb-1K-dsd" secondAttribute="bottom" constant="20" id="hMB-3u-OUu"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Wxq-CE-IJs" secondAttribute="trailing" constant="60" id="mal-n0-MSx"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="OBV-VI-gji" secondAttribute="bottom" constant="112" id="p04-8J-8qh"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="h93-P6-XyU" secondAttribute="bottom" constant="50" id="qtt-pP-cMw"/>
                 <constraint firstItem="h93-P6-XyU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="rh7-Jp-jbe"/>
-                <constraint firstItem="qjS-m4-Lgb" firstAttribute="top" secondItem="EZb-1K-dsd" secondAttribute="bottom" constant="42" id="rva-cZ-Fo9"/>
                 <constraint firstItem="h93-P6-XyU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="u9O-t6-wkA"/>
                 <constraint firstItem="EZb-1K-dsd" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="wBo-lE-TVT"/>
-                <constraint firstItem="qjS-m4-Lgb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wXX-dW-pTh"/>
                 <constraint firstItem="XeF-o9-Ahf" firstAttribute="centerX" secondItem="h93-P6-XyU" secondAttribute="centerX" id="y2m-AJ-oyv"/>
                 <constraint firstItem="XeF-o9-Ahf" firstAttribute="centerY" secondItem="Wxq-CE-IJs" secondAttribute="centerY" id="yhi-NI-wOf"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mgb-OY-bQ1" secondAttribute="bottom" constant="80" id="zk1-iy-qht"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="SuccessView" destination="9GX-sF-bWQ" id="z0J-fG-Ihx"/>
                 <outlet property="levelView" destination="CP6-Df-wj7" id="lg6-NG-AWt"/>
                 <outlet property="resultLabel" destination="EZb-1K-dsd" id="FM2-Vp-K5Q"/>
                 <outlet property="starImage" destination="qjS-m4-Lgb" id="QuV-NN-ahy"/>
@@ -101,6 +111,7 @@
         <image name="关卡背景" width="216" height="57"/>
         <image name="回主菜单" width="191" height="71"/>
         <image name="回主菜单-点击" width="191" height="71"/>
+        <image name="成功" width="147" height="145"/>
         <image name="星星-空" width="188" height="179"/>
         <image name="第几关" width="138" height="36"/>
         <image name="背景-背景光" width="960" height="640"/>
