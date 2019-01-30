@@ -16,7 +16,6 @@
 		F7206C7021F32802003CCB2A /* CheckPointPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7206C6F21F32802003CCB2A /* CheckPointPageView.m */; };
 		F7274C2D21F825650049D5BE /* TeachViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7274C2C21F825650049D5BE /* TeachViewController.m */; };
 		F734349921F5584000C005E9 /* CheckPoint.plist in Resources */ = {isa = PBXBuildFile; fileRef = F734349821F5584000C005E9 /* CheckPoint.plist */; };
-		F734349C21F575E900C005E9 /* GameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F734349B21F575E900C005E9 /* GameView.xib */; };
 		F734349F21F5786700C005E9 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F734349E21F5786700C005E9 /* GameViewController.m */; };
 		F73434A221F57E0D00C005E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73434A021F57E0D00C005E9 /* Main.storyboard */; };
 		F73434A421F5B40C00C005E9 /* 游戏页面背景.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F73434A321F5B40C00C005E9 /* 游戏页面背景.mp3 */; };
@@ -25,9 +24,12 @@
 		F767E9AB21F6D30800ED86E5 /* Character.xib in Resources */ = {isa = PBXBuildFile; fileRef = F767E9AA21F6D30800ED86E5 /* Character.xib */; };
 		F767E9B121F6D37600ED86E5 /* CharacterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767E9B021F6D37600ED86E5 /* CharacterView.m */; };
 		F767E9B321F7153A00ED86E5 /* 金币.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F767E9B221F7153A00ED86E5 /* 金币.mp3 */; };
-		F767E9B821F7172100ED86E5 /* GameOverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F767E9B721F7172100ED86E5 /* GameOverView.xib */; };
 		F767E9BB21F71F0500ED86E5 /* GameOverView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767E9BA21F71F0500ED86E5 /* GameOverView.m */; };
 		F794B01222017BDD004E9502 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F794B01422017BDD004E9502 /* InfoPlist.strings */; };
+		F794B01E2201A580004E9502 /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F794B0202201A580004E9502 /* SettingView.xib */; };
+		F794B0262201A6B8004E9502 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F794B0282201A6B8004E9502 /* Localizable.strings */; };
+		F794B02A2201A891004E9502 /* GameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F794B02C2201A891004E9502 /* GameView.xib */; };
+		F794B0302201A907004E9502 /* GameOverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F794B0322201A907004E9502 /* GameOverView.xib */; };
 		F7DA2BBB21F2C5E20060C272 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DA2BBA21F2C5E20060C272 /* AppDelegate.m */; };
 		F7DA2BBE21F2C5E20060C272 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DA2BBD21F2C5E20060C272 /* ViewController.m */; };
 		F7DA2BC321F2C5E30060C272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DA2BC221F2C5E30060C272 /* Assets.xcassets */; };
@@ -35,7 +37,6 @@
 		F7DA2BC921F2C5E30060C272 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DA2BC821F2C5E30060C272 /* main.m */; };
 		F7DA2BD121F2DA7D0060C272 /* 柔和的风.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7DA2BD021F2DA7C0060C272 /* 柔和的风.mp3 */; };
 		F7DA2BD421F2DC380060C272 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DA2BD321F2DC380060C272 /* MainViewController.m */; };
-		F7DA2BD621F2DF050060C272 /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7DA2BD521F2DF050060C272 /* SettingView.xib */; };
 		F7DA2BD921F303750060C272 /* SettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DA2BD821F303750060C272 /* SettingView.m */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +53,6 @@
 		F7274C2B21F825650049D5BE /* TeachViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeachViewController.h; sourceTree = "<group>"; };
 		F7274C2C21F825650049D5BE /* TeachViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeachViewController.m; sourceTree = "<group>"; };
 		F734349821F5584000C005E9 /* CheckPoint.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CheckPoint.plist; sourceTree = "<group>"; };
-		F734349B21F575E900C005E9 /* GameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameView.xib; sourceTree = "<group>"; };
 		F734349D21F5786700C005E9 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		F734349E21F5786700C005E9 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		F73434A121F57E0D00C005E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = OrderCode/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
@@ -64,14 +64,22 @@
 		F767E9AF21F6D37600ED86E5 /* CharacterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacterView.h; sourceTree = "<group>"; };
 		F767E9B021F6D37600ED86E5 /* CharacterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharacterView.m; sourceTree = "<group>"; };
 		F767E9B221F7153A00ED86E5 /* 金币.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "金币.mp3"; sourceTree = "<group>"; };
-		F767E9B721F7172100ED86E5 /* GameOverView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameOverView.xib; sourceTree = "<group>"; };
 		F767E9B921F71F0500ED86E5 /* GameOverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameOverView.h; sourceTree = "<group>"; };
 		F767E9BA21F71F0500ED86E5 /* GameOverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameOverView.m; sourceTree = "<group>"; };
 		F794B01322017BDD004E9502 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F794B01622017BF0004E9502 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		F794B01722017BF0004E9502 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F794B01A22018172004E9502 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F794B01B2201818A004E9502 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		F794B01F2201A580004E9502 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SettingView.xib; sourceTree = "<group>"; };
+		F794B0232201A59E004E9502 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/SettingView.xib"; sourceTree = "<group>"; };
+		F794B0272201A6B8004E9502 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F794B0292201A6BA004E9502 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F794B02B2201A891004E9502 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GameView.xib; sourceTree = "<group>"; };
+		F794B02F2201A897004E9502 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/GameView.xib"; sourceTree = "<group>"; };
+		F794B0312201A907004E9502 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GameOverView.xib; sourceTree = "<group>"; };
+		F794B0352201A913004E9502 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/GameOverView.xib"; sourceTree = "<group>"; };
+		F794B0382201ABA4004E9502 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		F794B0392201ABAB004E9502 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7DA2BB621F2C5E20060C272 /* OrderCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DA2BB921F2C5E20060C272 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7DA2BBA21F2C5E20060C272 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -84,7 +92,6 @@
 		F7DA2BD021F2DA7C0060C272 /* 柔和的风.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "柔和的风.mp3"; sourceTree = "<group>"; };
 		F7DA2BD221F2DC380060C272 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F7DA2BD321F2DC380060C272 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		F7DA2BD521F2DF050060C272 /* SettingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingView.xib; sourceTree = "<group>"; };
 		F7DA2BD721F303750060C272 /* SettingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingView.h; sourceTree = "<group>"; };
 		F7DA2BD821F303750060C272 /* SettingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,7 +123,7 @@
 		F734349A21F575D200C005E9 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				F734349B21F575E900C005E9 /* GameView.xib */,
+				F794B02C2201A891004E9502 /* GameView.xib */,
 				F767E9A821F6BC5000ED86E5 /* GameContainerView.xib */,
 				F767E9AA21F6D30800ED86E5 /* Character.xib */,
 				F767E9AF21F6D37600ED86E5 /* CharacterView.h */,
@@ -132,7 +139,7 @@
 		F767E9B421F716FC00ED86E5 /* GameOver */ = {
 			isa = PBXGroup;
 			children = (
-				F767E9B721F7172100ED86E5 /* GameOverView.xib */,
+				F794B0322201A907004E9502 /* GameOverView.xib */,
 				F767E9B921F71F0500ED86E5 /* GameOverView.h */,
 				F767E9BA21F71F0500ED86E5 /* GameOverView.m */,
 			);
@@ -178,6 +185,7 @@
 				F794B01422017BDD004E9502 /* InfoPlist.strings */,
 				F7DA2BC821F2C5E30060C272 /* main.m */,
 				F734349821F5584000C005E9 /* CheckPoint.plist */,
+				F794B0282201A6B8004E9502 /* Localizable.strings */,
 			);
 			path = OrderCode;
 			sourceTree = "<group>";
@@ -198,7 +206,7 @@
 		F7DA2BDA21F3037F0060C272 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				F7DA2BD521F2DF050060C272 /* SettingView.xib */,
+				F794B0202201A580004E9502 /* SettingView.xib */,
 				F7DA2BD721F303750060C272 /* SettingView.h */,
 				F7DA2BD821F303750060C272 /* SettingView.m */,
 			);
@@ -272,14 +280,15 @@
 				F767E9B321F7153A00ED86E5 /* 金币.mp3 in Resources */,
 				F794B01222017BDD004E9502 /* InfoPlist.strings in Resources */,
 				F767E9AB21F6D30800ED86E5 /* Character.xib in Resources */,
-				F7DA2BD621F2DF050060C272 /* SettingView.xib in Resources */,
-				F734349C21F575E900C005E9 /* GameView.xib in Resources */,
+				F794B01E2201A580004E9502 /* SettingView.xib in Resources */,
+				F794B02A2201A891004E9502 /* GameView.xib in Resources */,
 				F7206C6521F31D40003CCB2A /* 移动1.mp3 in Resources */,
 				F734349921F5584000C005E9 /* CheckPoint.plist in Resources */,
 				F7206C6A21F321FF003CCB2A /* CheckPointPage.xib in Resources */,
 				F73434A421F5B40C00C005E9 /* 游戏页面背景.mp3 in Resources */,
 				F767E9A921F6BC5000ED86E5 /* GameContainerView.xib in Resources */,
-				F767E9B821F7172100ED86E5 /* GameOverView.xib in Resources */,
+				F794B0262201A6B8004E9502 /* Localizable.strings in Resources */,
+				F794B0302201A907004E9502 /* GameOverView.xib in Resources */,
 				F7206C6121F31665003CCB2A /* CheckPoint.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,11 +337,48 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		F794B0202201A580004E9502 /* SettingView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F794B01F2201A580004E9502 /* en */,
+				F794B0232201A59E004E9502 /* zh-Hans */,
+			);
+			name = SettingView.xib;
+			sourceTree = "<group>";
+		};
+		F794B0282201A6B8004E9502 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F794B0272201A6B8004E9502 /* en */,
+				F794B0292201A6BA004E9502 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F794B02C2201A891004E9502 /* GameView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F794B02B2201A891004E9502 /* en */,
+				F794B02F2201A897004E9502 /* zh-Hans */,
+			);
+			name = GameView.xib;
+			sourceTree = "<group>";
+		};
+		F794B0322201A907004E9502 /* GameOverView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F794B0312201A907004E9502 /* en */,
+				F794B0352201A913004E9502 /* zh-Hans */,
+			);
+			name = GameOverView.xib;
+			sourceTree = "<group>";
+		};
 		F7DA2BC421F2C5E30060C272 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F7DA2BC521F2C5E30060C272 /* Base */,
-				F794B01622017BF0004E9502 /* zh-Hans */,
+				F794B0382201ABA4004E9502 /* zh-Hans */,
+				F794B0392201ABAB004E9502 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

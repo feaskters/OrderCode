@@ -14,6 +14,8 @@
 @property (weak, nonatomic) IBOutlet UISlider *volume_yx;
 @property (weak, nonatomic) IBOutlet UIButton *mute;
 
+@property NSString *muteString;
+@property NSString *unmuteString;
 @end
 
 @implementation SettingView
@@ -31,28 +33,31 @@
 
 - (void)layoutSubviews{
     [super layoutSubviews];
+    
+    self.muteString = NSLocalizedString(@"静音", nil);
+    self.unmuteString = NSLocalizedString(@"取消静音", nil);
            self.volume.value = _musicPlay.volume;
            self.volume_yx.value = _musicPlay_yx.volume;
     if (self.volume_yx.value == 0.0 && self.volume.value == 0.0) {
-        [self.mute setTitle:@"取消静音" forState:UIControlStateNormal] ;
+        [self.mute setTitle:self.unmuteString forState:UIControlStateNormal] ;
     }
 }
 
 - (IBAction)silent:(UIButton *)sender {
     //判断当期是否为静音
-    if ([sender.titleLabel.text isEqualToString:@"静音"]) {
+    if ([sender.titleLabel.text isEqualToString:self.muteString]) {
         //改变slider位置
         self.volume.value = 0;
         self.volume_yx.value = 0;
         [_musicPlay setVolume:0];
         [_musicPlay_yx setVolume:0];
-        [sender setTitle:@"取消静音" forState:UIControlStateNormal];
+        [sender setTitle:self.unmuteString forState:UIControlStateNormal];
     }else{
         self.volume.value = 0.5;
         self.volume_yx.value = 0.5;
         [_musicPlay setVolume:0.5];
         [_musicPlay_yx setVolume:0.5];
-           [sender setTitle:@"静音" forState:UIControlStateNormal];
+           [sender setTitle:self.muteString forState:UIControlStateNormal];
     }
 }
 

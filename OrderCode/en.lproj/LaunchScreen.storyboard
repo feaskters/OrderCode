@@ -18,15 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="组22" translatesAutoresizingMaskIntoConstraints="NO" id="RDc-BV-p42">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="组22" translatesAutoresizingMaskIntoConstraints="NO" id="sb9-PY-LHE">
                                 <rect key="frame" x="112.5" y="170" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="QNs-Tc-xa5"/>
-                                    <constraint firstAttribute="height" constant="150" id="jxG-YK-Exq"/>
+                                    <constraint firstAttribute="width" constant="150" id="RhU-4D-h6z"/>
+                                    <constraint firstAttribute="height" constant="150" id="aom-vI-o0c"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="指令代码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tzy-vZ-WN7">
-                                <rect key="frame" x="146.5" y="371" width="82" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Code Of Order" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5UY-As-uJY">
+                                <rect key="frame" x="124" y="371" width="127.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -34,17 +34,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="RDc-BV-p42" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="96l-He-IiC"/>
-                            <constraint firstItem="Tzy-vZ-WN7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="q6d-wu-fcQ"/>
-                            <constraint firstItem="RDc-BV-p42" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wx8-0X-tNv"/>
-                            <constraint firstItem="Tzy-vZ-WN7" firstAttribute="top" secondItem="RDc-BV-p42" secondAttribute="bottom" constant="51" id="x37-y4-Imh"/>
+                            <constraint firstItem="sb9-PY-LHE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Pin-EJ-8QG"/>
+                            <constraint firstItem="5UY-As-uJY" firstAttribute="top" secondItem="sb9-PY-LHE" secondAttribute="bottom" constant="51" id="Yvz-an-uFW"/>
+                            <constraint firstItem="sb9-PY-LHE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="oWm-gm-zrY"/>
+                            <constraint firstItem="5UY-As-uJY" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wCB-HF-JSh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>

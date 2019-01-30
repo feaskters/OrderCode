@@ -22,12 +22,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZm-sI-9Bx">
-                                <rect key="frame" x="68.5" y="391.5" width="238" height="84"/>
+                                <rect key="frame" x="68.5" y="379" width="238" height="109"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="238" id="cju-24-kvt"/>
                                 </constraints>
-                                <state key="normal" image="开始游戏"/>
-                                <state key="highlighted" image="开始游戏-点击"/>
+                                <state key="normal" image="开始游戏_en"/>
+                                <state key="highlighted" image="开始游戏-点击_en"/>
                                 <connections>
                                     <segue destination="d4x-78-fZC" kind="show" identifier="showMain" id="zmM-1K-0AV"/>
                                 </connections>
@@ -92,8 +92,8 @@
                                     <constraint firstAttribute="width" constant="191" id="9SP-vN-3lD"/>
                                     <constraint firstAttribute="height" constant="71" id="Vvh-tf-QgF"/>
                                 </constraints>
-                                <state key="normal" image="查看教程"/>
-                                <state key="highlighted" image="查看教程-点击"/>
+                                <state key="normal" image="查看教程_en"/>
+                                <state key="highlighted" image="查看教程-点击_en"/>
                                 <connections>
                                     <action selector="teach:" destination="d4x-78-fZC" eventType="touchUpInside" id="dHK-mA-4Z2"/>
                                     <segue destination="nq3-41-Dzi" kind="show" id="lsv-qQ-0va"/>
@@ -144,8 +144,8 @@
                                     <constraint firstAttribute="height" constant="69" id="RB6-tp-Zyt"/>
                                     <constraint firstAttribute="width" constant="121" id="Z8j-US-XKL"/>
                                 </constraints>
-                                <state key="normal" image="确定"/>
-                                <state key="highlighted" image="确定-点击"/>
+                                <state key="normal" image="确定_en"/>
+                                <state key="highlighted" image="确定-点击_en"/>
                                 <connections>
                                     <action selector="back:" destination="nq3-41-Dzi" eventType="touchUpInside" id="i0S-Va-Xc9"/>
                                     <segue destination="d4x-78-fZC" kind="show" id="3T2-Wo-4e0"/>
@@ -170,13 +170,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="开始游戏" width="238" height="84"/>
-        <image name="开始游戏-点击" width="238" height="84"/>
+        <image name="开始游戏-点击_en" width="190" height="66"/>
+        <image name="开始游戏_en" width="315" height="109"/>
         <image name="教程_en" width="397" height="707"/>
-        <image name="查看教程" width="191" height="71"/>
-        <image name="查看教程-点击" width="191" height="71"/>
-        <image name="确定" width="121" height="69"/>
-        <image name="确定-点击" width="121" height="69"/>
+        <image name="查看教程-点击_en" width="190" height="66"/>
+        <image name="查看教程_en" width="315" height="109"/>
+        <image name="确定-点击_en" width="116" height="68"/>
+        <image name="确定_en" width="193" height="113"/>
         <image name="背景-天空" width="256" height="256"/>
         <image name="背景-宇宙" width="1920" height="1080"/>
         <image name="设置" width="28" height="29"/>
