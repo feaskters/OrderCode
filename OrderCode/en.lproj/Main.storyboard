@@ -135,7 +135,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="教程" translatesAutoresizingMaskIntoConstraints="NO" id="FJB-Qg-GNU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="教程_en" translatesAutoresizingMaskIntoConstraints="NO" id="FJB-Qg-GNU">
                                 <rect key="frame" x="0.0" y="20" width="375" height="607"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q18-MO-rBC">
@@ -172,7 +172,7 @@
     <resources>
         <image name="开始游戏" width="238" height="84"/>
         <image name="开始游戏-点击" width="238" height="84"/>
-        <image name="教程" width="394" height="703"/>
+        <image name="教程_en" width="397" height="707"/>
         <image name="查看教程" width="191" height="71"/>
         <image name="查看教程-点击" width="191" height="71"/>
         <image name="确定" width="121" height="69"/>
