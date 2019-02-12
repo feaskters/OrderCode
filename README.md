@@ -13,6 +13,7 @@ IOS游戏项目-指令代码
 8. 使用animation来使人物移动
 9. uiscrollView的使用
 10. 使用plist加载数据
+11. 使用`arc4random()`生成随机数
 ## 所用资源
 1. 来自[爱给网](http://www.aigei.com/)的图片和图标
 2. 来自[站长素材](http://sc.chinaz.com/yinxiao/)的音效
