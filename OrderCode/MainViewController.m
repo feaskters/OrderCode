@@ -11,6 +11,7 @@
 #import "Setting/SettingView.h"
 #import "checkPoint/CheckPointPageView.h"
 #import "TeachingViewController.h"
+#import "competition/CompetitionViewController.h"
 
 @interface MainViewController ()
 
@@ -71,6 +72,17 @@
 //教程页面
 - (IBAction)teach:(UIButton *)sender {
     [__musicPlay_yx play];
+}
+
+//竞赛模式
+- (IBAction)competition:(UIButton *)sender {
+    [__musicPlay_yx play];
+    CompetitionViewController *cvc = [CompetitionViewController competitionView];
+    cvc.musPlay_yx = self._musicPlay_yx;
+    cvc.musplay = self._musicPlay;
+    [self presentViewController:cvc animated:YES completion:^{
+        
+    }];
 }
 
 

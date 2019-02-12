@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)left;
 -(void)down;
 -(void)right;
+-(void)competition_left;
+-(void)competition_right;
+
 //获取当前位置
 -(NSArray *)location;
 

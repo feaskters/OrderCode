@@ -99,6 +99,18 @@
                                     <segue destination="nq3-41-Dzi" kind="show" id="lsv-qQ-0va"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2t-Z0-ZR8">
+                                <rect key="frame" x="91.5" y="603" width="192" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="6dx-40-moi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="24"/>
+                                <state key="normal" title="competition" backgroundImage="空白按钮"/>
+                                <state key="highlighted" title="competition" backgroundImage="空白按钮-点击"/>
+                                <connections>
+                                    <action selector="competition:" destination="d4x-78-fZC" eventType="touchUpInside" id="UeD-P8-N7T"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -108,12 +120,14 @@
                             <constraint firstItem="AzY-sa-5UI" firstAttribute="bottom" secondItem="1I7-TM-t1f" secondAttribute="bottom" constant="100" id="AJe-2e-Hnz"/>
                             <constraint firstItem="JQd-8b-sW0" firstAttribute="top" secondItem="AzY-sa-5UI" secondAttribute="top" constant="20" id="CVM-bP-BzA"/>
                             <constraint firstItem="dob-sm-yE0" firstAttribute="leading" secondItem="AzY-sa-5UI" secondAttribute="leading" id="Eg4-cR-htA"/>
+                            <constraint firstItem="a2t-Z0-ZR8" firstAttribute="centerX" secondItem="t2z-tT-GVv" secondAttribute="centerX" id="GFl-74-9JK"/>
                             <constraint firstItem="mTu-Xl-kpO" firstAttribute="trailing" secondItem="1I7-TM-t1f" secondAttribute="trailing" id="HWP-WM-iXN"/>
                             <constraint firstItem="AzY-sa-5UI" firstAttribute="trailing" secondItem="1I7-TM-t1f" secondAttribute="trailing" constant="10" id="M51-Ie-MMw"/>
                             <constraint firstItem="1I7-TM-t1f" firstAttribute="top" secondItem="dob-sm-yE0" secondAttribute="top" constant="100" id="Qe7-05-Pdd"/>
                             <constraint firstItem="mTu-Xl-kpO" firstAttribute="top" secondItem="t2z-tT-GVv" secondAttribute="top" constant="20" id="Vxb-9p-JeO"/>
                             <constraint firstAttribute="trailing" secondItem="dob-sm-yE0" secondAttribute="trailing" id="bkd-nO-sQU"/>
                             <constraint firstItem="JQd-8b-sW0" firstAttribute="leading" secondItem="AzY-sa-5UI" secondAttribute="leading" constant="16" id="h0f-Yv-L81"/>
+                            <constraint firstItem="AzY-sa-5UI" firstAttribute="bottom" secondItem="a2t-Z0-ZR8" secondAttribute="bottom" constant="7" id="mYi-GD-Esw"/>
                             <constraint firstItem="AzY-sa-5UI" firstAttribute="bottom" secondItem="dob-sm-yE0" secondAttribute="bottom" id="pwx-lh-TlK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AzY-sa-5UI"/>
@@ -177,13 +191,14 @@
         <image name="查看教程_en" width="315" height="109"/>
         <image name="确定-点击_en" width="116" height="68"/>
         <image name="确定_en" width="193" height="113"/>
+        <image name="空白按钮" width="192" height="70"/>
+        <image name="空白按钮-点击" width="192" height="70"/>
         <image name="背景-天空" width="252" height="252"/>
         <image name="背景-宇宙" width="1893" height="1065"/>
         <image name="设置" width="28" height="29"/>
         <image name="设置-点击" width="28" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lsv-qQ-0va"/>
-        <segue reference="3T2-Wo-4e0"/>
+        <segue reference="zmM-1K-0AV"/>
     </inferredMetricsTieBreakers>
 </document>

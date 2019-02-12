@@ -13,6 +13,8 @@
 		F71642A1221278B20055B7AC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = F716429B221278B20055B7AC /* FMDatabasePool.m */; };
 		F71642A2221278B20055B7AC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F716429C221278B20055B7AC /* FMResultSet.m */; };
 		F71642AE2212909E0055B7AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F794B01422017BDD004E9502 /* InfoPlist.strings */; };
+		F71642B12212B6030055B7AC /* competitionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71642B02212B6030055B7AC /* competitionView.xib */; };
+		F71642B42212BA2B0055B7AC /* CompetitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71642B32212BA2B0055B7AC /* CompetitionViewController.m */; };
 		F7206C6121F31665003CCB2A /* CheckPoint.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7206C6021F31665003CCB2A /* CheckPoint.xib */; };
 		F7206C6521F31D40003CCB2A /* 移动1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7206C6221F31D40003CCB2A /* 移动1.mp3 */; };
 		F7206C6621F31D40003CCB2A /* 点击按钮.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7206C6321F31D40003CCB2A /* 点击按钮.mp3 */; };
@@ -64,6 +66,9 @@
 		F716429D221278B20055B7AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F71642A922127A310055B7AC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		F71642AA22127E260055B7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F71642B02212B6030055B7AC /* competitionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = competitionView.xib; sourceTree = "<group>"; };
+		F71642B22212BA2B0055B7AC /* CompetitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompetitionViewController.h; sourceTree = "<group>"; };
+		F71642B32212BA2B0055B7AC /* CompetitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompetitionViewController.m; sourceTree = "<group>"; };
 		F7206C6021F31665003CCB2A /* CheckPoint.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckPoint.xib; sourceTree = "<group>"; };
 		F7206C6221F31D40003CCB2A /* 移动1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "移动1.mp3"; sourceTree = "<group>"; };
 		F7206C6321F31D40003CCB2A /* 点击按钮.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "点击按钮.mp3"; sourceTree = "<group>"; };
@@ -146,6 +151,16 @@
 			path = fmdb;
 			sourceTree = "<group>";
 		};
+		F71642AF2212B5EB0055B7AC /* competition */ = {
+			isa = PBXGroup;
+			children = (
+				F71642B02212B6030055B7AC /* competitionView.xib */,
+				F71642B22212BA2B0055B7AC /* CompetitionViewController.h */,
+				F71642B32212BA2B0055B7AC /* CompetitionViewController.m */,
+			);
+			path = competition;
+			sourceTree = "<group>";
+		};
 		F7206C6821F321DB003CCB2A /* checkPoint */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +219,7 @@
 		F7DA2BB821F2C5E20060C272 /* OrderCode */ = {
 			isa = PBXGroup;
 			children = (
+				F71642AF2212B5EB0055B7AC /* competition */,
 				F7164291221278B20055B7AC /* fmdb */,
 				F767E9B421F716FC00ED86E5 /* GameOver */,
 				F734349A21F575D200C005E9 /* Game */,
@@ -215,8 +231,8 @@
 				F7DA2BBD21F2C5E20060C272 /* ViewController.m */,
 				F7DA2BD221F2DC380060C272 /* MainViewController.h */,
 				F7DA2BD321F2DC380060C272 /* MainViewController.m */,
-				F7274C2B21F825650049D5BE /* TeachingViewController.h */,
 				F7274C2C21F825650049D5BE /* TeachingViewController.m */,
+				F7274C2B21F825650049D5BE /* TeachingViewController.h */,
 				F7DA2BB921F2C5E20060C272 /* AppDelegate.h */,
 				F7DA2BBA21F2C5E20060C272 /* AppDelegate.m */,
 				F7DA2BC221F2C5E30060C272 /* Assets.xcassets */,
@@ -313,6 +329,7 @@
 			files = (
 				F7DA2BD121F2DA7D0060C272 /* 柔和的风.mp3 in Resources */,
 				F7206C6621F31D40003CCB2A /* 点击按钮.mp3 in Resources */,
+				F71642B12212B6030055B7AC /* competitionView.xib in Resources */,
 				F7DA2BC621F2C5E30060C272 /* LaunchScreen.storyboard in Resources */,
 				F73434A221F57E0D00C005E9 /* Main.storyboard in Resources */,
 				F7206C6721F31D40003CCB2A /* 移动.mp3 in Resources */,
@@ -346,6 +363,7 @@
 				F71642A0221278B20055B7AC /* FMDatabase.m in Sources */,
 				F7DA2BC921F2C5E30060C272 /* main.m in Sources */,
 				F716429E221278B20055B7AC /* FMDatabaseQueue.m in Sources */,
+				F71642B42212BA2B0055B7AC /* CompetitionViewController.m in Sources */,
 				F716429F221278B20055B7AC /* FMDatabaseAdditions.m in Sources */,
 				F7206C6D21F327F3003CCB2A /* CheckPointView.m in Sources */,
 				F767E9B121F6D37600ED86E5 /* CharacterView.m in Sources */,
@@ -553,14 +571,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y97Q74UT3T;
+				DEVELOPMENT_TEAM = 3JU9D5RL7J;
 				INFOPLIST_FILE = OrderCode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zmh.OrderCode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangmh.OrderCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -571,14 +589,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y97Q74UT3T;
+				DEVELOPMENT_TEAM = 3JU9D5RL7J;
 				INFOPLIST_FILE = OrderCode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zmh.OrderCode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangmh.OrderCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -61,6 +61,26 @@
         }];
     }
 }
+//竞赛向左
+-(void)competition_left{
+    self.animationImages = self.picturesleft;
+    [self startAnimating];
+    if (self.frame.origin.x > 0 ) {
+        [UIView animateWithDuration:0.2 animations:^{
+            self.frame = CGRectMake(self.frame.origin.x - 50, self.frame.origin.y, 50, 50);
+        }];
+    }
+}
+//竞赛向右
+-(void)competition_right{
+    self.animationImages = self.picturesright;
+    [self startAnimating];
+    if ( self.frame.origin.x < 6 * 50) {
+        [UIView animateWithDuration:0.2 animations:^{
+            self.frame = CGRectMake(self.frame.origin.x + 50, self.frame.origin.y, 50, 50);
+        }];
+    }
+}
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
