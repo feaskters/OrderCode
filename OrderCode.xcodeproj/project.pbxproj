@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F716429E221278B20055B7AC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F7164293221278B20055B7AC /* FMDatabaseQueue.m */; };
+		F716429F221278B20055B7AC /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F7164296221278B20055B7AC /* FMDatabaseAdditions.m */; };
+		F71642A0221278B20055B7AC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F7164297221278B20055B7AC /* FMDatabase.m */; };
+		F71642A1221278B20055B7AC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = F716429B221278B20055B7AC /* FMDatabasePool.m */; };
+		F71642A2221278B20055B7AC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F716429C221278B20055B7AC /* FMResultSet.m */; };
+		F71642AE2212909E0055B7AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F794B01422017BDD004E9502 /* InfoPlist.strings */; };
 		F7206C6121F31665003CCB2A /* CheckPoint.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7206C6021F31665003CCB2A /* CheckPoint.xib */; };
 		F7206C6521F31D40003CCB2A /* 移动1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7206C6221F31D40003CCB2A /* 移动1.mp3 */; };
 		F7206C6621F31D40003CCB2A /* 点击按钮.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7206C6321F31D40003CCB2A /* 点击按钮.mp3 */; };
@@ -14,7 +20,7 @@
 		F7206C6A21F321FF003CCB2A /* CheckPointPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7206C6921F321FF003CCB2A /* CheckPointPage.xib */; };
 		F7206C6D21F327F3003CCB2A /* CheckPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7206C6C21F327F3003CCB2A /* CheckPointView.m */; };
 		F7206C7021F32802003CCB2A /* CheckPointPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7206C6F21F32802003CCB2A /* CheckPointPageView.m */; };
-		F7274C2D21F825650049D5BE /* TeachViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7274C2C21F825650049D5BE /* TeachViewController.m */; };
+		F7274C2D21F825650049D5BE /* TeachingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7274C2C21F825650049D5BE /* TeachingViewController.m */; };
 		F734349921F5584000C005E9 /* CheckPoint.plist in Resources */ = {isa = PBXBuildFile; fileRef = F734349821F5584000C005E9 /* CheckPoint.plist */; };
 		F734349F21F5786700C005E9 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F734349E21F5786700C005E9 /* GameViewController.m */; };
 		F73434A221F57E0D00C005E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73434A021F57E0D00C005E9 /* Main.storyboard */; };
@@ -25,7 +31,6 @@
 		F767E9B121F6D37600ED86E5 /* CharacterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767E9B021F6D37600ED86E5 /* CharacterView.m */; };
 		F767E9B321F7153A00ED86E5 /* 金币.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F767E9B221F7153A00ED86E5 /* 金币.mp3 */; };
 		F767E9BB21F71F0500ED86E5 /* GameOverView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767E9BA21F71F0500ED86E5 /* GameOverView.m */; };
-		F794B01222017BDD004E9502 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F794B01422017BDD004E9502 /* InfoPlist.strings */; };
 		F794B01E2201A580004E9502 /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F794B0202201A580004E9502 /* SettingView.xib */; };
 		F794B0262201A6B8004E9502 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F794B0282201A6B8004E9502 /* Localizable.strings */; };
 		F794B02A2201A891004E9502 /* GameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F794B02C2201A891004E9502 /* GameView.xib */; };
@@ -41,6 +46,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F716428C22126F0B0055B7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F716428E22126F490055B7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SettingView.xib; sourceTree = "<group>"; };
+		F716428F22126F5F0055B7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GameView.xib; sourceTree = "<group>"; };
+		F716429022126F720055B7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GameOverView.xib; sourceTree = "<group>"; };
+		F7164292221278B20055B7AC /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		F7164293221278B20055B7AC /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		F7164294221278B20055B7AC /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		F7164295221278B20055B7AC /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		F7164296221278B20055B7AC /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		F7164297221278B20055B7AC /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		F7164298221278B20055B7AC /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		F7164299221278B20055B7AC /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		F716429A221278B20055B7AC /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		F716429B221278B20055B7AC /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		F716429C221278B20055B7AC /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		F716429D221278B20055B7AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F71642A922127A310055B7AC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		F71642AA22127E260055B7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7206C6021F31665003CCB2A /* CheckPoint.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckPoint.xib; sourceTree = "<group>"; };
 		F7206C6221F31D40003CCB2A /* 移动1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "移动1.mp3"; sourceTree = "<group>"; };
 		F7206C6321F31D40003CCB2A /* 点击按钮.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "点击按钮.mp3"; sourceTree = "<group>"; };
@@ -50,12 +73,11 @@
 		F7206C6C21F327F3003CCB2A /* CheckPointView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckPointView.m; sourceTree = "<group>"; };
 		F7206C6E21F32802003CCB2A /* CheckPointPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckPointPageView.h; sourceTree = "<group>"; };
 		F7206C6F21F32802003CCB2A /* CheckPointPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckPointPageView.m; sourceTree = "<group>"; };
-		F7274C2B21F825650049D5BE /* TeachViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeachViewController.h; sourceTree = "<group>"; };
-		F7274C2C21F825650049D5BE /* TeachViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeachViewController.m; sourceTree = "<group>"; };
+		F7274C2B21F825650049D5BE /* TeachingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeachingViewController.h; sourceTree = "<group>"; };
+		F7274C2C21F825650049D5BE /* TeachingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeachingViewController.m; sourceTree = "<group>"; };
 		F734349821F5584000C005E9 /* CheckPoint.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CheckPoint.plist; sourceTree = "<group>"; };
 		F734349D21F5786700C005E9 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		F734349E21F5786700C005E9 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
-		F73434A121F57E0D00C005E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = OrderCode/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		F73434A321F5B40C00C005E9 /* 游戏页面背景.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "游戏页面背景.mp3"; sourceTree = "<group>"; };
 		F767E9A521F6BC3C00ED86E5 /* GameContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameContainerView.h; sourceTree = "<group>"; };
 		F767E9A621F6BC3C00ED86E5 /* GameContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameContainerView.m; sourceTree = "<group>"; };
@@ -78,7 +100,6 @@
 		F794B02F2201A897004E9502 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/GameView.xib"; sourceTree = "<group>"; };
 		F794B0312201A907004E9502 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GameOverView.xib; sourceTree = "<group>"; };
 		F794B0352201A913004E9502 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/GameOverView.xib"; sourceTree = "<group>"; };
-		F794B0382201ABA4004E9502 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		F794B0392201ABAB004E9502 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7DA2BB621F2C5E20060C272 /* OrderCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DA2BB921F2C5E20060C272 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,7 +107,6 @@
 		F7DA2BBC21F2C5E20060C272 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F7DA2BBD21F2C5E20060C272 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F7DA2BC221F2C5E30060C272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F7DA2BC521F2C5E30060C272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7DA2BC721F2C5E30060C272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7DA2BC821F2C5E30060C272 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F7DA2BD021F2DA7C0060C272 /* 柔和的风.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "柔和的风.mp3"; sourceTree = "<group>"; };
@@ -107,6 +127,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7164291221278B20055B7AC /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				F7164292221278B20055B7AC /* FMDatabase.h */,
+				F7164293221278B20055B7AC /* FMDatabaseQueue.m */,
+				F7164294221278B20055B7AC /* FMResultSet.h */,
+				F7164295221278B20055B7AC /* FMDatabasePool.h */,
+				F7164296221278B20055B7AC /* FMDatabaseAdditions.m */,
+				F7164297221278B20055B7AC /* FMDatabase.m */,
+				F7164298221278B20055B7AC /* FMDatabaseQueue.h */,
+				F7164299221278B20055B7AC /* FMDB.h */,
+				F716429A221278B20055B7AC /* FMDatabaseAdditions.h */,
+				F716429B221278B20055B7AC /* FMDatabasePool.m */,
+				F716429C221278B20055B7AC /* FMResultSet.m */,
+				F716429D221278B20055B7AC /* Info.plist */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
 		F7206C6821F321DB003CCB2A /* checkPoint */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +204,7 @@
 		F7DA2BB821F2C5E20060C272 /* OrderCode */ = {
 			isa = PBXGroup;
 			children = (
+				F7164291221278B20055B7AC /* fmdb */,
 				F767E9B421F716FC00ED86E5 /* GameOver */,
 				F734349A21F575D200C005E9 /* Game */,
 				F7DA2BCF21F2DA680060C272 /* resource */,
@@ -175,8 +215,8 @@
 				F7DA2BBD21F2C5E20060C272 /* ViewController.m */,
 				F7DA2BD221F2DC380060C272 /* MainViewController.h */,
 				F7DA2BD321F2DC380060C272 /* MainViewController.m */,
-				F7274C2B21F825650049D5BE /* TeachViewController.h */,
-				F7274C2C21F825650049D5BE /* TeachViewController.m */,
+				F7274C2B21F825650049D5BE /* TeachingViewController.h */,
+				F7274C2C21F825650049D5BE /* TeachingViewController.m */,
 				F7DA2BB921F2C5E20060C272 /* AppDelegate.h */,
 				F7DA2BBA21F2C5E20060C272 /* AppDelegate.m */,
 				F7DA2BC221F2C5E30060C272 /* Assets.xcassets */,
@@ -278,10 +318,10 @@
 				F7206C6721F31D40003CCB2A /* 移动.mp3 in Resources */,
 				F7DA2BC321F2C5E30060C272 /* Assets.xcassets in Resources */,
 				F767E9B321F7153A00ED86E5 /* 金币.mp3 in Resources */,
-				F794B01222017BDD004E9502 /* InfoPlist.strings in Resources */,
 				F767E9AB21F6D30800ED86E5 /* Character.xib in Resources */,
 				F794B01E2201A580004E9502 /* SettingView.xib in Resources */,
 				F794B02A2201A891004E9502 /* GameView.xib in Resources */,
+				F71642AE2212909E0055B7AC /* InfoPlist.strings in Resources */,
 				F7206C6521F31D40003CCB2A /* 移动1.mp3 in Resources */,
 				F734349921F5584000C005E9 /* CheckPoint.plist in Resources */,
 				F7206C6A21F321FF003CCB2A /* CheckPointPage.xib in Resources */,
@@ -300,16 +340,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7274C2D21F825650049D5BE /* TeachViewController.m in Sources */,
+				F7274C2D21F825650049D5BE /* TeachingViewController.m in Sources */,
 				F734349F21F5786700C005E9 /* GameViewController.m in Sources */,
 				F7DA2BBE21F2C5E20060C272 /* ViewController.m in Sources */,
+				F71642A0221278B20055B7AC /* FMDatabase.m in Sources */,
 				F7DA2BC921F2C5E30060C272 /* main.m in Sources */,
+				F716429E221278B20055B7AC /* FMDatabaseQueue.m in Sources */,
+				F716429F221278B20055B7AC /* FMDatabaseAdditions.m in Sources */,
 				F7206C6D21F327F3003CCB2A /* CheckPointView.m in Sources */,
 				F767E9B121F6D37600ED86E5 /* CharacterView.m in Sources */,
 				F7DA2BBB21F2C5E20060C272 /* AppDelegate.m in Sources */,
 				F767E9A721F6BC3C00ED86E5 /* GameContainerView.m in Sources */,
 				F7DA2BD421F2DC380060C272 /* MainViewController.m in Sources */,
 				F7206C7021F32802003CCB2A /* CheckPointPageView.m in Sources */,
+				F71642A2221278B20055B7AC /* FMResultSet.m in Sources */,
+				F71642A1221278B20055B7AC /* FMDatabasePool.m in Sources */,
 				F7DA2BD921F303750060C272 /* SettingView.m in Sources */,
 				F767E9BB21F71F0500ED86E5 /* GameOverView.m in Sources */,
 			);
@@ -321,9 +366,9 @@
 		F73434A021F57E0D00C005E9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F73434A121F57E0D00C005E9 /* Base */,
 				F794B01A22018172004E9502 /* en */,
 				F794B01B2201818A004E9502 /* zh-Hans */,
+				F71642AA22127E260055B7AC /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -342,6 +387,7 @@
 			children = (
 				F794B01F2201A580004E9502 /* en */,
 				F794B0232201A59E004E9502 /* zh-Hans */,
+				F716428E22126F490055B7AC /* Base */,
 			);
 			name = SettingView.xib;
 			sourceTree = "<group>";
@@ -360,6 +406,7 @@
 			children = (
 				F794B02B2201A891004E9502 /* en */,
 				F794B02F2201A897004E9502 /* zh-Hans */,
+				F716428F22126F5F0055B7AC /* Base */,
 			);
 			name = GameView.xib;
 			sourceTree = "<group>";
@@ -369,6 +416,7 @@
 			children = (
 				F794B0312201A907004E9502 /* en */,
 				F794B0352201A913004E9502 /* zh-Hans */,
+				F716429022126F720055B7AC /* Base */,
 			);
 			name = GameOverView.xib;
 			sourceTree = "<group>";
@@ -376,9 +424,9 @@
 		F7DA2BC421F2C5E30060C272 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F7DA2BC521F2C5E30060C272 /* Base */,
-				F794B0382201ABA4004E9502 /* zh-Hans */,
 				F794B0392201ABAB004E9502 /* en */,
+				F716428C22126F0B0055B7AC /* Base */,
+				F71642A922127A310055B7AC /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

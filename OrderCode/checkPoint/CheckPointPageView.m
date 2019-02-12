@@ -28,12 +28,12 @@
     //设置scrollview的内容
     self.scrollView.contentSize = CGSizeMake(WIDTH, HEIGHT);
     //设置checkpoint
-    for (int i = 0; i < _checkPoints.count; i++) {
-        CheckPointView *cpv = [CheckPointView checkPoint];
-        cpv.musicPlay_yx = self.musicPlay_yx;
-        cpv.musicPlay = self.musicPlay;
-        cpv.checkPonitInfo = _checkPoints[i];
-        cpv.nc = self.nc;
+    for (int i = 0; i < _checkPointsSetting.count; i++) {
+        CheckPointView *cpv = [CheckPointView getCheckPoint];
+        cpv.musplay_yx = self.musplay_yx;
+        cpv.musplay = self.musplay;
+        cpv.checkPonitMessage = _checkPointsSetting[i];
+        cpv.navigationController = self.navigationcontroller;
         CGRect frame = CGRectMake((i % 3) * (check_f + margin_horizon) + margin_horizon, (i / 3) * (check_f + margin_vertical) + margin_vertical, check_f, check_f);
         cpv.frame = frame;
         [self.scrollView addSubview:cpv];

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GameOverView : UIView
 
-@property AVAudioPlayer *musicPlay_yx;
+@property AVAudioPlayer *musPlay_yx;
 @property NSDictionary *gameDetail;
 @property int is_star;
 @property int is_clear;

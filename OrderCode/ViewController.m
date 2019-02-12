@@ -22,25 +22,7 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    //初始化音乐播放器
-    NSURL *url = [[NSURL alloc]initFileURLWithPath:[[NSBundle mainBundle]pathForResource:@"柔和的风" ofType:@"mp3"]];
-    _musicPlay = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
-    _musicPlay.numberOfLoops = -1;//无限循环
-    [_musicPlay play];
-    
-    NSURL *url_yx = [[NSURL alloc]initFileURLWithPath:[[NSBundle mainBundle]pathForResource:@"点击按钮" ofType:@"mp3"]];
-    _musicPlay_yx = [[AVAudioPlayer alloc]initWithContentsOfURL:url_yx error:nil];
-    
-}
 
-/*
- 设置标题
- */
--(void)setTitleName{
-    
-}
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([segue.identifier isEqualToString:@"showMain"]) {
@@ -53,4 +35,16 @@
     }
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    //初始化音乐播放器
+    NSURL *url = [[NSURL alloc]initFileURLWithPath:[[NSBundle mainBundle]pathForResource:@"柔和的风" ofType:@"mp3"]];
+    _musicPlay = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
+    _musicPlay.numberOfLoops = -1;//无限循环
+    [_musicPlay play];
+    
+    NSURL *url_yx = [[NSURL alloc]initFileURLWithPath:[[NSBundle mainBundle]pathForResource:@"点击按钮" ofType:@"mp3"]];
+    _musicPlay_yx = [[AVAudioPlayer alloc]initWithContentsOfURL:url_yx error:nil];
+    
+}
 @end

@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="869.60000000000002" y="32.833583208395808"/>
         </scene>
-        <!--Teach View Controller-->
+        <!--Teaching View Controller-->
         <scene sceneID="6yh-2h-lnG">
             <objects>
-                <viewController id="nq3-41-Dzi" customClass="TeachViewController" sceneMemberID="viewController">
+                <viewController id="nq3-41-Dzi" customClass="TeachingViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CPo-La-wsO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,17 +172,17 @@
     <resources>
         <image name="开始游戏" width="238" height="84"/>
         <image name="开始游戏-点击" width="238" height="84"/>
-        <image name="教程" width="394" height="703"/>
+        <image name="教程" width="389" height="693"/>
         <image name="查看教程" width="191" height="71"/>
         <image name="查看教程-点击" width="191" height="71"/>
         <image name="确定" width="121" height="69"/>
         <image name="确定-点击" width="121" height="69"/>
-        <image name="背景-天空" width="256" height="256"/>
-        <image name="背景-宇宙" width="1920" height="1080"/>
+        <image name="背景-天空" width="252" height="252"/>
+        <image name="背景-宇宙" width="1893" height="1065"/>
         <image name="设置" width="28" height="29"/>
         <image name="设置-点击" width="28" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zmM-1K-0AV"/>
+        <segue reference="3T2-Wo-4e0"/>
     </inferredMetricsTieBreakers>
 </document>

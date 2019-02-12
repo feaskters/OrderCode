@@ -41,8 +41,8 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="SvP-bb-byZ"/>
             <connections>
-                <outlet property="level" destination="BqU-EQ-HN3" id="QiI-vI-24L"/>
-                <outlet property="star" destination="s7w-wE-ksV" id="VvX-Ov-Gpa"/>
+                <outlet property="levelNumber" destination="BqU-EQ-HN3" id="QiI-vI-24L"/>
+                <outlet property="shiningStar" destination="s7w-wE-ksV" id="VvX-Ov-Gpa"/>
             </connections>
             <point key="canvasLocation" x="105.59999999999999" y="53.973013493253376"/>
         </view>
@@ -50,7 +50,7 @@
     <resources>
         <image name="1" width="200" height="200"/>
         <image name="星星-空" width="188" height="179"/>
-        <image name="背景-设置2" width="266" height="278"/>
-        <image name="背景-设置3" width="442" height="193"/>
+        <image name="背景-设置2" width="262" height="275"/>
+        <image name="背景-设置3" width="436" height="190"/>
     </resources>
 </document>

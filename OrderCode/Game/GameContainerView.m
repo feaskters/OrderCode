@@ -20,88 +20,88 @@
 -(void)layoutSubviews{
     [super layoutSubviews];
     //添加地图块
-    for (int i = 0; i < 8; i++) {
-        for (int j = 0; j < 7; j++) {
-            UIImageView *imageview = [[UIImageView alloc]init];
-            UIImage *image = [[UIImage alloc]init];
-            switch ([self.gameDetail[@"block"][i][j] integerValue]) {
+    for (int k = 0; k < 8; k++) {
+        for (int l = 0; l < 7; l++) {
+            UIImageView *pictureView = [[UIImageView alloc]init];
+            UIImage *picture = [[UIImage alloc]init];
+            switch ([self.gameDetail[@"block"][k][l] integerValue]) {
                 case 0:
-                    image = [UIImage imageNamed:@"上下垂直"];
+                    picture = [UIImage imageNamed:@"上下垂直"];
                     break;
                 case 1:
-                    image = [UIImage imageNamed:@"左上"];
+                    picture = [UIImage imageNamed:@"左上"];
                     break;
                 case 2:
-                    image = [UIImage imageNamed:@"三叉-水平上"];
+                    picture = [UIImage imageNamed:@"三叉-水平上"];
                     break;
                 case 3:
-                    image = [UIImage imageNamed:@"右上"];
+                    picture = [UIImage imageNamed:@"右上"];
                     break;
                 case 4:
-                    image = [UIImage imageNamed:@"三叉-垂直左"];
+                    picture = [UIImage imageNamed:@"三叉-垂直左"];
                     break;
                 case 5:
-                    image = [UIImage imageNamed:@"水平"];
+                    picture = [UIImage imageNamed:@"水平"];
                     break;
                 case 6:
-                    image = [UIImage imageNamed:@"三叉-垂直右"];
+                    picture = [UIImage imageNamed:@"三叉-垂直右"];
                     break;
                 case 7:
-                    image = [UIImage imageNamed:@"左下"];
+                    picture = [UIImage imageNamed:@"左下"];
                     break;
                 case 8:
-                    image = [UIImage imageNamed:@"三叉-水平下"];
+                    picture = [UIImage imageNamed:@"三叉-水平下"];
                     break;
                 case 9:
-                    image = [UIImage imageNamed:@"右下"];
+                    picture = [UIImage imageNamed:@"右下"];
                     break;
                 case 10:
-                    image = [UIImage imageNamed:@"草地"];
+                    picture = [UIImage imageNamed:@"草地"];
                     break;
                 case 11:
-                    image = [UIImage imageNamed:@"下-封顶"];
+                    picture = [UIImage imageNamed:@"下-封顶"];
                     break;
                 case 12:
-                    image = [UIImage imageNamed:@"右-封顶"];
+                    picture = [UIImage imageNamed:@"右-封顶"];
                     break;
                 case 13:
-                    image = [UIImage imageNamed:@"十字路口"];
+                    picture = [UIImage imageNamed:@"十字路口"];
                     break;
                 case 14:
-                    image = [UIImage imageNamed:@"熊"];
+                    picture = [UIImage imageNamed:@"熊"];
                     break;
                 case 15:
-                    image = [UIImage imageNamed:@"企鹅"];
+                    picture = [UIImage imageNamed:@"企鹅"];
                     break;
                 case 16:
-                    image = [UIImage imageNamed:@"幽灵"];
+                    picture = [UIImage imageNamed:@"幽灵"];
                     break;
                 case 17:
-                    image = [UIImage imageNamed:@"牛"];
+                    picture = [UIImage imageNamed:@"牛"];
                     break;
                 default:
                     break;
             }
-            CGRect frame = CGRectMake(j * 50, i * 50, 50, 50);
-            imageview.frame = frame;
-            [imageview setImage:image];
-            [self addSubview: imageview];
+            CGRect frame = CGRectMake(l * 50, k * 50, 50, 50);
+            pictureView.frame = frame;
+            [pictureView setImage:picture];
+            [self addSubview: pictureView];
         }
     }
     //添加终点
-    UIImageView *imageViewEnd = [[UIImageView alloc]init];
-    NSMutableArray<UIImage *> *imageEnds = [NSMutableArray array];
-    for (int i = 1; i < 5; i ++) {
-        NSString *imageName = [NSString stringWithFormat:@"任意门 %d",i];
-        UIImage *imageEnd = [UIImage imageNamed:imageName];
-        [imageEnds addObject:imageEnd];
+    UIImageView *pictureViewEnd = [[UIImageView alloc]init];
+    NSMutableArray<UIImage *> *pictureEnds = [NSMutableArray array];
+    for (int l = 1; l < 5; l ++) {
+        NSString *pictureName = [NSString stringWithFormat:@"任意门 %d",l];
+        UIImage *pictureEnd = [UIImage imageNamed:pictureName];
+        [pictureEnds addObject:pictureEnd];
     }
-    imageViewEnd.animationImages = imageEnds;
-    imageViewEnd.animationDuration = 1;
+    pictureViewEnd.animationImages = pictureEnds;
+    pictureViewEnd.animationDuration = 1;
     CGRect frame = CGRectMake([self.gameDetail[@"终点"][0] integerValue] * 50, [self.gameDetail[@"终点"][1] integerValue] * 50, 50, 50);
-    imageViewEnd.frame = frame;
-    [self addSubview:imageViewEnd];
-    [imageViewEnd startAnimating];
+    pictureViewEnd.frame = frame;
+    [self addSubview:pictureViewEnd];
+    [pictureViewEnd startAnimating];
     //添加起始人物
     frame = CGRectMake([self.gameDetail[@"起点"][0] integerValue] * 50, [self.gameDetail[@"起点"][1] integerValue] * 50, 50, 50);
     self.character = [[CharacterView alloc]initWithFrame: frame];
@@ -109,8 +109,8 @@
     //初始化音效
     //初始化音乐播放器
     NSURL *url = [[NSURL alloc]initFileURLWithPath:[[NSBundle mainBundle]pathForResource:@"移动1" ofType:@"mp3"]];
-    _musicPlay_move = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
-    _musicPlay_move.volume = _musicPlay_yx.volume;
+    _musPlay_move = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
+    _musPlay_move.volume = _musPlay_yx.volume;
     //初始化金币
     self.coinView = [[UIImageView alloc]init];
     NSMutableArray<UIImage *> *coins = [NSMutableArray array];
@@ -124,8 +124,8 @@
     [self.coinView setAnimationImages:coins];
     [self addSubview:self.coinView];
     url = [[NSURL alloc]initFileURLWithPath:[[NSBundle mainBundle]pathForResource:@"金币" ofType:@"mp3"]];
-    _musicPlay_coin = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
-    _musicPlay_coin.volume = _musicPlay_yx.volume;
+    _musPlay_coin = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
+    _musPlay_coin.volume = _musPlay_yx.volume;
 }
 
 
@@ -133,9 +133,9 @@
     return [[NSBundle mainBundle]loadNibNamed:@"GameContainerView" owner:nil options:nil][0];
 }
 
--(NSArray *)move:(int)order{
-    [_musicPlay_move play];
-    switch (order) {
+-(NSArray *)move:(int)message{
+    [_musPlay_move play];
+    switch (message) {
         case 1:
             [self.character up];
             break;

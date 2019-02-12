@@ -20,12 +20,17 @@
 
 @implementation GameOverView
 
+
+- (IBAction)back:(UIButton *)sender {
+    [_musPlay_yx play];
+    [self.gvc back:sender];
+}
 -(void)layoutSubviews{
     [super layoutSubviews];
     //修改plist文件
     //沙盒路径
-    NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
-    NSString *path = [documentPath stringByAppendingPathComponent:@"CheckPoint.plist"];
+    NSString *docPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+    NSString *path = [docPath stringByAppendingPathComponent:@"CheckPoint.plist"];
     NSMutableArray *mArray = [NSMutableArray arrayWithContentsOfFile:path];
     //设置图片
     NSString *levelName = [[NSString alloc]initWithFormat:@"%@",self.gameDetail[@"level"]];
@@ -55,9 +60,4 @@
 +(instancetype)gameOverView{
     return [[NSBundle mainBundle]loadNibNamed:@"GameOverView" owner:nil options:nil][0];
 }
-- (IBAction)back:(UIButton *)sender {
-    [_musicPlay_yx play];
-    [self.gvc back:sender];
-}
-
 @end

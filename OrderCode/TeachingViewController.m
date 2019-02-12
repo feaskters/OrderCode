@@ -6,22 +6,20 @@
 //  Copyright © 2019年 iOS123. All rights reserved.
 //
 
-#import "TeachViewController.h"
+#import "TeachingViewController.h"
 
-@interface TeachViewController ()
+@interface TeachingViewController ()
 
 @end
 
-@implementation TeachViewController
+@implementation TeachingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 - (IBAction)back:(UIButton *)sender {
-    [_musicPlay_yx play];
+    [_musplay_yx play];
     [self dismissViewControllerAnimated:YES completion:^{
-        
     }];
 }
 

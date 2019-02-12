@@ -13,10 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SettingView : UIView
 //音乐播放器对象
-@property AVAudioPlayer *musicPlay;
+@property AVAudioPlayer *musplay;
 
 //音乐播放器对象
-@property AVAudioPlayer *musicPlay_yx;
+@property AVAudioPlayer *musplay_yx;
 
 +(instancetype)settingView;
 

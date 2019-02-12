@@ -10,8 +10,8 @@
 #import <AVFoundation/AVFoundation.h>
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TeachViewController : UIViewController
-@property AVAudioPlayer *musicPlay_yx;
+@interface TeachingViewController : UIViewController
+@property AVAudioPlayer *musplay_yx;
 @end
 
 NS_ASSUME_NONNULL_END

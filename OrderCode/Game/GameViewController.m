@@ -55,29 +55,29 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     //设置图片
-    NSString *levelName = [[NSString alloc]initWithFormat:@"%@",self.checkPointInfo[@"level"]];
+    NSString *levelName = [[NSString alloc]initWithFormat:@"%@",self.checkPointInfoMessage[@"level"]];
       [self.levelImage setImage:[UIImage imageNamed:levelName]];
     [self initAll];
     //播放背景
     //初始化音乐播放器
     NSURL *url = [[NSURL alloc]initFileURLWithPath:[[NSBundle mainBundle]pathForResource:@"游戏页面背景" ofType:@"mp3"]];
-    _musicPlay_bg = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
-    _musicPlay_bg.volume = _musicPlay.volume;
-    _musicPlay_bg.numberOfLoops = -1;//无限循环
-    [_musicPlay_bg play];
+    _musPlay_bg = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:nil];
+    _musPlay_bg.volume = _musplay.volume;
+    _musPlay_bg.numberOfLoops = -1;//无限循环
+    [_musPlay_bg play];
     //设置scrollview
     self.orderScrollView.frame = CGRectMake(self.orderScrollView.frame.origin.x, self.orderScrollView.frame.origin.y, self.gameView.frame.size.width, 40);
     self.orderScrollView.scrollEnabled = YES; self.orderScrollView.contentSize = CGSizeMake(36 * 40, 40);
     //初始化地图
     self.gcv = [GameContainerView gameContainer];
-    self.gcv.gameDetail = self.checkPointInfo;
-    self.gcv.musicPlay_yx = self.musicPlay_yx;
+    self.gcv.gameDetail = self.checkPointInfoMessage;
+    self.gcv.musPlay_yx = self.musPlay_yx;
     self.gcv.frame = CGRectMake(0, 0, self.gameView.frame.size.width, self.gameView.frame.size.height);
     [self.gameView addSubview:self.gcv];
     //初始化结算界面
     self.gov = [GameOverView gameOverView];
     self.gov.frame = self.view.frame;
-    self.gov.gameDetail = self.checkPointInfo;
+    self.gov.gameDetail = self.checkPointInfoMessage;
 }
 
 +(instancetype)gameView{
@@ -85,8 +85,8 @@
 }
 //返回
 - (IBAction)back:(UIButton *)sender {
-    [_musicPlay_yx play];
-    [_musicPlay_bg stop];
+    [_musPlay_yx play];
+    [_musPlay_bg stop];
     [self dismissViewControllerAnimated:YES completion:^{
         
     }];
@@ -103,7 +103,7 @@
         6 清空
  */
 - (IBAction)click:(UIButton *)sender {
-    [_musicPlay_yx play];
+    [_musPlay_yx play];
     switch (sender.tag) {
         case 0:
             //开始执行指令
@@ -149,6 +149,51 @@
             break;
     }
     [self refreshOrderScrollView];
+}
+
+
+
+//执行指令
+- (void)act{
+    //禁止点击所有按钮
+    self.upbtn.userInteractionEnabled = NO;
+    self.downbtn.userInteractionEnabled = NO;
+    self.leftbtn.userInteractionEnabled = NO;
+    self.rightbtn.userInteractionEnabled = NO;
+    self.startbtn.userInteractionEnabled = NO;
+    self.delete.userInteractionEnabled = NO;
+    self.cleanbtn.userInteractionEnabled = NO;
+    
+    //--------------------------------------------------
+    for (int i = 0; i < self.orderArray.count; i++) {
+        [NSTimer scheduledTimerWithTimeInterval:i repeats:NO block:^(NSTimer * _Nonnull timer) {
+            int num = (int)[self.orderArray[0] integerValue];
+            NSArray *location = [self.gcv move:num];
+            if ([location isEqualToArray:self.checkPointInfoMessage[@"金币"]]) {
+                [self.gcv.musPlay_coin play];
+                self.gcv.coinView.animationDuration = 1;
+                [self.gcv.coinView startAnimating];
+                self.gov.is_star = 1;
+            }
+            if (self.orderArray.count > 0) {
+                [self.orderArray removeObjectAtIndex:0];
+                [self refreshOrderScrollView];
+            }
+            if(self.orderArray.count == 0){
+                if ([location isEqualToArray:self.checkPointInfoMessage[@"终点"] ]) {
+                    self.gov.is_clear = 1;
+                }else{
+                    self.gov.is_clear = 0;
+                }
+                [NSTimer scheduledTimerWithTimeInterval:1 repeats:NO block:^(NSTimer * _Nonnull timer) {
+                    self.gov.gvc = self;
+                    [self.view addSubview:self.gov];
+                    [timer invalidate];
+                }];
+            }
+            [timer invalidate];
+        }];
+    }
 }
 
 //清空scrollView
@@ -198,51 +243,8 @@
             }else{
                 _orderScrollView.contentOffset = CGPointMake(0, 0);
             }
-           
+            
         }
-    }
-}
-
-//执行指令
-- (void)act{
-    //禁止点击所有按钮
-    self.upbtn.userInteractionEnabled = NO;
-    self.downbtn.userInteractionEnabled = NO;
-    self.leftbtn.userInteractionEnabled = NO;
-    self.rightbtn.userInteractionEnabled = NO;
-    self.startbtn.userInteractionEnabled = NO;
-    self.delete.userInteractionEnabled = NO;
-    self.cleanbtn.userInteractionEnabled = NO;
-    
-    //--------------------------------------------------
-    for (int i = 0; i < self.orderArray.count; i++) {
-        [NSTimer scheduledTimerWithTimeInterval:i repeats:NO block:^(NSTimer * _Nonnull timer) {
-            int num = (int)[self.orderArray[0] integerValue];
-            NSArray *location = [self.gcv move:num];
-            if ([location isEqualToArray:self.checkPointInfo[@"金币"]]) {
-                [self.gcv.musicPlay_coin play];
-                self.gcv.coinView.animationDuration = 1;
-                [self.gcv.coinView startAnimating];
-                self.gov.is_star = 1;
-            }
-            if (self.orderArray.count > 0) {
-                [self.orderArray removeObjectAtIndex:0];
-                [self refreshOrderScrollView];
-            }
-            if(self.orderArray.count == 0){
-                if ([location isEqualToArray:self.checkPointInfo[@"终点"] ]) {
-                    self.gov.is_clear = 1;
-                }else{
-                    self.gov.is_clear = 0;
-                }
-                [NSTimer scheduledTimerWithTimeInterval:1 repeats:NO block:^(NSTimer * _Nonnull timer) {
-                    self.gov.gvc = self;
-                    [self.view addSubview:self.gov];
-                    [timer invalidate];
-                }];
-            }
-            [timer invalidate];
-        }];
     }
 }
 

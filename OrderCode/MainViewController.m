@@ -10,13 +10,13 @@
 #import <AVFoundation/AVFoundation.h>
 #import "Setting/SettingView.h"
 #import "checkPoint/CheckPointPageView.h"
-#import "TeachViewController.h"
+#import "TeachingViewController.h"
 
 @interface MainViewController ()
 
 @property UIImageView *teach;
-@property NSInteger screenWidth;
-@property NSInteger screenHeight;
+@property NSInteger scWidth;
+@property NSInteger scHeight;
 @property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
 @property CheckPointPageView *cppv;
 
@@ -24,21 +24,12 @@
 
 @implementation MainViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.screenWidth = self.view.frame.size.width;
-    self.screenHeight = self.view.frame.size.height;
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    TeachingViewController *tvc = [segue destinationViewController];
+    tvc.musplay_yx = self._musicPlay_yx;
 }
 
--(void)viewDidDisappear:(BOOL)animated{
-    [__musicPlay pause];
-    [self.cppv removeFromSuperview];
-}
-
-- (void)viewDidAppear:(BOOL)animated{
-    [__musicPlay play];
-    [self addSelectCheckPointPage];
-}
 
 //关卡选择页面
 - (void)addSelectCheckPointPage{
@@ -57,10 +48,10 @@
     NSArray *array = [NSArray arrayWithContentsOfFile:fileName];
         //加载选择页面
     self.cppv = [CheckPointPageView checkPointPage];
-    self.cppv.musicPlay_yx = self._musicPlay_yx;
-    self.cppv.musicPlay = self._musicPlay;
-    self.cppv.checkPoints = array;
-    self.cppv.nc = self;
+    self.cppv.musplay_yx = self._musicPlay_yx;
+    self.cppv.musplay = self._musicPlay;
+    self.cppv.checkPointsSetting = array;
+    self.cppv.navigationcontroller = self;
     CGRect frame = CGRectMake(0, 0, _mainScrollView.frame.size.width, _mainScrollView.frame.size.height);
     self.cppv.frame = frame;
     [self.mainScrollView addSubview:self.cppv];
@@ -69,11 +60,11 @@
 //弹出设置页面
 - (IBAction)setting:(UIButton *)sender {
     [__musicPlay_yx play];
-    CGRect frame = CGRectMake(10, self.screenHeight / 8, self.screenWidth - 20, self.screenHeight / 1.3);
+    CGRect frame = CGRectMake(10, self.scHeight / 8, self.scWidth - 20, self.scHeight / 1.3);
     SettingView *view = [SettingView settingView];
     view.frame = frame;
-    view.musicPlay = self._musicPlay;
-    view.musicPlay_yx = self._musicPlay_yx;
+    view.musplay = self._musicPlay;
+    view.musplay_yx = self._musicPlay_yx;
     [self.view addSubview:view];
 }
 
@@ -82,9 +73,20 @@
     [__musicPlay_yx play];
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    TeachViewController *tvc = [segue destinationViewController];
-    tvc.musicPlay_yx = self._musicPlay_yx;
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.scWidth = self.view.frame.size.width;
+    self.scHeight = self.view.frame.size.height;
 }
 
+-(void)viewDidDisappear:(BOOL)animated{
+    [__musicPlay pause];
+    [self.cppv removeFromSuperview];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [__musicPlay play];
+    [self addSelectCheckPointPage];
+}
 @end

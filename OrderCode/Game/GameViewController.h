@@ -14,14 +14,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GameViewController : UIViewController
 
-@property AVAudioPlayer *musicPlay;
-@property AVAudioPlayer *musicPlay_yx;//音效
-@property AVAudioPlayer *musicPlay_bg;//背景
-@property AVAudioPlayer *musicPlay_yx1;//音效
+@property AVAudioPlayer *musplay;
+@property AVAudioPlayer *musPlay_yx;//音效
+@property AVAudioPlayer *musPlay_bg;//背景
+@property AVAudioPlayer *musPlay_yx1;//音效
 
 @property (weak, nonatomic) IBOutlet UIImageView *levelImage;
 
-@property NSDictionary *checkPointInfo;
+@property NSDictionary *checkPointInfoMessage;
 
 - (IBAction)back:(UIButton *)sender;
 +(instancetype)gameView;

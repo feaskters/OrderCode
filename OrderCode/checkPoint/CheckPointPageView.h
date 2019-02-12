@@ -13,14 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CheckPointPageView : UIView
 
-@property UIViewController *nc;//main的navigationcontroller
+@property UIViewController *navigationcontroller;//main的navigationcontroller
 
-@property AVAudioPlayer *musicPlay;
-@property AVAudioPlayer *musicPlay_yx;
+@property AVAudioPlayer *musplay;
+@property AVAudioPlayer *musplay_yx;
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
-@property NSArray *checkPoints;
+@property NSArray *checkPointsSetting;
 
 +(instancetype)checkPointPage;
 

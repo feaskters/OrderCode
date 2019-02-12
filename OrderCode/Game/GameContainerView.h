@@ -14,13 +14,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @property UIImageView *coinView;
-@property AVAudioPlayer *musicPlay_coin;
-@property AVAudioPlayer *musicPlay_yx;
-@property AVAudioPlayer *musicPlay_move;
+@property AVAudioPlayer *musPlay_coin;
+@property AVAudioPlayer *musPlay_yx;
+@property AVAudioPlayer *musPlay_move;
 @property NSDictionary *gameDetail;
 +(instancetype)gameContainer;
 //移动并返回当前位置
--(NSArray *)move:(int)order;
+-(NSArray *)move:(int)message;
 @end
 
 NS_ASSUME_NONNULL_END

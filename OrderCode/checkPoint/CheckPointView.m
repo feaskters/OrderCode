@@ -19,50 +19,50 @@
     return self;
 }
 
--(void)layoutSubviews{
-    [super layoutSubviews];
-    //是否可点击
-    if ([_checkPonitInfo[@"enable"] boolValue]) {
-        [self setUserInteractionEnabled:true];
-        [self.level setBackgroundImage:[UIImage imageNamed:@"背景-设置2"] forState:UIControlStateNormal];
-        [self setAlpha:1];
-    }else
-    {
-        [self setUserInteractionEnabled:false];
-         [self.level setBackgroundImage:[UIImage imageNamed:@"背景-设置3"] forState:UIControlStateNormal];
-        [self setAlpha:0.5];
-    }
-    //是否有星星
-    if ([_checkPonitInfo[@"is_star"] boolValue]) {
-        UIImage *starImage = [UIImage imageNamed:@"星星-满"];
-        [self.star setImage: starImage];
-    }else
-    {
-        UIImage *starImage = [UIImage imageNamed:@"星星-空"];
-        [self.star setImage: starImage];
-    }
-    //关卡等级
-    NSString *levelImageName = [[NSString alloc]initWithFormat:@"%@",_checkPonitInfo[@"level"]];
-    UIImage *levelImage = [UIImage imageNamed:levelImageName];
-    [self.level setImage:levelImage forState:UIControlStateNormal];
-}
 
-+(instancetype)checkPoint{
++(instancetype)getCheckPoint{
     return [[NSBundle mainBundle]loadNibNamed:@"CheckPoint" owner:nil options:nil][0];
 }
 
 //开始关卡
 - (IBAction)enterGame:(UIButton *)sender {
-    [_musicPlay_yx play];
+    [_musplay_yx play];
     GameViewController *gcv = [GameViewController gameView];
-    gcv.musicPlay_yx = self.musicPlay_yx;
-    gcv.musicPlay = self.musicPlay;
-    gcv.checkPointInfo = self.checkPonitInfo;
-    [self.nc presentViewController:gcv animated:YES completion:^{
-        [self.musicPlay pause];
+    gcv.musPlay_yx = self.musplay_yx;
+    gcv.musplay = self.musplay;
+    gcv.checkPointInfoMessage = self.checkPonitMessage;
+    [self.navigationController presentViewController:gcv animated:YES completion:^{
+        [self.musplay pause];
     }];
     
 }
 
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    //是否可点击
+    if ([_checkPonitMessage[@"enable"] boolValue]) {
+        [self setUserInteractionEnabled:true];
+        [self.levelNumber setBackgroundImage:[UIImage imageNamed:@"背景-设置2"] forState:UIControlStateNormal];
+        [self setAlpha:1];
+    }else
+    {
+        [self setUserInteractionEnabled:false];
+        [self.levelNumber setBackgroundImage:[UIImage imageNamed:@"背景-设置3"] forState:UIControlStateNormal];
+        [self setAlpha:0.5];
+    }
+    //是否有星星
+    if ([_checkPonitMessage[@"is_star"] boolValue]) {
+        UIImage *starImage = [UIImage imageNamed:@"星星-满"];
+        [self.shiningStar setImage: starImage];
+    }else
+    {
+        UIImage *starImage = [UIImage imageNamed:@"星星-空"];
+        [self.shiningStar setImage: starImage];
+    }
+    //关卡等级
+    NSString *levelImageName = [[NSString alloc]initWithFormat:@"%@",_checkPonitMessage[@"level"]];
+    UIImage *levelImage = [UIImage imageNamed:levelImageName];
+    [self.levelNumber setImage:levelImage forState:UIControlStateNormal];
+}
 
 @end
