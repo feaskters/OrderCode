@@ -70,9 +70,14 @@
         [self.character competition_left];
     }else{
         [self.character competition_right];
-        
     }
     NSLog(@"%@",[self.character location]);
+}
+
+//开始游戏
+- (IBAction)start:(UIButton *)sender {
+    [_musPlay_yx play];
+    sender.hidden = YES;
 }
 
 @end

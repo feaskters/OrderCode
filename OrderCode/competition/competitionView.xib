@@ -92,6 +92,9 @@
                             <color key="titleColor" red="1" green="0.33346716366240148" blue="0.37636028229095486" alpha="0.85067958047945202" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                         <state key="highlighted" backgroundImage="空白按钮-点击"/>
+                        <connections>
+                            <action selector="start:" destination="zVN-BK-pnH" eventType="touchUpInside" id="NQO-bu-tbr"/>
+                        </connections>
                     </button>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
