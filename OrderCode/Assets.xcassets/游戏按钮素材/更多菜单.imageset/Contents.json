@@ -1,6 +1,20 @@
 {
   "images" : [
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 100,
+          "top" : 100,
+          "right" : 142,
+          "left" : 118
+        }
+      },
       "idiom" : "universal",
       "filename" : "科幻网游《荒野星球》全套UI-对话框中气泡 TEMP_228_爱给网_aigei_com.png",
       "scale" : "1x"

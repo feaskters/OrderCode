@@ -96,6 +96,12 @@
                             <action selector="start:" destination="zVN-BK-pnH" eventType="touchUpInside" id="NQO-bu-tbr"/>
                         </connections>
                     </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3yS-Sd-RY4">
+                        <rect key="frame" x="124" y="581" width="127" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="PDz-KK-Mmt"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
@@ -111,22 +117,27 @@
                     <constraint firstItem="QKE-4c-Ize" firstAttribute="top" secondItem="Gi8-2G-jc5" secondAttribute="top" id="OSi-I6-VHT"/>
                     <constraint firstItem="W0J-6F-gKz" firstAttribute="width" secondItem="0Yx-Ma-9MB" secondAttribute="width" constant="-30" id="QRD-Pe-sXX"/>
                     <constraint firstItem="W0J-6F-gKz" firstAttribute="centerX" secondItem="0Yx-Ma-9MB" secondAttribute="centerX" id="Rro-6k-taX"/>
+                    <constraint firstItem="3yS-Sd-RY4" firstAttribute="leading" secondItem="hIR-KW-4k4" secondAttribute="trailing" constant="4" id="VGr-Fs-RwV"/>
                     <constraint firstItem="hIR-KW-4k4" firstAttribute="top" secondItem="0Yx-Ma-9MB" secondAttribute="bottom" constant="30" id="Wlc-nC-fPm"/>
+                    <constraint firstItem="3yS-Sd-RY4" firstAttribute="centerY" secondItem="hIR-KW-4k4" secondAttribute="centerY" id="Z0p-Cb-uWu"/>
                     <constraint firstItem="dvX-Sy-Czb" firstAttribute="trailing" secondItem="qfZ-tN-KhF" secondAttribute="trailing" constant="-20" id="aIg-mV-2b7"/>
                     <constraint firstItem="qfZ-tN-KhF" firstAttribute="trailing" secondItem="Lle-SD-4YB" secondAttribute="trailing" id="eBq-4h-w3m"/>
                     <constraint firstItem="QKE-4c-Ize" firstAttribute="height" secondItem="Gi8-2G-jc5" secondAttribute="height" id="eDQ-79-ESP"/>
                     <constraint firstItem="Lle-SD-4YB" firstAttribute="top" secondItem="7mo-9s-NwZ" secondAttribute="top" id="fLI-TR-nBG"/>
+                    <constraint firstItem="dvX-Sy-Czb" firstAttribute="leading" secondItem="3yS-Sd-RY4" secondAttribute="trailing" constant="4" id="gs8-jF-PtF"/>
                     <constraint firstItem="RCG-gj-sSa" firstAttribute="centerX" secondItem="W0J-6F-gKz" secondAttribute="centerX" id="h7X-Sg-SIo"/>
                     <constraint firstItem="W0J-6F-gKz" firstAttribute="centerY" secondItem="0Yx-Ma-9MB" secondAttribute="centerY" id="mru-Ug-Ceg"/>
                     <constraint firstItem="RCG-gj-sSa" firstAttribute="centerY" secondItem="W0J-6F-gKz" secondAttribute="centerY" id="oqF-tz-slC"/>
                     <constraint firstItem="W0J-6F-gKz" firstAttribute="height" secondItem="0Yx-Ma-9MB" secondAttribute="height" constant="-30" id="pKm-4K-gIa"/>
                     <constraint firstItem="QKE-4c-Ize" firstAttribute="leading" secondItem="Gi8-2G-jc5" secondAttribute="trailing" id="wfg-LQ-MIa"/>
+                    <constraint firstItem="3yS-Sd-RY4" firstAttribute="centerX" secondItem="7mo-9s-NwZ" secondAttribute="centerX" id="yJH-ey-hhM"/>
                     <constraint firstItem="0Yx-Ma-9MB" firstAttribute="centerX" secondItem="7mo-9s-NwZ" secondAttribute="centerX" id="z65-H4-4S4"/>
                 </constraints>
                 <viewLayoutGuide key="safeArea" id="qfZ-tN-KhF"/>
             </view>
             <connections>
                 <outlet property="gameView" destination="W0J-6F-gKz" id="EZw-rY-2H0"/>
+                <outlet property="lifeView" destination="3yS-Sd-RY4" id="aEm-Ji-WxL"/>
                 <outlet property="score" destination="QKE-4c-Ize" id="ahU-oE-vpf"/>
                 <outlet property="view" destination="7mo-9s-NwZ" id="eUH-ua-LS2"/>
             </connections>

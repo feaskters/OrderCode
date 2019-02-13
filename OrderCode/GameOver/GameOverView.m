@@ -25,6 +25,7 @@
     [_musPlay_yx play];
     [self.gvc back:sender];
 }
+
 -(void)layoutSubviews{
     [super layoutSubviews];
     //修改plist文件

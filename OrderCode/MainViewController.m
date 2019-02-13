@@ -20,6 +20,8 @@
 @property NSInteger scHeight;
 @property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
 @property CheckPointPageView *cppv;
+@property UIView *moreView;
+@property UIImageView *moreImageView;
 
 @end
 
@@ -68,6 +70,30 @@
     view.musplay_yx = self._musicPlay_yx;
     [self.view addSubview:view];
 }
+//更多
+- (IBAction)more:(UIButton *)sender {
+    [__musicPlay_yx play];
+    if ([sender.titleLabel.text isEqualToString:@"BACK"]) {
+        [sender setTitle:@"MORE" forState:UIControlStateNormal];
+        [sender setTitle:@"MORE" forState:UIControlStateHighlighted];
+        //动画消失背景
+        [UIView animateWithDuration:1 animations:^{
+            self.moreImageView.frame = CGRectMake(0, 0, self.moreView.frame.size.width, 0);
+        } completion:^(BOOL finished) {
+        }];
+    }else{
+        [sender setTitle:@"BACK" forState:UIControlStateNormal];
+        [sender setTitle:@"BACK" forState:UIControlStateHighlighted];
+        [self.view addSubview:self.moreView];
+        [self.moreView addSubview:self.moreImageView];
+        //动画显示背景
+        [UIView animateWithDuration:1 animations:^{
+            self.moreImageView.frame = CGRectMake(0, 0, self.moreView.frame.size.width, self.moreView.frame.size.height);
+        } completion:^(BOOL finished) {
+        }];
+    }
+    
+}
 
 //教程页面
 - (IBAction)teach:(UIButton *)sender {
@@ -90,6 +116,14 @@
     [super viewDidLoad];
     self.scWidth = self.view.frame.size.width;
     self.scHeight = self.view.frame.size.height;
+    //更多view
+    self.moreView = [[UIView alloc]init];
+    self.moreView.frame = CGRectMake(self.mainScrollView.frame.origin.x, self.mainScrollView.frame.origin.y, self.scWidth - 20, _scHeight - 200);
+    self.moreView.backgroundColor = nil;
+    //view的背景
+    UIImage *image = [UIImage imageNamed:@"更多菜单"];
+    self.moreImageView = [[UIImageView alloc]initWithImage:image];
+    self.moreImageView.frame = CGRectMake(0, 0, self.moreView.frame.size.width, 20);
 }
 
 -(void)viewDidDisappear:(BOOL)animated{

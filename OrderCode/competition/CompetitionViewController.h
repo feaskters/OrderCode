@@ -15,7 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property AVAudioPlayer *musplay;
 @property AVAudioPlayer *musPlay_yx;//音效
 @property AVAudioPlayer *musPlay_bg;//背景
+@property AVAudioPlayer *musPlay_kx;//扣血
+
 + (instancetype) competitionView;
+- (IBAction)back:(UIButton *)sender;
 
 @end
 
