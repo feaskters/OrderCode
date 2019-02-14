@@ -13,13 +13,15 @@ IOS游戏项目-指令代码
 4. 图片拉伸保护
 5. 不同状态按钮的使用
 6. 帧动画的使用
-7. ustimer的使用
+7. nstimer的使用
 8. 使用animation来使人物移动
 9. uiscrollView的使用
 10. 使用plist加载数据
 11. 使用`arc4random()`生成随机数
 12. 自定义代理的使用
 13. fmdb
+14. 使用`+load`方法来初始化数据
+15. 通过`nsobject`保存对象
 ## 所用资源
 1. 来自[爱给网](http://www.aigei.com/)的图片和图标
 2. 来自[站长素材](http://sc.chinaz.com/yinxiao/)的音效
