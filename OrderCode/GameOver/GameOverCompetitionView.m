@@ -7,6 +7,7 @@
 //
 
 #import "GameOverCompetitionView.h"
+#import "../db/UserDb.h"
 
 @interface GameOverCompetitionView()
 
@@ -31,6 +32,9 @@
 }
 
 - (IBAction)menu:(UIButton *)sender {
+    UserDb *db = [UserDb sharedUserDb];
+    [db insertCompetitionWithName:self.name.text score:self.score.text];
+    //调用competitionViewController的返回方法
     [self.cvc back:sender];
 }
 

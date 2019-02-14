@@ -99,20 +99,8 @@
                                     <segue destination="nq3-41-Dzi" kind="show" id="lsv-qQ-0va"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2t-Z0-ZR8">
-                                <rect key="frame" x="91.5" y="603" width="192" height="57"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="57" id="6dx-40-moi"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="24"/>
-                                <state key="normal" title="competition" backgroundImage="空白按钮"/>
-                                <state key="highlighted" title="competition" backgroundImage="空白按钮-点击"/>
-                                <connections>
-                                    <action selector="competition:" destination="d4x-78-fZC" eventType="touchUpInside" id="UeD-P8-N7T"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKz-JB-EUc">
-                                <rect key="frame" x="91" y="548" width="192" height="57"/>
+                                <rect key="frame" x="91.5" y="590" width="192" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="vR0-Gm-hZk"/>
                                 </constraints>
@@ -132,18 +120,15 @@
                             <constraint firstItem="AzY-sa-5UI" firstAttribute="bottom" secondItem="1I7-TM-t1f" secondAttribute="bottom" constant="100" id="AJe-2e-Hnz"/>
                             <constraint firstItem="JQd-8b-sW0" firstAttribute="top" secondItem="AzY-sa-5UI" secondAttribute="top" constant="20" id="CVM-bP-BzA"/>
                             <constraint firstItem="dob-sm-yE0" firstAttribute="leading" secondItem="AzY-sa-5UI" secondAttribute="leading" id="Eg4-cR-htA"/>
-                            <constraint firstItem="a2t-Z0-ZR8" firstAttribute="centerX" secondItem="t2z-tT-GVv" secondAttribute="centerX" id="GFl-74-9JK"/>
                             <constraint firstItem="mTu-Xl-kpO" firstAttribute="trailing" secondItem="1I7-TM-t1f" secondAttribute="trailing" id="HWP-WM-iXN"/>
                             <constraint firstItem="AzY-sa-5UI" firstAttribute="trailing" secondItem="1I7-TM-t1f" secondAttribute="trailing" constant="10" id="M51-Ie-MMw"/>
                             <constraint firstItem="1I7-TM-t1f" firstAttribute="top" secondItem="dob-sm-yE0" secondAttribute="top" constant="100" id="Qe7-05-Pdd"/>
                             <constraint firstItem="mTu-Xl-kpO" firstAttribute="top" secondItem="t2z-tT-GVv" secondAttribute="top" constant="20" id="Vxb-9p-JeO"/>
                             <constraint firstAttribute="trailing" secondItem="dob-sm-yE0" secondAttribute="trailing" id="bkd-nO-sQU"/>
-                            <constraint firstItem="QKz-JB-EUc" firstAttribute="leading" secondItem="AzY-sa-5UI" secondAttribute="leading" constant="91" id="esg-7x-B8l"/>
+                            <constraint firstItem="QKz-JB-EUc" firstAttribute="centerX" secondItem="t2z-tT-GVv" secondAttribute="centerX" id="ckw-A2-eX7"/>
                             <constraint firstItem="JQd-8b-sW0" firstAttribute="leading" secondItem="AzY-sa-5UI" secondAttribute="leading" constant="16" id="h0f-Yv-L81"/>
-                            <constraint firstItem="AzY-sa-5UI" firstAttribute="trailing" secondItem="QKz-JB-EUc" secondAttribute="trailing" constant="92" id="kda-VV-t9y"/>
-                            <constraint firstItem="AzY-sa-5UI" firstAttribute="bottom" secondItem="a2t-Z0-ZR8" secondAttribute="bottom" constant="7" id="mYi-GD-Esw"/>
                             <constraint firstItem="AzY-sa-5UI" firstAttribute="bottom" secondItem="dob-sm-yE0" secondAttribute="bottom" id="pwx-lh-TlK"/>
-                            <constraint firstItem="AzY-sa-5UI" firstAttribute="bottom" secondItem="QKz-JB-EUc" secondAttribute="bottom" constant="62" id="yl6-ng-U0V"/>
+                            <constraint firstItem="AzY-sa-5UI" firstAttribute="bottom" secondItem="QKz-JB-EUc" secondAttribute="bottom" constant="20" id="yl6-ng-U0V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AzY-sa-5UI"/>
                     </view>

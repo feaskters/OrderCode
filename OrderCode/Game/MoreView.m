@@ -10,12 +10,27 @@
 
 @implementation MoreView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        
+    }
+    return self;
 }
-*/
+
++(instancetype)moreView{
+    return [[NSBundle mainBundle]loadNibNamed:@"MoreView" owner:nil options:nil][0];
+}
+
+//点击competition
+- (IBAction)competition:(UIButton *)sender {
+    [self.delegate LSMoreViewCompetitionButtonClick];
+}
+
+//点击rank
+- (IBAction)rank:(UIButton *)sender {
+    [self.delegate LSMoreViewRankButtonClick];
+}
 
 @end

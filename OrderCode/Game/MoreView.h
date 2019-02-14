@@ -10,8 +10,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+//代理协议
+@protocol LSMoreViewDelegate <NSObject>
+
+@optional
+-(void)LSMoreViewCompetitionButtonClick;
+-(void)LSMoreViewRankButtonClick;
+@end
+
 @interface MoreView : UIView
 
++(instancetype)moreView;
+@property (nonatomic,weak) id<LSMoreViewDelegate> delegate;
 @end
 
 NS_ASSUME_NONNULL_END

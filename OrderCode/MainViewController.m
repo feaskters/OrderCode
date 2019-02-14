@@ -12,8 +12,11 @@
 #import "checkPoint/CheckPointPageView.h"
 #import "TeachingViewController.h"
 #import "competition/CompetitionViewController.h"
+#import "Game/MoreView.h"
+#import "db/UserDb.h"
+#import "rank/RankViewController.h"
 
-@interface MainViewController ()
+@interface MainViewController ()<LSMoreViewDelegate>
 
 @property UIImageView *teach;
 @property NSInteger scWidth;
@@ -22,11 +25,20 @@
 @property CheckPointPageView *cppv;
 @property UIView *moreView;
 @property UIImageView *moreImageView;
+@property (nonatomic) MoreView *moreViewContent;//moreview的内容
 
 @end
 
 @implementation MainViewController
 
+//懒加载moreViewContent
+- (MoreView *)moreViewContent{
+    if (_moreViewContent == nil) {
+        _moreViewContent = [MoreView moreView];
+        _moreViewContent.frame = CGRectMake(0, 0, self.mainScrollView.frame.size.width, self.mainScrollView.frame.size.height);
+    }
+    return _moreViewContent;
+}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     TeachingViewController *tvc = [segue destinationViewController];
@@ -79,17 +91,30 @@
         //动画消失背景
         [UIView animateWithDuration:1 animations:^{
             self.moreImageView.frame = CGRectMake(0, 0, self.moreView.frame.size.width, 0);
+            self.moreViewContent.alpha = 0;
         } completion:^(BOOL finished) {
+            if (self.moreImageView.frame.size.height == 0 && self.moreViewContent.alpha == 0) {
+                [self.moreImageView removeFromSuperview];
+                [self.moreView removeFromSuperview];
+                [self.moreViewContent removeFromSuperview];
+            }
         }];
     }else{
+        //改变按钮文字
         [sender setTitle:@"BACK" forState:UIControlStateNormal];
         [sender setTitle:@"BACK" forState:UIControlStateHighlighted];
+        //添加背景和内容
         [self.view addSubview:self.moreView];
         [self.moreView addSubview:self.moreImageView];
+        [self.moreView addSubview:self.moreViewContent];
+        self.moreViewContent.frame = CGRectMake(0, 0, self.moreView.frame.size.width, self.moreView.frame.size.height);
+        self.moreViewContent.alpha = 0;
         //动画显示背景
         [UIView animateWithDuration:1 animations:^{
             self.moreImageView.frame = CGRectMake(0, 0, self.moreView.frame.size.width, self.moreView.frame.size.height);
+            self.moreViewContent.alpha = 1;
         } completion:^(BOOL finished) {
+            
         }];
     }
     
@@ -98,17 +123,6 @@
 //教程页面
 - (IBAction)teach:(UIButton *)sender {
     [__musicPlay_yx play];
-}
-
-//竞赛模式
-- (IBAction)competition:(UIButton *)sender {
-    [__musicPlay_yx play];
-    CompetitionViewController *cvc = [CompetitionViewController competitionView];
-    cvc.musPlay_yx = self._musicPlay_yx;
-    cvc.musplay = self._musicPlay;
-    [self presentViewController:cvc animated:YES completion:^{
-        
-    }];
 }
 
 
@@ -121,9 +135,13 @@
     self.moreView.frame = CGRectMake(self.mainScrollView.frame.origin.x, self.mainScrollView.frame.origin.y, self.scWidth - 20, _scHeight - 200);
     self.moreView.backgroundColor = nil;
     //view的背景
-    UIImage *image = [UIImage imageNamed:@"更多菜单"];
+    UIImage *image = [UIImage imageNamed:@"背景-设置2"];
     self.moreImageView = [[UIImageView alloc]initWithImage:image];
     self.moreImageView.frame = CGRectMake(0, 0, self.moreView.frame.size.width, 20);
+    //moreView的内容
+    self.moreViewContent = [MoreView moreView];
+    //设置moreview代理
+    self.moreViewContent.delegate = self;
 }
 
 -(void)viewDidDisappear:(BOOL)animated{
@@ -135,4 +153,30 @@
     [__musicPlay play];
     [self addSelectCheckPointPage];
 }
+
+
+#pragma mark LSMoreViewDelegate
+
+//排行榜
+-(void)LSMoreViewRankButtonClick{
+    [self._musicPlay_yx play];
+    RankViewController *rvc = [[RankViewController alloc]init];
+    [self presentViewController:rvc animated:YES completion:^{
+        
+    }];
+//    UserDb *db = [UserDb sharedUserDb];
+//    [db SelectCompetition];
+}
+
+//竞赛模式
+-(void)LSMoreViewCompetitionButtonClick{
+    [self._musicPlay_yx play];
+    CompetitionViewController *cvc = [CompetitionViewController competitionView];
+    cvc.musPlay_yx = self._musicPlay_yx;
+    cvc.musplay = self._musicPlay;
+    [self presentViewController:cvc animated:YES completion:^{
+        
+    }];
+}
+
 @end
