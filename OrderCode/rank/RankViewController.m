@@ -46,6 +46,8 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     RankTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"rankCell"];
     cell = [RankTableViewCell rankTableViewCell];
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:indexPath.row + 1],@"rank",[self.infoArray[indexPath.row] valueForKey:@"name"],@"name",[self.infoArray[indexPath.row] valueForKey:@"score"],@"score", nil];
+    cell.rankInfo = dic;
     return cell;
 }
 

@@ -8,6 +8,15 @@
 
 #import "RankTableViewCell.h"
 
+@interface RankTableViewCell()
+
+@property (weak, nonatomic) IBOutlet UILabel *rank;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *score;
+
+
+@end
+
 @implementation RankTableViewCell
 
 - (void)awakeFromNib {
@@ -22,6 +31,9 @@
     [super layoutSubviews];
     self.backgroundColor = nil;
     self.contentView.backgroundColor = nil;
+    self.rank.text = [NSString stringWithFormat:@"%@", self.rankInfo[@"rank"] ];
+    self.name.text = self.rankInfo[@"name"];
+    self.score.text = [NSString stringWithFormat:@"%@", self.rankInfo[@"score"]];
 }
 
 @end

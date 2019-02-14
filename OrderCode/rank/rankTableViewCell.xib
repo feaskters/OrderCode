@@ -50,6 +50,11 @@
                     <constraint firstItem="3jL-FN-cIX" firstAttribute="leading" secondItem="kMO-62-YpW" secondAttribute="leading" constant="20" id="sJs-CF-x5k"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="name" destination="nog-ya-zDp" id="pJn-D8-AQY"/>
+                <outlet property="rank" destination="3jL-FN-cIX" id="GI8-tx-lEP"/>
+                <outlet property="score" destination="C0O-XK-87d" id="bq9-bc-n5g"/>
+            </connections>
             <point key="canvasLocation" x="868" y="132.23388305847078"/>
         </tableViewCell>
     </objects>
