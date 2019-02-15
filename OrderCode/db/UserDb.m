@@ -23,9 +23,10 @@ static UserDb *_instance;
 + (void)load{
     _instance = [[UserDb alloc]init];
     //沙盒地址
-    NSString *path  = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *path  = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
     //数据库地址
-    NSString *dbPath = [path stringByAppendingString:@"user.sqlite"];
+    NSString *dbPath = [path stringByAppendingString:@"/user.sqlite"];
+    NSLog(@"%@",dbPath);
     //加载数据库
     _instance.db = [FMDatabase databaseWithPath:dbPath];
     //创建表
