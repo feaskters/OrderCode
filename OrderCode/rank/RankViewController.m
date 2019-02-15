@@ -17,6 +17,7 @@
 
 @implementation RankViewController
 
+//懒加载infoArray
 - (NSArray *)infoArray{
     if (_infoArray == nil) {
         UserDb *db = [UserDb sharedUserDb];
@@ -33,6 +34,13 @@
     [self.rankTableView registerClass:[RankTableViewCell classForCoder] forCellReuseIdentifier:@"rankCell"];
 }
 
+//返回
+- (IBAction)back:(UIButton *)sender {
+    [_musicPlay_yx play];
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
 #pragma mark tableViewDatasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{

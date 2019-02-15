@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="zVN-BK-pnH" customClass="CompetitionViewController">
+            <view key="view" contentMode="scaleToFill" id="7mo-9s-NwZ">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景-游戏" translatesAutoresizingMaskIntoConstraints="NO" id="Lle-SD-4YB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qv8-pk-Ybq">
+                        <rect key="frame" x="20" y="43" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Ehe-ts-ySe"/>
+                            <constraint firstAttribute="width" constant="40" id="bVg-jn-Mdy"/>
+                        </constraints>
+                        <state key="normal" image="返回"/>
+                        <state key="highlighted" image="返回-点击"/>
+                        <connections>
+                            <action selector="back:" destination="zVN-BK-pnH" eventType="touchUpInside" id="Emz-z7-CDa"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="地图块0" translatesAutoresizingMaskIntoConstraints="NO" id="0Yx-Ma-9MB">
+                        <rect key="frame" x="-2.5" y="96" width="380" height="430"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="430" id="cT3-Sq-Duw"/>
+                            <constraint firstAttribute="width" constant="380" id="cci-gc-ZuV"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0J-6F-gKz">
+                        <rect key="frame" x="12.5" y="111" width="350" height="400"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvX-Sy-Czb">
+                        <rect key="frame" x="255" y="556" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="WrT-9h-1rJ"/>
+                            <constraint firstAttribute="width" constant="100" id="cjW-xG-fmT"/>
+                        </constraints>
+                        <state key="normal" image="右"/>
+                        <connections>
+                            <action selector="btnClick:" destination="zVN-BK-pnH" eventType="touchUpInside" id="GnL-Mi-J5V"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gi8-2G-jc5">
+                        <rect key="frame" x="110" y="38" width="141" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="141" id="AHj-0e-prC"/>
+                            <constraint firstAttribute="height" constant="50" id="GYt-hI-x0e"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                        <color key="textColor" red="0.92651491119999996" green="0.60906271079999996" blue="0.3702167442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIR-KW-4k4">
+                        <rect key="frame" x="20" y="556" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Keh-Yr-iRh"/>
+                            <constraint firstAttribute="height" constant="100" id="XrK-Ue-dvu"/>
+                        </constraints>
+                        <state key="normal" image="左"/>
+                        <connections>
+                            <action selector="btnClick:" destination="zVN-BK-pnH" eventType="touchUpInside" id="MhB-B1-aIK"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKE-4c-Ize">
+                        <rect key="frame" x="251" y="38" width="19" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="eXu-ZC-WLx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ot0-id-Qvr"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                        <color key="textColor" red="0.92651491119999996" green="0.60906271079999996" blue="0.3702167442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCG-gj-sSa">
+                        <rect key="frame" x="91.5" y="276" width="192" height="70"/>
+                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="36"/>
+                        <state key="normal" title="START" backgroundImage="空白按钮">
+                            <color key="titleColor" red="1" green="0.33346716366240148" blue="0.37636028229095486" alpha="0.85067958047945202" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="highlighted" backgroundImage="空白按钮-点击"/>
+                        <connections>
+                            <action selector="start:" destination="zVN-BK-pnH" eventType="touchUpInside" id="NQO-bu-tbr"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3yS-Sd-RY4">
+                        <rect key="frame" x="124" y="581" width="127" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="PDz-KK-Mmt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Gi8-2G-jc5" firstAttribute="leading" secondItem="Qv8-pk-Ybq" secondAttribute="trailing" constant="50" id="0PC-bW-Etc"/>
+                    <constraint firstItem="hIR-KW-4k4" firstAttribute="leading" secondItem="qfZ-tN-KhF" secondAttribute="leading" constant="20" id="6P1-hf-UHv"/>
+                    <constraint firstItem="dvX-Sy-Czb" firstAttribute="top" secondItem="0Yx-Ma-9MB" secondAttribute="bottom" constant="30" id="CpH-1v-hff"/>
+                    <constraint firstItem="Lle-SD-4YB" firstAttribute="leading" secondItem="qfZ-tN-KhF" secondAttribute="leading" id="EEg-bD-7Fu"/>
+                    <constraint firstItem="0Yx-Ma-9MB" firstAttribute="top" secondItem="Gi8-2G-jc5" secondAttribute="bottom" constant="8" id="FYy-he-rgO"/>
+                    <constraint firstItem="Qv8-pk-Ybq" firstAttribute="leading" secondItem="qfZ-tN-KhF" secondAttribute="leading" constant="20" id="HsX-Pm-aej"/>
+                    <constraint firstItem="Qv8-pk-Ybq" firstAttribute="centerY" secondItem="Gi8-2G-jc5" secondAttribute="centerY" id="I0n-gW-bEd"/>
+                    <constraint firstItem="qfZ-tN-KhF" firstAttribute="bottom" secondItem="Lle-SD-4YB" secondAttribute="bottom" id="IL7-hp-5F4"/>
+                    <constraint firstItem="Gi8-2G-jc5" firstAttribute="top" secondItem="qfZ-tN-KhF" secondAttribute="top" constant="18" id="IwX-Dj-Qyn"/>
+                    <constraint firstItem="QKE-4c-Ize" firstAttribute="top" secondItem="Gi8-2G-jc5" secondAttribute="top" id="OSi-I6-VHT"/>
+                    <constraint firstItem="W0J-6F-gKz" firstAttribute="width" secondItem="0Yx-Ma-9MB" secondAttribute="width" constant="-30" id="QRD-Pe-sXX"/>
+                    <constraint firstItem="W0J-6F-gKz" firstAttribute="centerX" secondItem="0Yx-Ma-9MB" secondAttribute="centerX" id="Rro-6k-taX"/>
+                    <constraint firstItem="3yS-Sd-RY4" firstAttribute="leading" secondItem="hIR-KW-4k4" secondAttribute="trailing" constant="4" id="VGr-Fs-RwV"/>
+                    <constraint firstItem="hIR-KW-4k4" firstAttribute="top" secondItem="0Yx-Ma-9MB" secondAttribute="bottom" constant="30" id="Wlc-nC-fPm"/>
+                    <constraint firstItem="3yS-Sd-RY4" firstAttribute="centerY" secondItem="hIR-KW-4k4" secondAttribute="centerY" id="Z0p-Cb-uWu"/>
+                    <constraint firstItem="dvX-Sy-Czb" firstAttribute="trailing" secondItem="qfZ-tN-KhF" secondAttribute="trailing" constant="-20" id="aIg-mV-2b7"/>
+                    <constraint firstItem="qfZ-tN-KhF" firstAttribute="trailing" secondItem="Lle-SD-4YB" secondAttribute="trailing" id="eBq-4h-w3m"/>
+                    <constraint firstItem="QKE-4c-Ize" firstAttribute="height" secondItem="Gi8-2G-jc5" secondAttribute="height" id="eDQ-79-ESP"/>
+                    <constraint firstItem="Lle-SD-4YB" firstAttribute="top" secondItem="7mo-9s-NwZ" secondAttribute="top" id="fLI-TR-nBG"/>
+                    <constraint firstItem="dvX-Sy-Czb" firstAttribute="leading" secondItem="3yS-Sd-RY4" secondAttribute="trailing" constant="4" id="gs8-jF-PtF"/>
+                    <constraint firstItem="RCG-gj-sSa" firstAttribute="centerX" secondItem="W0J-6F-gKz" secondAttribute="centerX" id="h7X-Sg-SIo"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QKE-4c-Ize" secondAttribute="trailing" constant="10" id="lfx-94-89w"/>
+                    <constraint firstItem="W0J-6F-gKz" firstAttribute="centerY" secondItem="0Yx-Ma-9MB" secondAttribute="centerY" id="mru-Ug-Ceg"/>
+                    <constraint firstItem="RCG-gj-sSa" firstAttribute="centerY" secondItem="W0J-6F-gKz" secondAttribute="centerY" id="oqF-tz-slC"/>
+                    <constraint firstItem="W0J-6F-gKz" firstAttribute="height" secondItem="0Yx-Ma-9MB" secondAttribute="height" constant="-30" id="pKm-4K-gIa"/>
+                    <constraint firstItem="QKE-4c-Ize" firstAttribute="leading" secondItem="Gi8-2G-jc5" secondAttribute="trailing" id="wfg-LQ-MIa"/>
+                    <constraint firstItem="3yS-Sd-RY4" firstAttribute="centerX" secondItem="7mo-9s-NwZ" secondAttribute="centerX" id="yJH-ey-hhM"/>
+                    <constraint firstItem="0Yx-Ma-9MB" firstAttribute="centerX" secondItem="7mo-9s-NwZ" secondAttribute="centerX" id="z65-H4-4S4"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="qfZ-tN-KhF"/>
+            </view>
+            <connections>
+                <outlet property="gameView" destination="W0J-6F-gKz" id="EZw-rY-2H0"/>
+                <outlet property="lifeView" destination="3yS-Sd-RY4" id="aEm-Ji-WxL"/>
+                <outlet property="score" destination="QKE-4c-Ize" id="ahU-oE-vpf"/>
+                <outlet property="view" destination="7mo-9s-NwZ" id="eUH-ua-LS2"/>
+            </connections>
+            <point key="canvasLocation" x="58.399999999999999" y="42.728635682158924"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="右" width="89" height="89"/>
+        <image name="地图块0" width="67" height="67"/>
+        <image name="左" width="89" height="89"/>
+        <image name="空白按钮" width="192" height="70"/>
+        <image name="空白按钮-点击" width="192" height="70"/>
+        <image name="背景-游戏" width="1274" height="955"/>
+        <image name="返回" width="71" height="75"/>
+        <image name="返回-点击" width="71" height="75"/>
+    </resources>
+</document>

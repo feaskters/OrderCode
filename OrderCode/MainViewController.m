@@ -85,9 +85,14 @@
 //更多
 - (IBAction)more:(UIButton *)sender {
     [__musicPlay_yx play];
-    if ([sender.titleLabel.text isEqualToString:@"BACK"]) {
-        [sender setTitle:@"MORE" forState:UIControlStateNormal];
-        [sender setTitle:@"MORE" forState:UIControlStateHighlighted];
+    if ([sender.titleLabel.text isEqualToString:@"BACK"] || [sender.titleLabel.text isEqualToString:@"返回"]) {
+        if ([sender.titleLabel.text isEqualToString:@"BACK"]) {
+            [sender setTitle:@"MORE" forState:UIControlStateNormal];
+            [sender setTitle:@"MORE" forState:UIControlStateHighlighted];
+        }else{
+            [sender setTitle:@"更多" forState:UIControlStateNormal];
+            [sender setTitle:@"更多" forState:UIControlStateHighlighted];
+        }
         //动画消失背景
         [UIView animateWithDuration:1 animations:^{
             self.moreImageView.frame = CGRectMake(0, 0, self.moreView.frame.size.width, 0);
@@ -101,8 +106,13 @@
         }];
     }else{
         //改变按钮文字
-        [sender setTitle:@"BACK" forState:UIControlStateNormal];
-        [sender setTitle:@"BACK" forState:UIControlStateHighlighted];
+        if ([sender.titleLabel.text isEqualToString:@"MORE"]) {
+            [sender setTitle:@"BACK" forState:UIControlStateNormal];
+            [sender setTitle:@"BACK" forState:UIControlStateHighlighted];
+        }else{
+            [sender setTitle:@"返回" forState:UIControlStateNormal];
+            [sender setTitle:@"返回" forState:UIControlStateHighlighted];
+        }
         //添加背景和内容
         [self.view addSubview:self.moreView];
         [self.moreView addSubview:self.moreImageView];
@@ -161,11 +171,10 @@
 -(void)LSMoreViewRankButtonClick{
     [self._musicPlay_yx play];
     RankViewController *rvc = [[RankViewController alloc]init];
+    rvc.musicPlay_yx = self._musicPlay_yx;
     [self presentViewController:rvc animated:YES completion:^{
         
     }];
-//    UserDb *db = [UserDb sharedUserDb];
-//    [db SelectCompetition];
 }
 
 //竞赛模式

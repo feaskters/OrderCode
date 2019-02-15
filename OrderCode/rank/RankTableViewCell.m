@@ -34,6 +34,19 @@
     self.rank.text = [NSString stringWithFormat:@"%@", self.rankInfo[@"rank"] ];
     self.name.text = self.rankInfo[@"name"];
     self.score.text = [NSString stringWithFormat:@"%@", self.rankInfo[@"score"]];
+    switch ([self.rankInfo[@"rank"] intValue]) {
+        case 1:
+            self.rank.textColor = [UIColor colorWithRed:241.0/255 green:124.0/255 blue:103.0/255 alpha:1];
+            break;
+        case 2:
+            self.rank.textColor = [UIColor colorWithRed:233.0/255 green:240.0/255 blue:29.0/255 alpha:1];
+            break;
+        case 3:
+            self.rank.textColor = [UIColor colorWithRed:146.0/255 green:79.0/255 blue:128.0/255 alpha:1];
+            break;
+        default:
+            break;
+    }
 }
 
 @end

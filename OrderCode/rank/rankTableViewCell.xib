@@ -19,27 +19,30 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jL-FN-cIX">
-                        <rect key="frame" x="20" y="10" width="16" height="49.5"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                        <color key="textColor" red="0.72549019609999998" green="0.1843137255" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <rect key="frame" x="20" y="10" width="21" height="49.5"/>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="32"/>
+                        <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nog-ya-zDp">
-                        <rect key="frame" x="70" y="10" width="46.5" height="49.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="70" y="10" width="72.5" height="49.5"/>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="26"/>
+                        <color key="textColor" red="0.25490196079999999" green="0.078431372550000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0O-XK-87d">
-                        <rect key="frame" x="303.5" y="10" width="51.5" height="49.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0O-XK-87d">
+                        <rect key="frame" x="255" y="10" width="100" height="49.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="1NF-6x-HtD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
                         <color key="textColor" red="1" green="0.62914934929999999" blue="0.20678734339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="nog-ya-zDp" secondAttribute="bottom" constant="10" id="A4L-mR-Br2"/>
-                    <constraint firstItem="C0O-XK-87d" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nog-ya-zDp" secondAttribute="trailing" constant="50" id="LSe-3j-H1p"/>
+                    <constraint firstItem="C0O-XK-87d" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nog-ya-zDp" secondAttribute="trailing" id="LSe-3j-H1p"/>
                     <constraint firstItem="3jL-FN-cIX" firstAttribute="top" secondItem="kMO-62-YpW" secondAttribute="top" constant="10" id="Ned-Zf-i1u"/>
                     <constraint firstItem="nog-ya-zDp" firstAttribute="top" secondItem="kMO-62-YpW" secondAttribute="top" constant="10" id="PCf-ur-xuL"/>
                     <constraint firstItem="C0O-XK-87d" firstAttribute="top" secondItem="kMO-62-YpW" secondAttribute="top" constant="10" id="cNA-ad-3f6"/>

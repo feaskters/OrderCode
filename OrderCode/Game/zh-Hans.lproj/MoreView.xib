@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MoreView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vS2-ig-TxF">
+                    <rect key="frame" x="87.5" y="120" width="200" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="goI-NW-S1t"/>
+                        <constraint firstAttribute="height" constant="57" id="voj-Yh-OIy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="24"/>
+                    <state key="normal" title="竞赛模式" backgroundImage="更多菜单按钮"/>
+                    <state key="highlighted" backgroundImage="更多菜单按钮-点击"/>
+                    <connections>
+                        <action selector="competition:" destination="iN0-l3-epB" eventType="touchUpInside" id="5Kz-rk-NoM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tg-yL-CJP">
+                    <rect key="frame" x="87.5" y="373" width="200" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="0BU-Cz-43W"/>
+                        <constraint firstAttribute="height" constant="57" id="5fO-sj-ZBA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="24"/>
+                    <state key="normal" title="排行榜" backgroundImage="更多菜单按钮"/>
+                    <state key="highlighted" backgroundImage="更多菜单按钮-点击"/>
+                    <connections>
+                        <action selector="rank:" destination="iN0-l3-epB" eventType="touchUpInside" id="Y3L-s3-YOn"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="模式" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mq-vJ-Pza">
+                    <rect key="frame" x="87.5" y="50" width="200" height="57"/>
+                    <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="32"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="排行" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfF-c2-LkK">
+                    <rect key="frame" x="87.5" y="311" width="200" height="57"/>
+                    <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="32"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="5tg-yL-CJP" firstAttribute="top" secondItem="NfF-c2-LkK" secondAttribute="bottom" constant="5" id="0uX-Il-n7q"/>
+                <constraint firstItem="2mq-vJ-Pza" firstAttribute="width" secondItem="vS2-ig-TxF" secondAttribute="width" id="A4T-4G-MER"/>
+                <constraint firstItem="vS2-ig-TxF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="B2q-RP-k2p"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="5tg-yL-CJP" secondAttribute="bottom" constant="50" id="GAj-8o-on8"/>
+                <constraint firstItem="NfF-c2-LkK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JKm-UB-z89"/>
+                <constraint firstItem="2mq-vJ-Pza" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="Mfz-hw-vnv"/>
+                <constraint firstItem="NfF-c2-LkK" firstAttribute="height" secondItem="5tg-yL-CJP" secondAttribute="height" id="NvW-SQ-HK1"/>
+                <constraint firstItem="5tg-yL-CJP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Oi3-uL-AWB"/>
+                <constraint firstItem="vS2-ig-TxF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="100" id="QaK-wS-aEi"/>
+                <constraint firstItem="NfF-c2-LkK" firstAttribute="width" secondItem="5tg-yL-CJP" secondAttribute="width" id="Rvc-4B-7TK"/>
+                <constraint firstItem="2mq-vJ-Pza" firstAttribute="height" secondItem="vS2-ig-TxF" secondAttribute="height" id="Y6v-sZ-Rlb"/>
+                <constraint firstItem="2mq-vJ-Pza" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bEE-hW-RcH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="16.800000000000001" y="37.781109445277366"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="更多菜单按钮" width="161" height="58"/>
+        <image name="更多菜单按钮-点击" width="163" height="60"/>
+    </resources>
+</document>

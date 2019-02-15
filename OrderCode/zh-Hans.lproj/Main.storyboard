@@ -99,6 +99,18 @@
                                     <segue destination="nq3-41-Dzi" kind="show" id="lsv-qQ-0va"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKz-JB-EUc">
+                                <rect key="frame" x="91.5" y="590" width="192" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="vR0-Gm-hZk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="24"/>
+                                <state key="normal" title="更多" backgroundImage="空白按钮"/>
+                                <state key="highlighted" title="更多" backgroundImage="空白按钮-点击"/>
+                                <connections>
+                                    <action selector="more:" destination="d4x-78-fZC" eventType="touchUpInside" id="p1e-xN-Gv4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -113,8 +125,10 @@
                             <constraint firstItem="1I7-TM-t1f" firstAttribute="top" secondItem="dob-sm-yE0" secondAttribute="top" constant="100" id="Qe7-05-Pdd"/>
                             <constraint firstItem="mTu-Xl-kpO" firstAttribute="top" secondItem="t2z-tT-GVv" secondAttribute="top" constant="20" id="Vxb-9p-JeO"/>
                             <constraint firstAttribute="trailing" secondItem="dob-sm-yE0" secondAttribute="trailing" id="bkd-nO-sQU"/>
+                            <constraint firstItem="QKz-JB-EUc" firstAttribute="centerX" secondItem="t2z-tT-GVv" secondAttribute="centerX" id="ckw-A2-eX7"/>
                             <constraint firstItem="JQd-8b-sW0" firstAttribute="leading" secondItem="AzY-sa-5UI" secondAttribute="leading" constant="16" id="h0f-Yv-L81"/>
                             <constraint firstItem="AzY-sa-5UI" firstAttribute="bottom" secondItem="dob-sm-yE0" secondAttribute="bottom" id="pwx-lh-TlK"/>
+                            <constraint firstItem="AzY-sa-5UI" firstAttribute="bottom" secondItem="QKz-JB-EUc" secondAttribute="bottom" constant="20" id="yl6-ng-U0V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AzY-sa-5UI"/>
                     </view>
@@ -136,37 +150,55 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="教程" translatesAutoresizingMaskIntoConstraints="NO" id="FJB-Qg-GNU">
-                                <rect key="frame" x="0.0" y="20" width="375" height="607"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q18-MO-rBC">
-                                <rect key="frame" x="127" y="598" width="121" height="69"/>
+                                <rect key="frame" x="0.0" y="20" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="69" id="RB6-tp-Zyt"/>
-                                    <constraint firstAttribute="width" constant="121" id="Z8j-US-XKL"/>
+                                    <constraint firstAttribute="height" constant="50" id="efk-l1-6sN"/>
+                                    <constraint firstAttribute="width" constant="50" id="fuo-pI-803"/>
                                 </constraints>
-                                <state key="normal" image="确定"/>
-                                <state key="highlighted" image="确定-点击"/>
+                                <state key="normal" image="返回"/>
+                                <state key="highlighted" image="返回-点击"/>
                                 <connections>
                                     <action selector="back:" destination="nq3-41-Dzi" eventType="touchUpInside" id="i0S-Va-Xc9"/>
                                     <segue destination="d4x-78-fZC" kind="show" id="3T2-Wo-4e0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vl-ka-MFX">
+                                <rect key="frame" x="87.5" y="25" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Dgt-OW-uWt"/>
+                                    <constraint firstAttribute="width" constant="200" id="Kos-ei-tN1"/>
+                                </constraints>
+                                <state key="normal" title="↓ 标准模式 ↓" backgroundImage="背景-排行榜">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeMode:" destination="nq3-41-Dzi" eventType="touchUpInside" id="T0K-gn-aCy"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="FJB-Qg-GNU" firstAttribute="leading" secondItem="7Aq-y9-ygi" secondAttribute="leading" id="3pO-cL-nV0"/>
-                            <constraint firstItem="Q18-MO-rBC" firstAttribute="bottom" secondItem="7Aq-y9-ygi" secondAttribute="bottom" id="AuD-Ma-xai"/>
-                            <constraint firstItem="Q18-MO-rBC" firstAttribute="centerX" secondItem="CPo-La-wsO" secondAttribute="centerX" id="K6W-jb-7dz"/>
+                            <constraint firstItem="5Vl-ka-MFX" firstAttribute="centerY" secondItem="Q18-MO-rBC" secondAttribute="centerY" id="8sQ-sG-8Qx"/>
+                            <constraint firstItem="Q18-MO-rBC" firstAttribute="leading" secondItem="7Aq-y9-ygi" secondAttribute="leading" id="9GC-Px-4fV"/>
+                            <constraint firstItem="5Vl-ka-MFX" firstAttribute="centerX" secondItem="CPo-La-wsO" secondAttribute="centerX" id="HNA-jc-eCd"/>
+                            <constraint firstItem="FJB-Qg-GNU" firstAttribute="top" secondItem="7Aq-y9-ygi" secondAttribute="top" constant="50" id="Hda-UJ-JvX"/>
+                            <constraint firstItem="Q18-MO-rBC" firstAttribute="top" secondItem="7Aq-y9-ygi" secondAttribute="top" id="O38-5N-Cse"/>
                             <constraint firstItem="7Aq-y9-ygi" firstAttribute="trailing" secondItem="FJB-Qg-GNU" secondAttribute="trailing" id="Utl-Zh-PHs"/>
-                            <constraint firstItem="7Aq-y9-ygi" firstAttribute="bottom" secondItem="FJB-Qg-GNU" secondAttribute="bottom" constant="40" id="e9Y-au-idR"/>
-                            <constraint firstItem="FJB-Qg-GNU" firstAttribute="top" secondItem="7Aq-y9-ygi" secondAttribute="top" id="sN9-9n-0Vs"/>
+                            <constraint firstItem="FJB-Qg-GNU" firstAttribute="bottom" secondItem="7Aq-y9-ygi" secondAttribute="bottom" id="cOG-CR-FOK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Aq-y9-ygi"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="FJB-Qg-GNU" id="38E-I2-WLf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lsr-5b-Nih" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1618" y="33"/>
+            <point key="canvasLocation" x="1616.8" y="32.833583208395808"/>
         </scene>
     </scenes>
     <resources>
@@ -175,14 +207,18 @@
         <image name="教程" width="389" height="693"/>
         <image name="查看教程" width="191" height="71"/>
         <image name="查看教程-点击" width="191" height="71"/>
-        <image name="确定" width="121" height="69"/>
-        <image name="确定-点击" width="121" height="69"/>
+        <image name="空白按钮" width="192" height="70"/>
+        <image name="空白按钮-点击" width="192" height="70"/>
         <image name="背景-天空" width="252" height="252"/>
         <image name="背景-宇宙" width="1893" height="1065"/>
+        <image name="背景-排行榜" width="305" height="220"/>
         <image name="设置" width="28" height="29"/>
         <image name="设置-点击" width="28" height="29"/>
+        <image name="返回" width="71" height="75"/>
+        <image name="返回-点击" width="71" height="75"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zmM-1K-0AV"/>
+        <segue reference="lsv-qQ-0va"/>
+        <segue reference="3T2-Wo-4e0"/>
     </inferredMetricsTieBreakers>
 </document>

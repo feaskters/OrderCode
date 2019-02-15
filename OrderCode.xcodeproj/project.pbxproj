@@ -13,7 +13,6 @@
 		F71642A1221278B20055B7AC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = F716429B221278B20055B7AC /* FMDatabasePool.m */; };
 		F71642A2221278B20055B7AC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F716429C221278B20055B7AC /* FMResultSet.m */; };
 		F71642AE2212909E0055B7AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F794B01422017BDD004E9502 /* InfoPlist.strings */; };
-		F71642B12212B6030055B7AC /* competitionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71642B02212B6030055B7AC /* competitionView.xib */; };
 		F71642B42212BA2B0055B7AC /* CompetitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71642B32212BA2B0055B7AC /* CompetitionViewController.m */; };
 		F7206C6121F31665003CCB2A /* CheckPoint.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7206C6021F31665003CCB2A /* CheckPoint.xib */; };
 		F7206C6521F31D40003CCB2A /* 移动1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F7206C6221F31D40003CCB2A /* 移动1.mp3 */; };
@@ -24,7 +23,6 @@
 		F7206C7021F32802003CCB2A /* CheckPointPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7206C6F21F32802003CCB2A /* CheckPointPageView.m */; };
 		F723AD3122151B5A003557D0 /* UserDb.m in Sources */ = {isa = PBXBuildFile; fileRef = F723AD3022151B5A003557D0 /* UserDb.m */; };
 		F723AD3622156034003557D0 /* RankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F723AD3422156034003557D0 /* RankViewController.m */; };
-		F723AD3722156034003557D0 /* RankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F723AD3522156034003557D0 /* RankViewController.xib */; };
 		F723AD3A22157208003557D0 /* RankTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F723AD3922157208003557D0 /* RankTableViewCell.m */; };
 		F723AD3C2215743C003557D0 /* rankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F723AD3B2215743C003557D0 /* rankTableViewCell.xib */; };
 		F7274C2D21F825650049D5BE /* TeachingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7274C2C21F825650049D5BE /* TeachingViewController.m */; };
@@ -34,9 +32,7 @@
 		F73434A421F5B40C00C005E9 /* 游戏页面背景.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F73434A321F5B40C00C005E9 /* 游戏页面背景.mp3 */; };
 		F74623072214001D00B493B3 /* 扣血.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F74623062214001D00B493B3 /* 扣血.mp3 */; };
 		F746230A2214055C00B493B3 /* GameOverCompetitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F74623092214055C00B493B3 /* GameOverCompetitionView.m */; };
-		F746230C2214057D00B493B3 /* GameOverCompetitionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F746230B2214057D00B493B3 /* GameOverCompetitionView.xib */; };
 		F746230F22141F8600B493B3 /* MoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = F746230E22141F8600B493B3 /* MoreView.m */; };
-		F74623112214220600B493B3 /* MoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F74623102214220600B493B3 /* MoreView.xib */; };
 		F750873F2213AB630031FD44 /* CoinImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F750873E2213AB630031FD44 /* CoinImageView.m */; };
 		F767E9A721F6BC3C00ED86E5 /* GameContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767E9A621F6BC3C00ED86E5 /* GameContainerView.m */; };
 		F767E9A921F6BC5000ED86E5 /* GameContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F767E9A821F6BC5000ED86E5 /* GameContainerView.xib */; };
@@ -44,6 +40,10 @@
 		F767E9B121F6D37600ED86E5 /* CharacterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767E9B021F6D37600ED86E5 /* CharacterView.m */; };
 		F767E9B321F7153A00ED86E5 /* 金币.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F767E9B221F7153A00ED86E5 /* 金币.mp3 */; };
 		F767E9BB21F71F0500ED86E5 /* GameOverView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767E9BA21F71F0500ED86E5 /* GameOverView.m */; };
+		F773501F221669D500DAF2E1 /* RankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7735021221669D500DAF2E1 /* RankViewController.xib */; };
+		F773502422166A3A00DAF2E1 /* competitionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F773502622166A3A00DAF2E1 /* competitionView.xib */; };
+		F773502922166A5A00DAF2E1 /* GameOverCompetitionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F773502B22166A5A00DAF2E1 /* GameOverCompetitionView.xib */; };
+		F773502E22166A7900DAF2E1 /* MoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F773503022166A7900DAF2E1 /* MoreView.xib */; };
 		F794B01E2201A580004E9502 /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F794B0202201A580004E9502 /* SettingView.xib */; };
 		F794B0262201A6B8004E9502 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F794B0282201A6B8004E9502 /* Localizable.strings */; };
 		F794B02A2201A891004E9502 /* GameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F794B02C2201A891004E9502 /* GameView.xib */; };
@@ -76,8 +76,6 @@
 		F716429C221278B20055B7AC /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		F716429D221278B20055B7AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F71642A922127A310055B7AC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
-		F71642AA22127E260055B7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F71642B02212B6030055B7AC /* competitionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = competitionView.xib; sourceTree = "<group>"; };
 		F71642B22212BA2B0055B7AC /* CompetitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompetitionViewController.h; sourceTree = "<group>"; };
 		F71642B32212BA2B0055B7AC /* CompetitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompetitionViewController.m; sourceTree = "<group>"; };
 		F7206C6021F31665003CCB2A /* CheckPoint.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckPoint.xib; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 		F723AD3022151B5A003557D0 /* UserDb.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDb.m; sourceTree = "<group>"; };
 		F723AD3322156034003557D0 /* RankViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RankViewController.h; sourceTree = "<group>"; };
 		F723AD3422156034003557D0 /* RankViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RankViewController.m; sourceTree = "<group>"; };
-		F723AD3522156034003557D0 /* RankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankViewController.xib; sourceTree = "<group>"; };
 		F723AD3822157208003557D0 /* RankTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RankTableViewCell.h; sourceTree = "<group>"; };
 		F723AD3922157208003557D0 /* RankTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RankTableViewCell.m; sourceTree = "<group>"; };
 		F723AD3B2215743C003557D0 /* rankTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = rankTableViewCell.xib; sourceTree = "<group>"; };
@@ -106,10 +103,8 @@
 		F74623062214001D00B493B3 /* 扣血.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "扣血.mp3"; sourceTree = "<group>"; };
 		F74623082214055C00B493B3 /* GameOverCompetitionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameOverCompetitionView.h; sourceTree = "<group>"; };
 		F74623092214055C00B493B3 /* GameOverCompetitionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameOverCompetitionView.m; sourceTree = "<group>"; };
-		F746230B2214057D00B493B3 /* GameOverCompetitionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameOverCompetitionView.xib; sourceTree = "<group>"; };
 		F746230D22141F8600B493B3 /* MoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreView.h; sourceTree = "<group>"; };
 		F746230E22141F8600B493B3 /* MoreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreView.m; sourceTree = "<group>"; };
-		F74623102214220600B493B3 /* MoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreView.xib; sourceTree = "<group>"; };
 		F750873D2213AB630031FD44 /* CoinImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoinImageView.h; sourceTree = "<group>"; };
 		F750873E2213AB630031FD44 /* CoinImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoinImageView.m; sourceTree = "<group>"; };
 		F767E9A521F6BC3C00ED86E5 /* GameContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameContainerView.h; sourceTree = "<group>"; };
@@ -121,10 +116,22 @@
 		F767E9B221F7153A00ED86E5 /* 金币.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "金币.mp3"; sourceTree = "<group>"; };
 		F767E9B921F71F0500ED86E5 /* GameOverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameOverView.h; sourceTree = "<group>"; };
 		F767E9BA21F71F0500ED86E5 /* GameOverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameOverView.m; sourceTree = "<group>"; };
+		F773501E2216684200DAF2E1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		F7735020221669D500DAF2E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RankViewController.xib; sourceTree = "<group>"; };
+		F773502522166A3A00DAF2E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/competitionView.xib; sourceTree = "<group>"; };
+		F773502A22166A5A00DAF2E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GameOverCompetitionView.xib; sourceTree = "<group>"; };
+		F773502F22166A7900DAF2E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MoreView.xib; sourceTree = "<group>"; };
+		F773503322166AED00DAF2E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GameOverCompetitionView.xib; sourceTree = "<group>"; };
+		F773503422166AFE00DAF2E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MoreView.xib; sourceTree = "<group>"; };
+		F773503522166B0400DAF2E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/competitionView.xib; sourceTree = "<group>"; };
+		F773503622166B3300DAF2E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RankViewController.xib; sourceTree = "<group>"; };
+		F773503A22166D3A00DAF2E1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/competitionView.xib"; sourceTree = "<group>"; };
+		F773503C22166D7300DAF2E1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/GameOverCompetitionView.xib"; sourceTree = "<group>"; };
+		F773504522166ED900DAF2E1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/RankViewController.xib"; sourceTree = "<group>"; };
+		F773504622166F1B00DAF2E1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/MoreView.xib"; sourceTree = "<group>"; };
 		F794B01322017BDD004E9502 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F794B01722017BF0004E9502 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F794B01A22018172004E9502 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F794B01B2201818A004E9502 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		F794B01F2201A580004E9502 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SettingView.xib; sourceTree = "<group>"; };
 		F794B0232201A59E004E9502 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/SettingView.xib"; sourceTree = "<group>"; };
 		F794B0272201A6B8004E9502 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -182,7 +189,7 @@
 		F71642AF2212B5EB0055B7AC /* competition */ = {
 			isa = PBXGroup;
 			children = (
-				F71642B02212B6030055B7AC /* competitionView.xib */,
+				F773502622166A3A00DAF2E1 /* competitionView.xib */,
 				F71642B22212BA2B0055B7AC /* CompetitionViewController.h */,
 				F71642B32212BA2B0055B7AC /* CompetitionViewController.m */,
 			);
@@ -216,7 +223,7 @@
 			children = (
 				F723AD3322156034003557D0 /* RankViewController.h */,
 				F723AD3422156034003557D0 /* RankViewController.m */,
-				F723AD3522156034003557D0 /* RankViewController.xib */,
+				F7735021221669D500DAF2E1 /* RankViewController.xib */,
 				F723AD3822157208003557D0 /* RankTableViewCell.h */,
 				F723AD3922157208003557D0 /* RankTableViewCell.m */,
 				F723AD3B2215743C003557D0 /* rankTableViewCell.xib */,
@@ -240,7 +247,7 @@
 				F750873E2213AB630031FD44 /* CoinImageView.m */,
 				F746230D22141F8600B493B3 /* MoreView.h */,
 				F746230E22141F8600B493B3 /* MoreView.m */,
-				F74623102214220600B493B3 /* MoreView.xib */,
+				F773503022166A7900DAF2E1 /* MoreView.xib */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -253,7 +260,7 @@
 				F767E9BA21F71F0500ED86E5 /* GameOverView.m */,
 				F74623082214055C00B493B3 /* GameOverCompetitionView.h */,
 				F74623092214055C00B493B3 /* GameOverCompetitionView.m */,
-				F746230B2214057D00B493B3 /* GameOverCompetitionView.xib */,
+				F773502B22166A5A00DAF2E1 /* GameOverCompetitionView.xib */,
 			);
 			path = GameOver;
 			sourceTree = "<group>";
@@ -388,10 +395,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F746230C2214057D00B493B3 /* GameOverCompetitionView.xib in Resources */,
+				F773502922166A5A00DAF2E1 /* GameOverCompetitionView.xib in Resources */,
 				F7DA2BD121F2DA7D0060C272 /* 柔和的风.mp3 in Resources */,
 				F7206C6621F31D40003CCB2A /* 点击按钮.mp3 in Resources */,
-				F71642B12212B6030055B7AC /* competitionView.xib in Resources */,
+				F773502422166A3A00DAF2E1 /* competitionView.xib in Resources */,
 				F7DA2BC621F2C5E30060C272 /* LaunchScreen.storyboard in Resources */,
 				F73434A221F57E0D00C005E9 /* Main.storyboard in Resources */,
 				F723AD3C2215743C003557D0 /* rankTableViewCell.xib in Resources */,
@@ -400,14 +407,14 @@
 				F74623072214001D00B493B3 /* 扣血.mp3 in Resources */,
 				F767E9B321F7153A00ED86E5 /* 金币.mp3 in Resources */,
 				F767E9AB21F6D30800ED86E5 /* Character.xib in Resources */,
-				F74623112214220600B493B3 /* MoreView.xib in Resources */,
+				F773502E22166A7900DAF2E1 /* MoreView.xib in Resources */,
 				F794B01E2201A580004E9502 /* SettingView.xib in Resources */,
 				F794B02A2201A891004E9502 /* GameView.xib in Resources */,
 				F71642AE2212909E0055B7AC /* InfoPlist.strings in Resources */,
 				F7206C6521F31D40003CCB2A /* 移动1.mp3 in Resources */,
 				F734349921F5584000C005E9 /* CheckPoint.plist in Resources */,
 				F7206C6A21F321FF003CCB2A /* CheckPointPage.xib in Resources */,
-				F723AD3722156034003557D0 /* RankViewController.xib in Resources */,
+				F773501F221669D500DAF2E1 /* RankViewController.xib in Resources */,
 				F73434A421F5B40C00C005E9 /* 游戏页面背景.mp3 in Resources */,
 				F767E9A921F6BC5000ED86E5 /* GameContainerView.xib in Resources */,
 				F794B0262201A6B8004E9502 /* Localizable.strings in Resources */,
@@ -457,10 +464,49 @@
 			isa = PBXVariantGroup;
 			children = (
 				F794B01A22018172004E9502 /* en */,
-				F794B01B2201818A004E9502 /* zh-Hans */,
-				F71642AA22127E260055B7AC /* Base */,
+				F773501E2216684200DAF2E1 /* zh-Hans */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7735021221669D500DAF2E1 /* RankViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7735020221669D500DAF2E1 /* en */,
+				F773503622166B3300DAF2E1 /* Base */,
+				F773504522166ED900DAF2E1 /* zh-Hans */,
+			);
+			name = RankViewController.xib;
+			sourceTree = "<group>";
+		};
+		F773502622166A3A00DAF2E1 /* competitionView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F773502522166A3A00DAF2E1 /* en */,
+				F773503522166B0400DAF2E1 /* Base */,
+				F773503A22166D3A00DAF2E1 /* zh-Hans */,
+			);
+			name = competitionView.xib;
+			sourceTree = "<group>";
+		};
+		F773502B22166A5A00DAF2E1 /* GameOverCompetitionView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F773502A22166A5A00DAF2E1 /* en */,
+				F773503322166AED00DAF2E1 /* Base */,
+				F773503C22166D7300DAF2E1 /* zh-Hans */,
+			);
+			name = GameOverCompetitionView.xib;
+			sourceTree = "<group>";
+		};
+		F773503022166A7900DAF2E1 /* MoreView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F773502F22166A7900DAF2E1 /* en */,
+				F773503422166AFE00DAF2E1 /* Base */,
+				F773504622166F1B00DAF2E1 /* zh-Hans */,
+			);
+			name = MoreView.xib;
 			sourceTree = "<group>";
 		};
 		F794B01422017BDD004E9502 /* InfoPlist.strings */ = {

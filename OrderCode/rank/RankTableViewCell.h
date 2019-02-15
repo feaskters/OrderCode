@@ -7,13 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <AVFoundation/AVFoundation.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RankTableViewCell : UITableViewCell
 
 @property NSDictionary *rankInfo;
-
 +(instancetype)rankTableViewCell;
 
 @end
