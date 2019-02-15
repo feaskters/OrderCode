@@ -45,7 +45,7 @@
                         <constraints>
                             <constraint firstItem="bZm-sI-9Bx" firstAttribute="centerY" secondItem="NsW-CH-ZMS" secondAttribute="centerY" multiplier="1.3" id="8dC-4h-zxU"/>
                             <constraint firstItem="Da9-XO-bh0" firstAttribute="leading" secondItem="hso-sr-UEm" secondAttribute="leading" id="IlI-63-ROp"/>
-                            <constraint firstItem="hso-sr-UEm" firstAttribute="bottom" secondItem="Da9-XO-bh0" secondAttribute="bottom" id="MHz-Tp-O3I"/>
+                            <constraint firstAttribute="bottom" secondItem="Da9-XO-bh0" secondAttribute="bottom" id="MHz-Tp-O3I"/>
                             <constraint firstItem="Ns7-BR-b5s" firstAttribute="centerY" secondItem="NsW-CH-ZMS" secondAttribute="centerY" multiplier="0.8" id="Ohi-IC-DFM"/>
                             <constraint firstItem="Da9-XO-bh0" firstAttribute="top" secondItem="NsW-CH-ZMS" secondAttribute="top" id="Ory-mx-lxg"/>
                             <constraint firstItem="Ns7-BR-b5s" firstAttribute="centerX" secondItem="NsW-CH-ZMS" secondAttribute="centerX" id="UGA-d3-kEo"/>
@@ -87,7 +87,7 @@
                                 <color key="backgroundColor" red="0.51764705879999995" green="0.28627450980000002" blue="0.043137254899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTu-Xl-kpO">
-                                <rect key="frame" x="174" y="20" width="191" height="71"/>
+                                <rect key="frame" x="174" y="25" width="191" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="191" id="9SP-vN-3lD"/>
                                     <constraint firstAttribute="height" constant="71" id="Vvh-tf-QgF"/>
@@ -122,12 +122,12 @@
                             <constraint firstItem="dob-sm-yE0" firstAttribute="leading" secondItem="AzY-sa-5UI" secondAttribute="leading" id="Eg4-cR-htA"/>
                             <constraint firstItem="mTu-Xl-kpO" firstAttribute="trailing" secondItem="1I7-TM-t1f" secondAttribute="trailing" id="HWP-WM-iXN"/>
                             <constraint firstItem="AzY-sa-5UI" firstAttribute="trailing" secondItem="1I7-TM-t1f" secondAttribute="trailing" constant="10" id="M51-Ie-MMw"/>
-                            <constraint firstItem="1I7-TM-t1f" firstAttribute="top" secondItem="dob-sm-yE0" secondAttribute="top" constant="100" id="Qe7-05-Pdd"/>
-                            <constraint firstItem="mTu-Xl-kpO" firstAttribute="top" secondItem="t2z-tT-GVv" secondAttribute="top" constant="20" id="Vxb-9p-JeO"/>
+                            <constraint firstItem="1I7-TM-t1f" firstAttribute="top" secondItem="AzY-sa-5UI" secondAttribute="top" constant="80" id="Qe7-05-Pdd"/>
+                            <constraint firstItem="mTu-Xl-kpO" firstAttribute="top" secondItem="AzY-sa-5UI" secondAttribute="top" constant="5" id="Vxb-9p-JeO"/>
                             <constraint firstAttribute="trailing" secondItem="dob-sm-yE0" secondAttribute="trailing" id="bkd-nO-sQU"/>
                             <constraint firstItem="QKz-JB-EUc" firstAttribute="centerX" secondItem="t2z-tT-GVv" secondAttribute="centerX" id="ckw-A2-eX7"/>
                             <constraint firstItem="JQd-8b-sW0" firstAttribute="leading" secondItem="AzY-sa-5UI" secondAttribute="leading" constant="16" id="h0f-Yv-L81"/>
-                            <constraint firstItem="AzY-sa-5UI" firstAttribute="bottom" secondItem="dob-sm-yE0" secondAttribute="bottom" id="pwx-lh-TlK"/>
+                            <constraint firstAttribute="bottom" secondItem="dob-sm-yE0" secondAttribute="bottom" id="pwx-lh-TlK"/>
                             <constraint firstItem="AzY-sa-5UI" firstAttribute="bottom" secondItem="QKz-JB-EUc" secondAttribute="bottom" constant="20" id="yl6-ng-U0V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AzY-sa-5UI"/>
@@ -179,7 +179,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.90712246190000001" green="0.83820430509999999" blue="0.65847654960000002" alpha="0.51000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FJB-Qg-GNU" firstAttribute="leading" secondItem="7Aq-y9-ygi" secondAttribute="leading" id="3pO-cL-nV0"/>
                             <constraint firstItem="5Vl-ka-MFX" firstAttribute="centerY" secondItem="Q18-MO-rBC" secondAttribute="centerY" id="8sQ-sG-8Qx"/>
@@ -188,7 +188,7 @@
                             <constraint firstItem="FJB-Qg-GNU" firstAttribute="top" secondItem="7Aq-y9-ygi" secondAttribute="top" constant="50" id="Hda-UJ-JvX"/>
                             <constraint firstItem="Q18-MO-rBC" firstAttribute="top" secondItem="7Aq-y9-ygi" secondAttribute="top" id="O38-5N-Cse"/>
                             <constraint firstItem="7Aq-y9-ygi" firstAttribute="trailing" secondItem="FJB-Qg-GNU" secondAttribute="trailing" id="Utl-Zh-PHs"/>
-                            <constraint firstItem="FJB-Qg-GNU" firstAttribute="bottom" secondItem="7Aq-y9-ygi" secondAttribute="bottom" id="cOG-CR-FOK"/>
+                            <constraint firstItem="FJB-Qg-GNU" firstAttribute="bottom" secondItem="CPo-La-wsO" secondAttribute="bottom" id="cOG-CR-FOK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Aq-y9-ygi"/>
                     </view>

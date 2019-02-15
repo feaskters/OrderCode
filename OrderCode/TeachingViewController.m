@@ -38,10 +38,10 @@
     }
     //中文
     if ([sender.titleLabel.text isEqualToString:@"↓ 标准模式 ↓"]) {
-        [sender setTitle:@"↓ 竞技模式 ↓" forState:UIControlStateNormal];
-        [sender setTitle:@"↓ 竞技模式 ↓" forState:UIControlStateHighlighted];
+        [sender setTitle:@"↓ 竞赛模式 ↓" forState:UIControlStateNormal];
+        [sender setTitle:@"↓ 竞赛模式 ↓" forState:UIControlStateHighlighted];
         self.imageView.image = [UIImage imageNamed: @"competition_teach"];
-    }else if([sender.titleLabel.text isEqualToString:@"↓ 竞技模式 ↓"]){
+    }else if([sender.titleLabel.text isEqualToString:@"↓ 竞赛模式 ↓"]){
         [sender setTitle:@"↓ 标准模式 ↓" forState:UIControlStateNormal];
         [sender setTitle:@"↓ 标准模式 ↓" forState:UIControlStateHighlighted];
         self.imageView.image = [UIImage imageNamed: @"教程"];

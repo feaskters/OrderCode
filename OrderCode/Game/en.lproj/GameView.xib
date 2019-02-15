@@ -175,7 +175,7 @@
                     <constraint firstItem="fFP-D2-Wcs" firstAttribute="width" secondItem="Loj-k2-Ksj" secondAttribute="width" constant="-30" id="edS-bK-zPX"/>
                     <constraint firstItem="fFP-D2-Wcs" firstAttribute="height" secondItem="Loj-k2-Ksj" secondAttribute="height" constant="-30" id="gIU-PW-BoZ"/>
                     <constraint firstItem="fFP-D2-Wcs" firstAttribute="centerX" secondItem="Loj-k2-Ksj" secondAttribute="centerX" id="hsJ-9b-JcA"/>
-                    <constraint firstItem="r4y-Jt-Igd" firstAttribute="bottom" secondItem="IL7-x7-Ssw" secondAttribute="bottom" id="jbp-LB-v0P"/>
+                    <constraint firstAttribute="bottom" secondItem="IL7-x7-Ssw" secondAttribute="bottom" id="jbp-LB-v0P"/>
                     <constraint firstItem="lgY-33-rx2" firstAttribute="width" secondItem="0pX-k3-tOH" secondAttribute="width" id="nBc-2i-Yua"/>
                     <constraint firstItem="Loj-k2-Ksj" firstAttribute="centerX" secondItem="PGx-Ga-Ypn" secondAttribute="centerX" id="nPg-hW-WWB"/>
                     <constraint firstItem="aoM-Zt-MbN" firstAttribute="leading" secondItem="log-uh-Zgv" secondAttribute="trailing" constant="10" id="ouJ-XB-ylw"/>
@@ -216,8 +216,8 @@
         <image name="开始-点击" width="87" height="93"/>
         <image name="清空" width="65" height="67"/>
         <image name="清空-点击" width="65" height="67"/>
-        <image name="背景-游戏" width="1280" height="960"/>
-        <image name="背景-设置2" width="266" height="278"/>
+        <image name="背景-游戏" width="1274" height="955"/>
+        <image name="背景-设置2" width="262" height="275"/>
         <image name="返回" width="71" height="75"/>
         <image name="返回-点击" width="71" height="75"/>
     </resources>

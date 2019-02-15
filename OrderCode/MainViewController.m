@@ -84,6 +84,7 @@
 }
 //更多
 - (IBAction)more:(UIButton *)sender {
+    self.moreView.frame = self.mainScrollView.frame;
     [__musicPlay_yx play];
     if ([sender.titleLabel.text isEqualToString:@"BACK"] || [sender.titleLabel.text isEqualToString:@"返回"]) {
         if ([sender.titleLabel.text isEqualToString:@"BACK"]) {

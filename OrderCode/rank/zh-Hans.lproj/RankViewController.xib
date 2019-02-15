@@ -80,7 +80,7 @@
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="9ta-2S-T6I" secondAttribute="trailing" id="VtF-G7-nhf"/>
                 <constraint firstItem="tdW-TZ-Pf9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WBv-5B-H3a"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="5IO-NL-PTh" secondAttribute="trailing" constant="16" id="adg-kZ-Nsb"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="9ta-2S-T6I" secondAttribute="bottom" id="b5I-rX-hY4"/>
+                <constraint firstAttribute="bottom" secondItem="9ta-2S-T6I" secondAttribute="bottom" id="b5I-rX-hY4"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="5IO-NL-PTh" secondAttribute="bottom" constant="100" id="fLf-3W-uEh"/>
                 <constraint firstItem="Vas-DD-8em" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="kYr-GR-maj"/>
                 <constraint firstItem="Vas-DD-8em" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="32" id="qro-eP-HK3"/>
