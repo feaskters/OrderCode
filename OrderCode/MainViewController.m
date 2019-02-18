@@ -15,6 +15,7 @@
 #import "Game/MoreView.h"
 #import "db/UserDb.h"
 #import "rank/RankViewController.h"
+#import "puzzle/PuzzleViewController.h"
 
 @interface MainViewController ()<LSMoreViewDelegate>
 
@@ -185,6 +186,17 @@
     cvc.musPlay_yx = self._musicPlay_yx;
     cvc.musplay = self._musicPlay;
     [self presentViewController:cvc animated:YES completion:^{
+        
+    }];
+}
+
+//解谜模式
+- (void)LSMoreViewPuzzleButtonClick{
+    [self._musicPlay_yx play];
+    PuzzleViewController *pvc = [PuzzleViewController puzzleViewController];
+    pvc.musplay = self._musicPlay;
+    pvc.musPlay_yx = self._musicPlay_yx;
+    [self presentViewController:pvc animated:YES completion:^{
         
     }];
 }

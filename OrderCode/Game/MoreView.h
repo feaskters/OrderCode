@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 -(void)LSMoreViewCompetitionButtonClick;
 -(void)LSMoreViewRankButtonClick;
+-(void)LSMoreViewPuzzleButtonClick;
 @end
 
 @interface MoreView : UIView

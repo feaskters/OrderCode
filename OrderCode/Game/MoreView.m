@@ -33,4 +33,9 @@
     [self.delegate LSMoreViewRankButtonClick];
 }
 
+//点击puzzle
+- (IBAction)puzzle:(UIButton *)sender {
+    [self.delegate LSMoreViewPuzzleButtonClick];
+}
+
 @end
