@@ -9,7 +9,7 @@
 #import "CompetitionViewController.h"
 #import "../Game/CharacterView.h"
 #import "../Game/CoinImageView.h"
-#import "../GameOver/GameOverCompetitionView.h"
+#import "../GameOver/GameOverScoreWithName.h"
 
 @interface CompetitionViewController ()
 @property (weak, nonatomic) IBOutlet UIView *gameView;
@@ -91,11 +91,12 @@
 
 //结算页面
 -(void)result{
-    GameOverCompetitionView *gocv = [GameOverCompetitionView gameOverCompetition];
-    [gocv addScoreString:self.score.text];
+    GameOverScoreWithName *gocv = [GameOverScoreWithName gameOverScoreWithName];
     gocv.frame = self.view.frame;
+    gocv.type = @"competition";
     gocv.cvc = self;
     [self.view addSubview:gocv];
+    [gocv addScoreString:self.score.text];
 }
 
 + (instancetype)competitionView{
@@ -120,9 +121,9 @@
 - (IBAction)btnClick:(UIButton *)sender {
     [_musPlay_yx play];
     if (sender.tag == 0) {
-        [self.character competition_left];
+        [self.character fast_left];
     }else{
-        [self.character competition_right];
+        [self.character fast_right];
     }
 }
 

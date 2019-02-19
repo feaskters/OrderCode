@@ -10,6 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "../Game/CharacterView.h"
 #import "PuzzleView.h"
+#import "../GameOver/GameOverScoreWithName.h"
 
 @interface PuzzleViewController ()
 
@@ -44,7 +45,15 @@
                 --leftTime;
                 self.second.text = [NSString stringWithFormat:@"%d",leftTime ];
             }else{
-                NSLog(@"gameOver");
+                //游戏结束，弹出结算界面
+                GameOverScoreWithName *goswn = [GameOverScoreWithName gameOverScoreWithName];
+                goswn.pvc = self;
+                goswn.type = @"puzzle";
+                goswn.frame = self.view.frame;
+                [self.view addSubview:goswn];
+                [goswn addScoreString:self.score.text];
+                //计时器结束
+                [timer invalidate];
             }
         }];
     }
@@ -91,6 +100,7 @@
 
 - (void)viewWillDisappear:(BOOL)animated{
     [self.timer invalidate];
+    [_musPlay_bg stop];
     self.timer = nil;
 }
 
@@ -99,6 +109,7 @@
 }
 - (IBAction)back:(UIButton *)sender {
     [_musPlay_yx play];
+    [_musPlay_bg stop];
     [self dismissViewControllerAnimated:YES completion:^{
         
     }];
@@ -113,16 +124,16 @@
     [_musPlay_yx play];
     switch (sender.tag) {
         case 0:
-            [self.character competition_up];
+            [self.character fast_up];
             break;
         case 1:
-            [self.character competition_left];
+            [self.character fast_left];
             break;
         case 2:
-            [self.character competition_down];
+            [self.character fast_down];
             break;
         case 3:
-            [self.character competition_right];
+            [self.character fast_right];
             break;
         default:
             break;

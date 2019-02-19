@@ -32,6 +32,10 @@
          [sender setTitle:@"↓ COMPETITION ↓" forState:UIControlStateHighlighted];
         self.imageView.image = [UIImage imageNamed: @"competition_teach_en"];
     }else if([sender.titleLabel.text isEqualToString:@"↓ COMPETITION ↓"]){
+        [sender setTitle:@"↓ PUZZLE ↓" forState:UIControlStateNormal];
+        [sender setTitle:@"↓ PUZZLE ↓" forState:UIControlStateHighlighted];
+        self.imageView.image = [UIImage imageNamed: @"puzzle_teach_en"];
+    }else if([sender.titleLabel.text isEqualToString:@"↓ PUZZLE ↓"]){
         [sender setTitle:@"↓ STANDARD ↓" forState:UIControlStateNormal];
         [sender setTitle:@"↓ STANDARD ↓" forState:UIControlStateHighlighted];
         self.imageView.image = [UIImage imageNamed: @"教程_en"];
@@ -42,6 +46,10 @@
         [sender setTitle:@"↓ 竞赛模式 ↓" forState:UIControlStateHighlighted];
         self.imageView.image = [UIImage imageNamed: @"competition_teach"];
     }else if([sender.titleLabel.text isEqualToString:@"↓ 竞赛模式 ↓"]){
+        [sender setTitle:@"↓ 解谜模式 ↓" forState:UIControlStateNormal];
+        [sender setTitle:@"↓ 解谜模式 ↓" forState:UIControlStateHighlighted];
+        self.imageView.image = [UIImage imageNamed: @"puzzle_teach"];
+    }else if([sender.titleLabel.text isEqualToString:@"↓ 解谜模式 ↓"]){
         [sender setTitle:@"↓ 标准模式 ↓" forState:UIControlStateNormal];
         [sender setTitle:@"↓ 标准模式 ↓" forState:UIControlStateHighlighted];
         self.imageView.image = [UIImage imageNamed: @"教程"];

@@ -62,7 +62,7 @@
     }
 }
 //竞赛向左
--(void)competition_left{
+-(void)fast_left{
     self.animationImages = self.picturesleft;
     [self startAnimating];
     if (self.frame.origin.x > 0 ) {
@@ -72,7 +72,7 @@
     }
 }
 //竞赛向右
--(void)competition_right{
+-(void)fast_right{
     self.animationImages = self.picturesright;
     [self startAnimating];
     if ( self.frame.origin.x < 6 * 50) {
@@ -82,7 +82,7 @@
     }
 }
 //竞赛前进
--(void)competition_up{
+-(void)fast_up{
     self.animationImages = self.picturesup;
     [self startAnimating];
     if ( self.frame.origin.y > 0 ) {
@@ -92,7 +92,7 @@
     }
 }
 //竞赛后退
--(void)competition_down{
+-(void)fast_down{
     self.animationImages = self.picturesdown;
     [self startAnimating];
     if (self.frame.origin.y < 7 * 50 ) {

@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RankViewController">
             <connections>
                 <outlet property="rankTableView" destination="A8V-8K-ZPd" id="O2y-ep-sJP"/>
+                <outlet property="title_label" destination="JSp-No-Ti7" id="7DQ-XD-4O7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -49,8 +50,8 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景-设置3" translatesAutoresizingMaskIntoConstraints="NO" id="Vas-DD-8em">
                     <rect key="frame" x="60" y="52" width="255" height="60"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="竞赛模式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSp-No-Ti7">
-                    <rect key="frame" x="115.5" y="57.5" width="144" height="49.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="竞赛模式&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSp-No-Ti7">
+                    <rect key="frame" x="103.5" y="57.5" width="168" height="49.5"/>
                     <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="36"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -67,21 +68,31 @@
                         <action selector="back:" destination="-1" eventType="touchUpInside" id="hgK-9Q-Peb"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdT-GA-Nk5">
+                    <rect key="frame" x="60" y="52" width="255" height="60"/>
+                    <connections>
+                        <action selector="changeRank:" destination="-1" eventType="touchUpInside" id="PdQ-pr-DhM"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="9ta-2S-T6I" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="A7P-3I-bVN"/>
                 <constraint firstItem="5IO-NL-PTh" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="100" id="AjX-uD-GxD"/>
                 <constraint firstItem="Vas-DD-8em" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BdQ-hP-8IN"/>
+                <constraint firstItem="LdT-GA-Nk5" firstAttribute="height" secondItem="Vas-DD-8em" secondAttribute="height" id="Cb6-hE-LUV"/>
                 <constraint firstItem="5IO-NL-PTh" firstAttribute="top" secondItem="Vas-DD-8em" secondAttribute="bottom" constant="8" id="G16-9r-nad"/>
+                <constraint firstItem="LdT-GA-Nk5" firstAttribute="centerY" secondItem="JSp-No-Ti7" secondAttribute="centerY" id="GST-8d-23z"/>
                 <constraint firstItem="JSp-No-Ti7" firstAttribute="centerX" secondItem="Vas-DD-8em" secondAttribute="centerX" id="HLn-7i-ebs"/>
                 <constraint firstItem="5IO-NL-PTh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="ORh-Ui-kRC"/>
+                <constraint firstItem="LdT-GA-Nk5" firstAttribute="centerX" secondItem="JSp-No-Ti7" secondAttribute="centerX" id="T1e-n9-x2D"/>
                 <constraint firstItem="9ta-2S-T6I" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Tyd-Ou-Bok"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="9ta-2S-T6I" secondAttribute="trailing" id="VtF-G7-nhf"/>
                 <constraint firstItem="tdW-TZ-Pf9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WBv-5B-H3a"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="5IO-NL-PTh" secondAttribute="trailing" constant="16" id="adg-kZ-Nsb"/>
                 <constraint firstAttribute="bottom" secondItem="9ta-2S-T6I" secondAttribute="bottom" id="b5I-rX-hY4"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="5IO-NL-PTh" secondAttribute="bottom" constant="100" id="fLf-3W-uEh"/>
+                <constraint firstItem="LdT-GA-Nk5" firstAttribute="width" secondItem="Vas-DD-8em" secondAttribute="width" id="hOe-IG-YhW"/>
                 <constraint firstItem="Vas-DD-8em" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="kYr-GR-maj"/>
                 <constraint firstItem="Vas-DD-8em" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="32" id="qro-eP-HK3"/>
                 <constraint firstItem="JSp-No-Ti7" firstAttribute="centerY" secondItem="Vas-DD-8em" secondAttribute="centerY" id="ssN-wp-kjq"/>

@@ -54,6 +54,19 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eM8-bZ-mbG">
+                    <rect key="frame" x="87.5" y="227" width="200" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="WuF-8F-OhZ"/>
+                        <constraint firstAttribute="height" constant="57" id="YAX-jQ-Mew"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="24"/>
+                    <state key="normal" title="解谜模式" backgroundImage="更多菜单按钮"/>
+                    <state key="highlighted" backgroundImage="更多菜单按钮-点击"/>
+                    <connections>
+                        <action selector="puzzle:" destination="iN0-l3-epB" eventType="touchUpInside" id="Khg-gt-J5H"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstItem="5tg-yL-CJP" firstAttribute="top" secondItem="NfF-c2-LkK" secondAttribute="bottom" constant="5" id="0uX-Il-n7q"/>
@@ -68,6 +81,8 @@
                 <constraint firstItem="NfF-c2-LkK" firstAttribute="width" secondItem="5tg-yL-CJP" secondAttribute="width" id="Rvc-4B-7TK"/>
                 <constraint firstItem="2mq-vJ-Pza" firstAttribute="height" secondItem="vS2-ig-TxF" secondAttribute="height" id="Y6v-sZ-Rlb"/>
                 <constraint firstItem="2mq-vJ-Pza" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bEE-hW-RcH"/>
+                <constraint firstItem="eM8-bZ-mbG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="e1k-wD-eWA"/>
+                <constraint firstItem="eM8-bZ-mbG" firstAttribute="top" secondItem="vS2-ig-TxF" secondAttribute="bottom" constant="50" id="zER-8D-GUA"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

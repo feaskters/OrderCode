@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSArray *)SelectCompetition;
 -(BOOL)insertCompetitionWithName:(NSString *)name score:(NSString *)score;
 
+-(NSArray *)SelectPuzzle;
+-(BOOL)insertPuzzleWithName:(NSString *)name score:(NSString *)score;
+
 @end
 
 NS_ASSUME_NONNULL_END

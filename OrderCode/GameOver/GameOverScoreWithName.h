@@ -8,15 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "../competition/CompetitionViewController.h"
+#import "../puzzle/PuzzleViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GameOverCompetitionView : UIView
+@interface GameOverScoreWithName : UIView
 
 @property CompetitionViewController *cvc;
+@property PuzzleViewController *pvc;
 
+@property NSString* type;
 -(void)addScoreString:(NSString *)scoreString;
-+(instancetype)gameOverCompetition;
++(instancetype)gameOverScoreWithName;
 
 @end
 

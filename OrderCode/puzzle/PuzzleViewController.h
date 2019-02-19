@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property AVAudioPlayer *musPlay_yx;//音效
 @property AVAudioPlayer *musPlay_bg;//背景
 +(instancetype)puzzleViewController;
-
+- (IBAction)back:(UIButton *)sender;
 @end
 
 NS_ASSUME_NONNULL_END
